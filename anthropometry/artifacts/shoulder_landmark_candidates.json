@@ -1,0 +1,666 @@
+{
+  "experiment": "Step 2.3.1 - Bilateral landmark confirmation",
+  "units": "centimeters unless otherwise stated",
+  "candidate_definitions": {
+    "published_asymmetric": {
+      "left_vertex_id": 4442,
+      "right_vertex_id": 7218,
+      "description": "Published SMPL-X shoulder-width pair"
+    },
+    "symmetric_from_left_4442": {
+      "left_vertex_id": 4442,
+      "right_vertex_id": 7178,
+      "description": "v4442 and its neutral-template mirror counterpart"
+    },
+    "symmetric_from_right_7218": {
+      "left_vertex_id": 4482,
+      "right_vertex_id": 7218,
+      "description": "neutral-template mirror counterpart of v7218 and v7218"
+    }
+  },
+  "beta_zero_neutral": {
+    "published_asymmetric": {
+      "left_vertex_id": 4442,
+      "right_vertex_id": 7218,
+      "description": "Published SMPL-X shoulder-width pair",
+      "left_coordinate_m": [
+        0.16507497429847717,
+        0.13681592047214508,
+        -0.053079698234796524
+      ],
+      "right_coordinate_m": [
+        -0.16402673721313477,
+        0.13998882472515106,
+        -0.02648346871137619
+      ],
+      "distance_m": 0.33018988370895386,
+      "distance_cm": 33.01898956298828,
+      "axis_delta_cm": [
+        32.91017150878906,
+        -0.31729042530059814,
+        -2.65962290763855
+      ],
+      "absolute_y_diff_cm": 0.31729042530059814,
+      "absolute_z_diff_cm": 2.65962290763855,
+      "bilateral_yz_mismatch_cm": 2.6784822940826416,
+      "left_shoulder_joint_offset_cm": [
+        0.09939372539520264,
+        5.157261848449707,
+        -3.7324109077453613
+      ],
+      "right_shoulder_joint_offset_cm": [
+        -1.2231900691986084,
+        5.955414295196533,
+        -0.7340871095657349
+      ],
+      "mirrored_joint_relative_delta_cm": [
+        -1.1237964630126953,
+        -0.7981523871421814,
+        -2.998323678970337
+      ],
+      "mirrored_joint_relative_mismatch_cm": 3.2999866008758545,
+      "left_surface_normal": [
+        0.19482339918613434,
+        0.9285047054290771,
+        -0.31610581278800964
+      ],
+      "right_surface_normal": [
+        -0.1193065419793129,
+        0.9800235033035278,
+        0.15912191569805145
+      ],
+      "mean_upward_normal_component": 0.9542641043663025
+    },
+    "symmetric_from_left_4442": {
+      "left_vertex_id": 4442,
+      "right_vertex_id": 7178,
+      "description": "v4442 and its neutral-template mirror counterpart",
+      "left_coordinate_m": [
+        0.16507497429847717,
+        0.13681592047214508,
+        -0.053079698234796524
+      ],
+      "right_coordinate_m": [
+        -0.16507408022880554,
+        0.13681535422801971,
+        -0.05307828262448311
+      ],
+      "distance_m": 0.3301490545272827,
+      "distance_cm": 33.0149040222168,
+      "axis_delta_cm": [
+        33.0149040222168,
+        5.6624412536621094e-05,
+        -0.00014156103134155273
+      ],
+      "absolute_y_diff_cm": 5.6624412536621094e-05,
+      "absolute_z_diff_cm": 0.00014156103134155273,
+      "bilateral_yz_mismatch_cm": 0.0001524659019196406,
+      "left_shoulder_joint_offset_cm": [
+        0.09939372539520264,
+        5.157261848449707,
+        -3.7324109077453613
+      ],
+      "right_shoulder_joint_offset_cm": [
+        -1.3279244899749756,
+        5.638067245483398,
+        -3.393568515777588
+      ],
+      "mirrored_joint_relative_delta_cm": [
+        -1.2285306453704834,
+        -0.48080533742904663,
+        -0.33884233236312866
+      ],
+      "mirrored_joint_relative_mismatch_cm": 1.3620851039886475,
+      "left_surface_normal": [
+        0.19482339918613434,
+        0.9285047054290771,
+        -0.31610581278800964
+      ],
+      "right_surface_normal": [
+        -0.1946665346622467,
+        0.9285568594932556,
+        -0.3160493075847626
+      ],
+      "mean_upward_normal_component": 0.9285308122634888
+    },
+    "symmetric_from_right_7218": {
+      "left_vertex_id": 4482,
+      "right_vertex_id": 7218,
+      "description": "neutral-template mirror counterpart of v7218 and v7218",
+      "left_coordinate_m": [
+        0.16402913630008698,
+        0.13999217748641968,
+        -0.026486089453101158
+      ],
+      "right_coordinate_m": [
+        -0.16402673721313477,
+        0.13998882472515106,
+        -0.02648346871137619
+      ],
+      "distance_m": 0.32805585861206055,
+      "distance_cm": 32.80558776855469,
+      "axis_delta_cm": [
+        32.80558776855469,
+        0.00033527612686157227,
+        -0.00026207417249679565
+      ],
+      "absolute_y_diff_cm": 0.00033527612686157227,
+      "absolute_z_diff_cm": 0.00026207417249679565,
+      "bilateral_yz_mismatch_cm": 0.0004255501553416252,
+      "left_shoulder_joint_offset_cm": [
+        -0.005190074443817139,
+        5.474887847900391,
+        -1.0730499029159546
+      ],
+      "right_shoulder_joint_offset_cm": [
+        -1.2231900691986084,
+        5.955414295196533,
+        -0.7340871095657349
+      ],
+      "mirrored_joint_relative_delta_cm": [
+        -1.2283802032470703,
+        -0.4805266857147217,
+        -0.3389628529548645
+      ],
+      "mirrored_joint_relative_mismatch_cm": 1.361880898475647,
+      "left_surface_normal": [
+        0.11931025981903076,
+        0.9800372123718262,
+        0.15903519093990326
+      ],
+      "right_surface_normal": [
+        -0.1193065419793129,
+        0.9800235033035278,
+        0.15912191569805145
+      ],
+      "mean_upward_normal_component": 0.980030357837677
+    }
+  },
+  "subjects": [
+    {
+      "sample": "p000444",
+      "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000444_a001426_kinect_000_000102/canonical/000001_canonical.npz",
+      "candidates": {
+        "published_asymmetric": {
+          "distance_cm": 32.251529693603516,
+          "absolute_y_diff_cm": 0.29008984565734863,
+          "absolute_z_diff_cm": 2.5624499320983887,
+          "left_shoulder_joint_offset_cm": [
+            0.1352265477180481,
+            5.105986595153809,
+            -3.6296441555023193
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.2440204620361328,
+            5.89371919631958,
+            -0.7898952960968018
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.1087939739227295,
+            -0.787732720375061,
+            -2.8397488594055176
+          ],
+          "mirrored_joint_relative_mismatch_cm": 3.148669719696045
+        },
+        "symmetric_from_left_4442": {
+          "distance_cm": 32.24518966674805,
+          "absolute_y_diff_cm": 6.854534149169922e-05,
+          "absolute_z_diff_cm": 0.00018775463104248047,
+          "left_shoulder_joint_offset_cm": [
+            0.1352265477180481,
+            5.105986595153809,
+            -3.6296441555023193
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.3409435749053955,
+            5.603560924530029,
+            -3.3521573543548584
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.2057170867919922,
+            -0.4975743591785431,
+            -0.27748680114746094
+          ],
+          "mirrored_joint_relative_mismatch_cm": 1.3335413932800293
+        },
+        "symmetric_from_right_7218": {
+          "distance_cm": 32.05146789550781,
+          "absolute_y_diff_cm": 0.00037550926208496094,
+          "absolute_z_diff_cm": 0.00031832605600357056,
+          "left_shoulder_joint_offset_cm": [
+            0.038430094718933105,
+            5.396451950073242,
+            -1.0675126314163208
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.2440204620361328,
+            5.89371919631958,
+            -0.7898952960968018
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.2055903673171997,
+            -0.49726739525794983,
+            -0.2776173949241638
+          ],
+          "mirrored_joint_relative_mismatch_cm": 1.3333395719528198
+        }
+      }
+    },
+    {
+      "sample": "p000456",
+      "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000456_a000793_kinect_000_000000/canonical/000001_canonical.npz",
+      "candidates": {
+        "published_asymmetric": {
+          "distance_cm": 34.934410095214844,
+          "absolute_y_diff_cm": 0.3143817186355591,
+          "absolute_z_diff_cm": 2.7455623149871826,
+          "left_shoulder_joint_offset_cm": [
+            0.0385969877243042,
+            5.344287395477295,
+            -3.7536978721618652
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.2865185737609863,
+            6.151144027709961,
+            -0.7034562826156616
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.2479215860366821,
+            -0.8068568706512451,
+            -3.050241708755493
+          ],
+          "mirrored_joint_relative_mismatch_cm": 3.3929779529571533
+        },
+        "symmetric_from_left_4442": {
+          "distance_cm": 34.86663818359375,
+          "absolute_y_diff_cm": 8.940696716308594e-06,
+          "absolute_z_diff_cm": 0.0002343207597732544,
+          "left_shoulder_joint_offset_cm": [
+            0.0385969877243042,
+            5.344287395477295,
+            -3.7536978721618652
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.3282239437103271,
+            5.836771488189697,
+            -3.448784351348877
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.289626955986023,
+            -0.49248412251472473,
+            -0.3049135208129883
+          ],
+          "mirrored_joint_relative_mismatch_cm": 1.413736343383789
+        },
+        "symmetric_from_right_7218": {
+          "distance_cm": 34.783382415771484,
+          "absolute_y_diff_cm": 0.00043511390686035156,
+          "absolute_z_diff_cm": 0.0002734363079071045,
+          "left_shoulder_joint_offset_cm": [
+            -0.002956390380859375,
+            5.659104347229004,
+            -1.0084086656570435
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.2865185737609863,
+            6.151144027709961,
+            -0.7034562826156616
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.2894749641418457,
+            -0.49204006791114807,
+            -0.3049524426460266
+          ],
+          "mirrored_joint_relative_mismatch_cm": 1.4134515523910522
+        }
+      }
+    },
+    {
+      "sample": "p000475",
+      "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000475_a000048_kinect_000_000120/canonical/000001_canonical.npz",
+      "candidates": {
+        "published_asymmetric": {
+          "distance_cm": 31.747644424438477,
+          "absolute_y_diff_cm": 0.2879127860069275,
+          "absolute_z_diff_cm": 2.542912244796753,
+          "left_shoulder_joint_offset_cm": [
+            0.18224269151687622,
+            5.113992214202881,
+            -3.557438850402832
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.243464708328247,
+            5.899005889892578,
+            -0.7641099691390991
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.061221957206726,
+            -0.7850140333175659,
+            -2.7933287620544434
+          ],
+          "mirrored_joint_relative_mismatch_cm": 3.0895185470581055
+        },
+        "symmetric_from_left_4442": {
+          "distance_cm": 31.75124740600586,
+          "absolute_y_diff_cm": 7.301568984985352e-05,
+          "absolute_z_diff_cm": 0.0002302229404449463,
+          "left_shoulder_joint_offset_cm": [
+            0.18224269151687622,
+            5.113992214202881,
+            -3.557438850402832
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.3503789901733398,
+            5.611020088195801,
+            -3.3067920207977295
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.1681363582611084,
+            -0.4970282316207886,
+            -0.25064682960510254
+          ],
+          "mirrored_joint_relative_mismatch_cm": 1.2939873933792114
+        },
+        "symmetric_from_right_7218": {
+          "distance_cm": 31.537532806396484,
+          "absolute_y_diff_cm": 0.0003859400749206543,
+          "absolute_z_diff_cm": 0.00034403055906295776,
+          "left_shoulder_joint_offset_cm": [
+            0.0754430890083313,
+            5.4022908210754395,
+            -1.0148706436157227
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.243464708328247,
+            5.899005889892578,
+            -0.7641099691390991
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.168021559715271,
+            -0.4967153072357178,
+            -0.25076064467430115
+          ],
+          "mirrored_joint_relative_mismatch_cm": 1.2937856912612915
+        }
+      }
+    },
+    {
+      "sample": "p000486",
+      "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000486_a000793_kinect_000_000096/canonical/000001_canonical.npz",
+      "candidates": {
+        "published_asymmetric": {
+          "distance_cm": 34.38650894165039,
+          "absolute_y_diff_cm": 0.32213032245635986,
+          "absolute_z_diff_cm": 2.742816209793091,
+          "left_shoulder_joint_offset_cm": [
+            -0.0006154179573059082,
+            5.212852954864502,
+            -3.8520078659057617
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.2203528881072998,
+            6.020061492919922,
+            -0.7352944612503052
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.2209683656692505,
+            -0.8072085380554199,
+            -3.116713523864746
+          ],
+          "mirrored_joint_relative_mismatch_cm": 3.443290948867798
+        },
+        "symmetric_from_left_4442": {
+          "distance_cm": 34.342132568359375,
+          "absolute_y_diff_cm": 5.513429641723633e-05,
+          "absolute_z_diff_cm": 0.0001646578311920166,
+          "left_shoulder_joint_offset_cm": [
+            -0.0006154179573059082,
+            5.212852954864502,
+            -3.8520078659057617
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.2870564460754395,
+            5.6978759765625,
+            -3.4779458045959473
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.2876719236373901,
+            -0.4850231111049652,
+            -0.3740620017051697
+          ],
+          "mirrored_joint_relative_mismatch_cm": 1.4259272813796997
+        },
+        "symmetric_from_right_7218": {
+          "distance_cm": 34.20888137817383,
+          "absolute_y_diff_cm": 0.00039637088775634766,
+          "absolute_z_diff_cm": 0.00024531036615371704,
+          "left_shoulder_joint_offset_cm": [
+            -0.06716698408126831,
+            5.535379886627197,
+            -1.109437108039856
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.2203528881072998,
+            6.020061492919922,
+            -0.7352944612503052
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.287519931793213,
+            -0.4846818745136261,
+            -0.3741426467895508
+          ],
+          "mirrored_joint_relative_mismatch_cm": 1.4256951808929443
+        }
+      }
+    },
+    {
+      "sample": "p000573",
+      "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000573_a000040_kinect_000_000012/canonical/000001_canonical.npz",
+      "candidates": {
+        "published_asymmetric": {
+          "distance_cm": 32.79230880737305,
+          "absolute_y_diff_cm": 0.29707401990890503,
+          "absolute_z_diff_cm": 2.60103178024292,
+          "left_shoulder_joint_offset_cm": [
+            0.1638069748878479,
+            5.223146915435791,
+            -3.6156110763549805
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.2797027826309204,
+            6.010335922241211,
+            -0.737598717212677
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.1158957481384277,
+            -0.7871888875961304,
+            -2.8780124187469482
+          ],
+          "mirrored_joint_relative_mismatch_cm": 3.18556809425354
+        },
+        "symmetric_from_left_4442": {
+          "distance_cm": 32.7833251953125,
+          "absolute_y_diff_cm": 1.341104507446289e-05,
+          "absolute_z_diff_cm": 0.00021569430828094482,
+          "left_shoulder_joint_offset_cm": [
+            0.1638069748878479,
+            5.223146915435791,
+            -3.6156110763549805
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.3753890991210938,
+            5.713248252868652,
+            -3.3384149074554443
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.2115821838378906,
+            -0.4901014268398285,
+            -0.2771962285041809
+          ],
+          "mirrored_joint_relative_mismatch_cm": 1.3360271453857422
+        },
+        "symmetric_from_right_7218": {
+          "distance_cm": 32.59209060668945,
+          "absolute_y_diff_cm": 0.0003680586814880371,
+          "absolute_z_diff_cm": 0.00030901283025741577,
+          "left_shoulder_joint_offset_cm": [
+            0.06825923919677734,
+            5.5205888748168945,
+            -1.0148882865905762
+          ],
+          "right_shoulder_joint_offset_cm": [
+            -1.2797027826309204,
+            6.010335922241211,
+            -0.737598717212677
+          ],
+          "mirrored_joint_relative_delta_cm": [
+            -1.211443543434143,
+            -0.4897467792034149,
+            -0.27728956937789917
+          ],
+          "mirrored_joint_relative_mismatch_cm": 1.3357906341552734
+        }
+      }
+    }
+  ],
+  "five_subject_summary": {
+    "published_asymmetric": {
+      "distance_cm": {
+        "mean": 33.222480392456056,
+        "std_population": 1.2319577716221182,
+        "min": 31.747644424438477,
+        "max": 34.934410095214844
+      },
+      "absolute_y_diff_cm": {
+        "mean": 0.30231773853302,
+        "std_population": 0.013583804357400087,
+        "min": 0.2879127860069275,
+        "max": 0.32213032245635986
+      },
+      "absolute_z_diff_cm": {
+        "mean": 2.638954496383667,
+        "std_population": 0.08794052233822294,
+        "min": 2.542912244796753,
+        "max": 2.7455623149871826
+      },
+      "mirrored_joint_relative_mismatch_cm": {
+        "mean": 3.2520050525665285,
+        "std_population": 0.1399696950700395,
+        "min": 3.0895185470581055,
+        "max": 3.443290948867798
+      },
+      "mean_upward_normal_component": {
+        "mean": 0.951226818561554,
+        "std_population": 0.0034872341534958272,
+        "min": 0.9463143348693848,
+        "max": 0.9554146528244019
+      }
+    },
+    "symmetric_from_left_4442": {
+      "distance_cm": {
+        "mean": 33.197706604003905,
+        "std_population": 1.2055113507839488,
+        "min": 31.75124740600586,
+        "max": 34.86663818359375
+      },
+      "absolute_y_diff_cm": {
+        "mean": 4.380941390991211e-05,
+        "std_population": 2.7324033003931268e-05,
+        "min": 8.940696716308594e-06,
+        "max": 7.301568984985352e-05
+      },
+      "absolute_z_diff_cm": {
+        "mean": 0.00020653009414672852,
+        "std_population": 2.654603285653669e-05,
+        "min": 0.0001646578311920166,
+        "max": 0.0002343207597732544
+      },
+      "mirrored_joint_relative_mismatch_cm": {
+        "mean": 1.3606439113616944,
+        "std_population": 0.05072346159709409,
+        "min": 1.2939873933792114,
+        "max": 1.4259272813796997
+      },
+      "mean_upward_normal_component": {
+        "mean": 0.9247556567192078,
+        "std_population": 0.004227084551843805,
+        "min": 0.9187998175621033,
+        "max": 0.9298136830329895
+      }
+    },
+    "symmetric_from_right_7218": {
+      "distance_cm": {
+        "mean": 33.034671020507815,
+        "std_population": 1.2522579724508065,
+        "min": 31.537532806396484,
+        "max": 34.783382415771484
+      },
+      "absolute_y_diff_cm": {
+        "mean": 0.0003921985626220703,
+        "std_population": 2.3492851465959976e-05,
+        "min": 0.0003680586814880371,
+        "max": 0.00043511390686035156
+      },
+      "absolute_z_diff_cm": {
+        "mean": 0.0002980232238769531,
+        "std_population": 3.473561036727301e-05,
+        "min": 0.00024531036615371704,
+        "max": 0.00034403055906295776
+      },
+      "mirrored_joint_relative_mismatch_cm": {
+        "mean": 1.3604125261306763,
+        "std_population": 0.050701638743802596,
+        "min": 1.2937856912612915,
+        "max": 1.4256951808929443
+      },
+      "mean_upward_normal_component": {
+        "mean": 0.9777374625205993,
+        "std_population": 0.002759228781699105,
+        "min": 0.9738742113113403,
+        "max": 0.9810521602630615
+      }
+    }
+  },
+  "automatic_scoring": {
+    "formula": "neutral(|dY|+|dZ|+joint_relative_mismatch) + subject_mean(|dY|+|dZ|+joint_relative_mismatch)",
+    "weights": {
+      "absolute_y_diff": 1.0,
+      "absolute_z_diff": 1.0,
+      "joint_relative": 1.0
+    },
+    "lower_is_better": true,
+    "scores_cm": {
+      "published_asymmetric": 12.470177221298218,
+      "symmetric_from_left_4442": 2.7231775403022764,
+      "symmetric_from_right_7218": 2.7235809966921805
+    },
+    "equivalence_tolerance_cm": 0.01,
+    "tie_breaker": "higher mean upward-facing local surface-normal component"
+  },
+  "recommendation": {
+    "candidate": "symmetric_from_right_7218",
+    "left_vertex_id": 4482,
+    "right_vertex_id": 7218,
+    "name": "acromion_surface_proxy_v1",
+    "status": "frozen_v1",
+    "decision": "B and C are bilaterally equivalent within the 0.1 mm score tolerance; C is selected by its more upward-facing shoulder-surface orientation",
+    "manual_acceptance": {
+      "tool": "MeshLab",
+      "views": [
+        "front",
+        "back",
+        "top",
+        "left_oblique",
+        "right_oblique"
+      ],
+      "checks": {
+        "shoulder_superolateral_region": true,
+        "bilateral_visual_correspondence": true,
+        "not_clavicle_anterior": true,
+        "not_excessively_lateral_deltoid": true,
+        "not_neck": true
+      }
+    },
+    "scientific_boundary": "SMPL-X represents the external body surface, not the scapular bone; this is a reproducible surface proxy, not a directly observed bony acromion"
+  }
+}
