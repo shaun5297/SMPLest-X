@@ -13,7 +13,9 @@ import numpy as np
 from anatomical_waist import (
     compute_anatomical_waist_plane,
     load_anatomical_landmarks,
+    load_surface_anchored_landmarks,
     measure_anatomical_waist,
+    measure_surface_anchored_anatomical_waist,
     normalize_gender_label,
 )
 from test_waist import synthetic_hourglass_mesh, synthetic_joints
@@ -34,6 +36,40 @@ class AnatomicalWaistTests(unittest.TestCase):
         self.temporary = tempfile.TemporaryDirectory()
         self.landmark_path = Path(self.temporary.name) / "landmarks_female.json"
         self.landmark_path.write_text(json.dumps(landmark_payload()), encoding="utf-8")
+        vertices, faces = synthetic_hourglass_mesh()
+        face_id = 128
+        vertex_ids = faces[face_id].tolist()
+        barycentric = [0.5, 0.25, 0.25]
+        point = np.asarray(barycentric) @ vertices[faces[face_id]]
+        anchor = {
+            "source_xyz_m": point.tolist(),
+            "face_id": face_id,
+            "vertex_ids": vertex_ids,
+            "barycentric": barycentric,
+            "projected_template_xyz_m": point.tolist(),
+            "projection_distance_mm": 0.0,
+        }
+        self.anchor_path = Path(self.temporary.name) / "landmarks_female_surface.json"
+        self.anchor_path.write_text(
+            json.dumps(
+                {
+                    "schema": "smplx_surface_landmarks_v1",
+                    "gender": "female",
+                    "template": {"vertex_count": len(vertices), "face_count": len(faces)},
+                    "projection": {"method": "synthetic"},
+                    "anchors": {
+                        name: anchor
+                        for name in (
+                            "left_lower_rib",
+                            "right_lower_rib",
+                            "left_iliac_crest",
+                            "right_iliac_crest",
+                        )
+                    },
+                }
+            ),
+            encoding="utf-8",
+        )
 
     def tearDown(self) -> None:
         self.temporary.cleanup()
@@ -78,6 +114,36 @@ class AnatomicalWaistTests(unittest.TestCase):
         vertices[:, [0, 2]] *= 2.0
         second = compute_anatomical_waist_plane(landmarks)
         self.assertEqual(first["plane_y_m"], second["plane_y_m"])
+
+    def test_surface_anchors_evaluate_on_subject_vertices(self) -> None:
+        vertices, faces = synthetic_hourglass_mesh()
+        landmarks = load_surface_anchored_landmarks(vertices, faces, self.anchor_path)
+        first = landmarks["points"]["left_lower_rib"]
+        self.assertAlmostEqual(first[1], 0.5)
+        altered = vertices.copy()
+        altered[:, 0] *= 1.5
+        moved = load_surface_anchored_landmarks(altered, faces, self.anchor_path)
+        self.assertNotEqual(first[0], moved["points"]["left_lower_rib"][0])
+
+    def test_surface_anchored_measurement_is_single_slice(self) -> None:
+        vertices, faces = synthetic_hourglass_mesh()
+        result = measure_surface_anchored_anatomical_waist(
+            vertices,
+            faces,
+            synthetic_joints(),
+            gender="female",
+            anchor_path=self.anchor_path,
+        )
+        self.assertEqual(result["definition"], "anatomical_midpoint_waist_proxy_v1")
+        self.assertTrue(result["landmark_source"]["surface_anchored"])
+        self.assertAlmostEqual(result["plane_definition"]["plane_y_m"], 0.5)
+
+    def test_surface_anchor_topology_mismatch_is_rejected(self) -> None:
+        vertices, faces = synthetic_hourglass_mesh()
+        mismatched = faces.copy()
+        mismatched[128] = mismatched[129]
+        with self.assertRaisesRegex(ValueError, "do not match the mesh topology"):
+            load_surface_anchored_landmarks(vertices, mismatched, self.anchor_path)
 
 
 if __name__ == "__main__":

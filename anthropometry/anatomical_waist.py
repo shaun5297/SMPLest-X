@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Gender-aware anatomical waist proxy on canonical SMPL-X meshes.
 
-``anatomical_waist_proxy_v1`` performs one horizontal slice at the bilateral
-mean of manually annotated lower-rib/iliac-crest midpoint heights.  It never
-searches a circumference profile.
+The fixed-XYZ baseline and the surface-anchored proxy both perform one
+horizontal slice at the bilateral mean of manually annotated lower-rib/
+iliac-crest midpoint heights. Neither searches a circumference profile.
 """
 
 from __future__ import annotations
@@ -25,6 +25,9 @@ from torso import (
 
 
 ANATOMICAL_WAIST_DEFINITION = "anatomical_waist_proxy_v1"
+SURFACE_ANCHORED_ANATOMICAL_WAIST_DEFINITION = (
+    "anatomical_midpoint_waist_proxy_v1"
+)
 ANATOMICAL_WAIST_STATUS = "baseline"
 WAIST_LANDMARK_NAMES = (
     "left_lower_rib",
@@ -142,6 +145,65 @@ def load_anatomical_landmarks(path: Path) -> dict[str, object]:
     }
 
 
+def load_surface_anchored_landmarks(
+    vertices: np.ndarray,
+    faces: np.ndarray,
+    path: Path,
+) -> dict[str, object]:
+    """Evaluate face+barycentric anchors on one subject-specific mesh."""
+    vertices = np.asarray(vertices, dtype=np.float64)
+    faces = np.asarray(faces, dtype=np.int64)
+    path = Path(path)
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if data.get("schema") != "smplx_surface_landmarks_v1":
+        raise ValueError(f"{path} is not an smplx_surface_landmarks_v1 file")
+    anchors = data.get("anchors", {})
+    missing = [name for name in WAIST_LANDMARK_NAMES if name not in anchors]
+    if missing:
+        raise ValueError(f"{path} is missing anchors: {', '.join(missing)}")
+
+    points = {}
+    evaluated_anchors = {}
+    for name in WAIST_LANDMARK_NAMES:
+        anchor = anchors[name]
+        face_id = int(anchor["face_id"])
+        if not 0 <= face_id < len(faces):
+            raise ValueError(f"{name} face_id lies outside the mesh topology")
+        expected_vertex_ids = np.asarray(anchor["vertex_ids"], dtype=np.int64)
+        actual_vertex_ids = faces[face_id]
+        if expected_vertex_ids.shape != (3,) or not np.array_equal(
+            expected_vertex_ids, actual_vertex_ids
+        ):
+            raise ValueError(f"{name} face vertex IDs do not match the mesh topology")
+        barycentric = np.asarray(anchor["barycentric"], dtype=np.float64)
+        if barycentric.shape != (3,) or not np.isfinite(barycentric).all():
+            raise ValueError(f"{name} barycentric coordinates must be finite length 3")
+        if not np.isclose(barycentric.sum(), 1.0, atol=1e-8):
+            raise ValueError(f"{name} barycentric coordinates do not sum to one")
+        if np.any(barycentric < -1e-8) or np.any(barycentric > 1.0 + 1e-8):
+            raise ValueError(f"{name} barycentric coordinates lie outside the face")
+        point = barycentric @ vertices[actual_vertex_ids]
+        points[name] = point
+        evaluated_anchors[name] = {
+            "face_id": face_id,
+            "vertex_ids": actual_vertex_ids.tolist(),
+            "barycentric": barycentric.tolist(),
+            "evaluated_xyz_m": point.tolist(),
+            "source_xyz_m": anchor["source_xyz_m"],
+            "projected_template_xyz_m": anchor["projected_template_xyz_m"],
+            "projection_distance_mm": anchor["projection_distance_mm"],
+        }
+    return {
+        "path": str(path.resolve()),
+        "landmark_type": "surface_face_barycentric",
+        "gender": data.get("gender"),
+        "template": data.get("template"),
+        "projection": data.get("projection"),
+        "points": points,
+        "anchors": evaluated_anchors,
+    }
+
+
 def compute_anatomical_waist_plane(landmarks: dict[str, object]) -> dict[str, object]:
     """Compute the bilateral mean lower-rib/iliac-crest midpoint height."""
     points = landmarks["points"]
@@ -170,18 +232,19 @@ def compute_anatomical_waist_plane(landmarks: dict[str, object]) -> dict[str, ob
     }
 
 
-def measure_anatomical_waist(
+def _measure_anatomical_waist_from_landmarks(
     vertices: np.ndarray,
     faces: np.ndarray,
     joints: np.ndarray,
     *,
     gender: str,
-    landmark_path: Path,
+    landmarks: dict[str, object],
+    definition: str,
+    surface_anchored: bool,
     eps: float = EPS,
     endpoint_tolerance: float = ENDPOINT_CLUSTER_TOLERANCE_M,
     centerline_proximity_m: float = DEFAULT_CENTERLINE_PROXIMITY_M,
 ) -> dict[str, object]:
-    """Measure one gender-routed, landmark-defined horizontal waist slice."""
     vertices = np.asarray(vertices, dtype=np.float64)
     faces = np.asarray(faces, dtype=np.int64)
     joints = np.asarray(joints, dtype=np.float64)
@@ -191,7 +254,6 @@ def measure_anatomical_waist(
     if gender not in {"female", "male", "neutral"}:
         raise ValueError(f"unsupported SMPL-X gender: {gender}")
 
-    landmarks = load_anatomical_landmarks(landmark_path)
     plane = compute_anatomical_waist_plane(landmarks)
     plane_y = plane["plane_y_m"]
     interval = compute_torso_vertical_interval(joints)
@@ -220,7 +282,7 @@ def measure_anatomical_waist(
     raw_height = float(np.ptp(vertices[:, 1]))
 
     return {
-        "definition": ANATOMICAL_WAIST_DEFINITION,
+        "definition": definition,
         "status": ANATOMICAL_WAIST_STATUS,
         "definition_text": (
             "A single horizontal canonical SMPL-X slice at the bilateral mean height "
@@ -235,6 +297,10 @@ def measure_anatomical_waist(
             "path": landmarks["path"],
             "landmark_type": landmarks["landmark_type"],
             "annotation_scope": "gender-specific standard-pose SMPL-X template",
+            "surface_anchored": surface_anchored,
+            "anchor_template": landmarks.get("template"),
+            "projection": landmarks.get("projection"),
+            "evaluated_anchors": landmarks.get("anchors"),
         },
         "plane_definition": {
             **plane,
@@ -266,8 +332,68 @@ def measure_anatomical_waist(
             "invalid_component_count": connectivity["invalid_component_count"],
         },
         "scientific_boundary": (
-            "This is a reproducible surface-landmark proxy based on manual annotations "
-            "on gendered standard-pose SMPL-X templates. It is WHO-protocol-inspired, "
+            "This is a reproducible landmark proxy based on manual annotations on "
+            "gendered standard-pose SMPL-X templates. It is WHO-protocol-inspired, "
             "not a per-subject clinical palpation or certified WHO/ISO measurement."
         ),
     }
+
+
+def measure_anatomical_waist(
+    vertices: np.ndarray,
+    faces: np.ndarray,
+    joints: np.ndarray,
+    *,
+    gender: str,
+    landmark_path: Path,
+    eps: float = EPS,
+    endpoint_tolerance: float = ENDPOINT_CLUSTER_TOLERANCE_M,
+    centerline_proximity_m: float = DEFAULT_CENTERLINE_PROXIMITY_M,
+) -> dict[str, object]:
+    """Measure the retained fixed-XYZ anatomy baseline."""
+    landmarks = load_anatomical_landmarks(landmark_path)
+    return _measure_anatomical_waist_from_landmarks(
+        vertices,
+        faces,
+        joints,
+        gender=gender,
+        landmarks=landmarks,
+        definition=ANATOMICAL_WAIST_DEFINITION,
+        surface_anchored=False,
+        eps=eps,
+        endpoint_tolerance=endpoint_tolerance,
+        centerline_proximity_m=centerline_proximity_m,
+    )
+
+
+def measure_surface_anchored_anatomical_waist(
+    vertices: np.ndarray,
+    faces: np.ndarray,
+    joints: np.ndarray,
+    *,
+    gender: str,
+    anchor_path: Path,
+    eps: float = EPS,
+    endpoint_tolerance: float = ENDPOINT_CLUSTER_TOLERANCE_M,
+    centerline_proximity_m: float = DEFAULT_CENTERLINE_PROXIMITY_M,
+) -> dict[str, object]:
+    """Measure the final beta-deforming face+barycentric anatomy proxy."""
+    landmarks = load_surface_anchored_landmarks(vertices, faces, anchor_path)
+    normalized_gender = normalize_gender_label(gender)
+    if landmarks["gender"] != normalized_gender:
+        raise ValueError(
+            f"anchor gender {landmarks['gender']} does not match sample gender "
+            f"{normalized_gender}"
+        )
+    return _measure_anatomical_waist_from_landmarks(
+        vertices,
+        faces,
+        joints,
+        gender=normalized_gender,
+        landmarks=landmarks,
+        definition=SURFACE_ANCHORED_ANATOMICAL_WAIST_DEFINITION,
+        surface_anchored=True,
+        eps=eps,
+        endpoint_tolerance=endpoint_tolerance,
+        centerline_proximity_m=centerline_proximity_m,
+    )

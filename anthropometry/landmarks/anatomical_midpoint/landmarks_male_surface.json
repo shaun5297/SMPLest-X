@@ -1,0 +1,131 @@
+{
+  "schema": "smplx_surface_landmarks_v1",
+  "definition": "anatomical_midpoint_waist_proxy_v1",
+  "gender": "male",
+  "source_fixed_landmarks": "/data0/datasets/data/smplx_models/landmarks_male.json",
+  "source_landmark_type": "fixed_xyz_per_gender",
+  "template": {
+    "model_file": "/data0/datasets/data/smplx_models/SMPLX_MALE.npz",
+    "model_gender": "male",
+    "betas": "zero",
+    "pose": "zero",
+    "expression": "zero",
+    "translation": "zero",
+    "vertex_count": 10475,
+    "face_count": 20908,
+    "vertices_sha256_float64": "eb5f5f32f701dd43747316da4651474a3403144736004aed394c70c39e7033b9",
+    "faces_sha256_int64": "2cb81d8e6c789896d764805d58fb44bdce62424bab97b519bbd6c1668d66ce2b"
+  },
+  "projection": {
+    "method": "closest_point_on_triangle_surface",
+    "library": "trimesh 3.23.5",
+    "maximum_projection_distance_mm": 0.4742981913569524
+  },
+  "debug_plot": "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/landmarks/anatomical_midpoint/landmarks_male_surface_projection.png",
+  "anchors": {
+    "left_lower_rib": {
+      "source_xyz_m": [
+        0.13974914,
+        -0.2047029,
+        0.061708052
+      ],
+      "face_id": 5255,
+      "vertex_ids": [
+        4119,
+        5410,
+        4118
+      ],
+      "barycentric": [
+        0.206017052408212,
+        0.0914589630642871,
+        0.7025239845275009
+      ],
+      "projected_template_xyz_m": [
+        0.13994786465341608,
+        -0.20468660887403484,
+        0.061851094414538905
+      ],
+      "projection_distance_mm": 0.24539360427215082,
+      "barycentric_sum": 1.0,
+      "reconstruction_error_mm": 6.938893903907228e-15
+    },
+    "right_lower_rib": {
+      "source_xyz_m": [
+        -0.1400125,
+        -0.20061494,
+        0.062175754
+      ],
+      "face_id": 6340,
+      "vertex_ids": [
+        6860,
+        6862,
+        6863
+      ],
+      "barycentric": [
+        0.09167182081418127,
+        0.7708939836496915,
+        0.1374341955361272
+      ],
+      "projected_template_xyz_m": [
+        -0.1396272384357806,
+        -0.20063682688554563,
+        0.061899976434377287
+      ],
+      "projection_distance_mm": 0.4742981913569524,
+      "barycentric_sum": 1.0,
+      "reconstruction_error_mm": 2.8609792490763985e-14
+    },
+    "left_iliac_crest": {
+      "source_xyz_m": [
+        0.14792836,
+        -0.32369924,
+        0.047370512
+      ],
+      "face_id": 15767,
+      "vertex_ids": [
+        5724,
+        5512,
+        5514
+      ],
+      "barycentric": [
+        0.07425499453372955,
+        0.6791701876285666,
+        0.24657481783770382
+      ],
+      "projected_template_xyz_m": [
+        0.14814397601345042,
+        -0.3236555988970807,
+        0.04753340241269763
+      ],
+      "projection_distance_mm": 0.27372997217891,
+      "barycentric_sum": 1.0,
+      "reconstruction_error_mm": 0.0
+    },
+    "right_iliac_crest": {
+      "source_xyz_m": [
+        -0.1526694,
+        -0.32361582,
+        0.041592829
+      ],
+      "face_id": 8032,
+      "vertex_ids": [
+        8234,
+        7152,
+        8418
+      ],
+      "barycentric": [
+        0.7806251278051866,
+        0.04375580311323585,
+        0.1756190690815775
+      ],
+      "projected_template_xyz_m": [
+        -0.15240945289806435,
+        -0.32366582785910186,
+        0.041474323909863865
+      ],
+      "projection_distance_mm": 0.29002885746917606,
+      "barycentric_sum": 1.0,
+      "reconstruction_error_mm": 0.0
+    }
+  }
+}
