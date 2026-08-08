@@ -37,6 +37,7 @@ CHEST_ENDPOINT_CLUSTER_TOLERANCE_M = 1e-7
 ARM_TORSO_MERGE_XSPAN_TO_SHOULDER_RATIO = 1.45
 LEFT_SHOULDER_JOINT_INDEX = 16
 RIGHT_SHOULDER_JOINT_INDEX = 17
+NECK_JOINT_INDEX = 12
 
 
 class ChestSelectionError(ValueError):
@@ -111,25 +112,31 @@ def thoracic_centerline_xz(
 ) -> tuple[np.ndarray, str]:
     """Evaluate the spine-chain X-Z centerline at a chest plane.
 
-    The public nipple levels lie slightly above spine3 in these canonical
-    meshes.  In that case the last spine2-to-spine3 segment is linearly
-    extrapolated; the measurement plane itself is never altered.
+    The chain extends from spine3 to the native neck joint so nipple and
+    shoulder-level planes remain true skeleton interpolation.  The measurement
+    plane itself is never altered.
     """
     joints = np.asarray(joints, dtype=np.float64)
-    indices = (PELVIS_JOINT_INDEX, SPINE1_JOINT_INDEX, SPINE2_JOINT_INDEX, SPINE3_JOINT_INDEX)
+    indices = (
+        PELVIS_JOINT_INDEX,
+        SPINE1_JOINT_INDEX,
+        SPINE2_JOINT_INDEX,
+        SPINE3_JOINT_INDEX,
+        NECK_JOINT_INDEX,
+    )
     chain = joints[list(indices)]
     if np.any(np.diff(chain[:, 1]) <= 0.0):
-        raise ValueError("expected pelvis < spine1 < spine2 < spine3")
+        raise ValueError("expected pelvis < spine1 < spine2 < spine3 < neck")
     if plane_y < chain[0, 1]:
         raise ChestSelectionError("chest plane lies below the pelvis-to-spine3 chain")
     if plane_y <= chain[-1, 1]:
         x = np.interp(plane_y, chain[:, 1], chain[:, 0])
         z = np.interp(plane_y, chain[:, 1], chain[:, 2])
-        return np.asarray([x, z]), "piecewise_spine_interpolation"
+        return np.asarray([x, z]), "piecewise_thoracic_skeleton_interpolation"
     first, second = chain[-2], chain[-1]
     fraction = (plane_y - first[1]) / (second[1] - first[1])
     point = first + fraction * (second - first)
-    return point[[0, 2]], "spine2_to_spine3_linear_extrapolation"
+    return point[[0, 2]], "spine3_to_neck_linear_extrapolation"
 
 
 def _compactness(area_m2: float, perimeter_m: float) -> float:

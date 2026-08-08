@@ -49,10 +49,10 @@
             "selection_mode": "spine_centerline_containment_then_area",
             "fallback_used": false,
             "centerline_xz_m": [
-              -0.005740484370931649,
-              0.01679811672396645
+              -0.0030529909208893216,
+              0.0035500787254093644
             ],
-            "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+            "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
             "centerline_inside": true,
             "selected_metrics": {
               "contour_id": 0,
@@ -64,7 +64,7 @@
                 -2.426832533625063e-07,
                 -0.01044880380547257
               ],
-              "centerline_to_centroid_m": 0.027845018458793044,
+              "centerline_to_centroid_m": 0.014327874368370935,
               "compactness": 0.9271228535417834,
               "x_span_m": 0.3445489145974981,
               "z_span_m": 0.2489512025401386,
@@ -82,7 +82,7 @@
                   -2.426832533625063e-07,
                   -0.01044880380547257
                 ],
-                "centerline_to_centroid_m": 0.027845018458793044,
+                "centerline_to_centroid_m": 0.014327874368370935,
                 "compactness": 0.9271228535417834,
                 "x_span_m": 0.3445489145974981,
                 "z_span_m": 0.2489512025401386,
@@ -112,10 +112,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.004301696627230183,
-                0.01336569770098154
+                -0.002571420651025476,
+                0.004836277143551199
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -127,7 +127,7 @@
                   -5.840912898660514e-07,
                   -0.009089908981302913
                 ],
-                "centerline_to_centroid_m": 0.022863810717294725,
+                "centerline_to_centroid_m": 0.014161492174236174,
                 "compactness": 0.9311139808258531,
                 "x_span_m": 0.3392414670505126,
                 "z_span_m": 0.24953837470324935,
@@ -145,7 +145,7 @@
                     -5.840912898660514e-07,
                     -0.009089908981302913
                   ],
-                  "centerline_to_centroid_m": 0.022863810717294725,
+                  "centerline_to_centroid_m": 0.014161492174236174,
                   "compactness": 0.9311139808258531,
                   "x_span_m": 0.3392414670505126,
                   "z_span_m": 0.24953837470324935,
@@ -174,10 +174,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005021090499080918,
-                0.015081907212474002
+                -0.002812205785957399,
+                0.0041931779344802815
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -189,7 +189,7 @@
                   -4.3628243094946333e-07,
                   -0.009722670496772967
                 ],
-                "centerline_to_centroid_m": 0.02530758866619332,
+                "centerline_to_centroid_m": 0.014197073124506153,
                 "compactness": 0.9291603391331702,
                 "x_span_m": 0.34174032776529717,
                 "z_span_m": 0.24944615744975984,
@@ -207,7 +207,7 @@
                     -4.3628243094946333e-07,
                     -0.009722670496772967
                   ],
-                  "centerline_to_centroid_m": 0.02530758866619332,
+                  "centerline_to_centroid_m": 0.014197073124506153,
                   "compactness": 0.9291603391331702,
                   "x_span_m": 0.34174032776529717,
                   "z_span_m": 0.24944615744975984,
@@ -236,10 +236,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005740484370931649,
-                0.01679811672396645
+                -0.0030529909208893216,
+                0.0035500787254093644
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -251,7 +251,7 @@
                   -2.426832533625063e-07,
                   -0.01044880380547257
                 ],
-                "centerline_to_centroid_m": 0.027845018458793044,
+                "centerline_to_centroid_m": 0.014327874368370935,
                 "compactness": 0.9271228535417834,
                 "x_span_m": 0.3445489145974981,
                 "z_span_m": 0.2489512025401386,
@@ -269,7 +269,7 @@
                     -2.426832533625063e-07,
                     -0.01044880380547257
                   ],
-                  "centerline_to_centroid_m": 0.027845018458793044,
+                  "centerline_to_centroid_m": 0.014327874368370935,
                   "compactness": 0.9271228535417834,
                   "x_span_m": 0.3445489145974981,
                   "z_span_m": 0.2489512025401386,
@@ -298,10 +298,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.00645987824278238,
-                0.0185143262354589
+                -0.003293776055821244,
+                0.0029069795163384473
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -313,7 +313,7 @@
                   -3.1883174044913476e-08,
                   -0.011314883340327481
                 ],
-                "centerline_to_centroid_m": 0.03052067101008644,
+                "centerline_to_centroid_m": 0.01459829215314796,
                 "compactness": 0.9256333298121056,
                 "x_span_m": 0.347357501429699,
                 "z_span_m": 0.24845624763051738,
@@ -331,7 +331,7 @@
                     -3.1883174044913476e-08,
                     -0.011314883340327481
                   ],
-                  "centerline_to_centroid_m": 0.03052067101008644,
+                  "centerline_to_centroid_m": 0.01459829215314796,
                   "compactness": 0.9256333298121056,
                   "x_span_m": 0.347357501429699,
                   "z_span_m": 0.24845624763051738,
@@ -348,7 +348,7 @@
                     -0.7770572908783544,
                     -0.08074162701891058
                   ],
-                  "centerline_to_centroid_m": 0.776963394644221,
+                  "centerline_to_centroid_m": 0.7782718459804449,
                   "compactness": 0.7388972238205274,
                   "x_span_m": 0.0005727332395312201,
                   "z_span_m": 0.00039328831668676567,
@@ -377,10 +377,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.0071792721146331125,
-                0.020230535746951356
+                -0.003534561190753166,
+                0.0022638803072675302
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -392,7 +392,7 @@
                   2.819292316868582e-07,
                   -0.012245213855846706
                 ],
-                "centerline_to_centroid_m": 0.033259890386656624,
+                "centerline_to_centroid_m": 0.014933483495722618,
                 "compactness": 0.9230788575627552,
                 "x_span_m": 0.3518986441781954,
                 "z_span_m": 0.2479907163515716,
@@ -410,7 +410,7 @@
                     2.819292316868582e-07,
                     -0.012245213855846706
                   ],
-                  "centerline_to_centroid_m": 0.033259890386656624,
+                  "centerline_to_centroid_m": 0.014933483495722618,
                   "compactness": 0.9230788575627552,
                   "x_span_m": 0.3518986441781954,
                   "z_span_m": 0.2479907163515716,
@@ -427,7 +427,7 @@
                     0.7757309325523087,
                     -0.08120754784045235
                   ],
-                  "centerline_to_centroid_m": 0.7894542883368978,
+                  "centerline_to_centroid_m": 0.7837232860236053,
                   "compactness": 0.9289521880649515,
                   "x_span_m": 0.008275131347089792,
                   "z_span_m": 0.009125758562748817,
@@ -444,7 +444,7 @@
                     -0.7757439973588426,
                     -0.08121929855931063
                   ],
-                  "centerline_to_centroid_m": 0.7752314530322382,
+                  "centerline_to_centroid_m": 0.7767089895583208,
                   "compactness": 0.9294795670990311,
                   "x_span_m": 0.008261726192161145,
                   "z_span_m": 0.009073529672743233,
@@ -461,7 +461,7 @@
                     -0.7935152987423397,
                     -0.06936328920841633
                   ],
-                  "centerline_to_centroid_m": 0.7914236540834387,
+                  "centerline_to_centroid_m": 0.7932212913906039,
                   "compactness": 0.9227099160742633,
                   "x_span_m": 0.008963723869335971,
                   "z_span_m": 0.007750291171589013,
@@ -478,7 +478,7 @@
                     0.7938688380921629,
                     -0.06935695869155363
                   ],
-                  "centerline_to_centroid_m": 0.8060421788130249,
+                  "centerline_to_centroid_m": 0.8006133434853835,
                   "compactness": 0.9257374514937005,
                   "x_span_m": 0.008456166929507347,
                   "z_span_m": 0.007532267773738804,
@@ -560,10 +560,10 @@
             "selection_mode": "spine_centerline_containment_then_area",
             "fallback_used": false,
             "centerline_xz_m": [
-              -0.0057480857872540675,
-              0.016816250910958883
+              -0.0030555351572617534,
+              0.0035432834703814195
             ],
-            "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+            "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
             "centerline_inside": true,
             "selected_metrics": {
               "contour_id": 0,
@@ -575,7 +575,7 @@
                 -2.426303096794903e-07,
                 -0.010457668485728084
               ],
-              "centerline_to_centroid_m": 0.027873004506400276,
+              "centerline_to_centroid_m": 0.014330438517454228,
               "compactness": 0.9271005506473129,
               "x_span_m": 0.34457859129982293,
               "z_span_m": 0.24894597263969592,
@@ -593,7 +593,7 @@
                   -2.426303096794903e-07,
                   -0.010457668485728084
                 ],
-                "centerline_to_centroid_m": 0.027873004506400276,
+                "centerline_to_centroid_m": 0.014330438517454228,
                 "compactness": 0.9271005506473129,
                 "x_span_m": 0.34457859129982293,
                 "z_span_m": 0.24894597263969592,
@@ -623,10 +623,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.004309298043552604,
-                0.013383831887973978
+                -0.0025739648873979084,
+                0.004829481888523253
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -638,7 +638,7 @@
                   -5.8265968002259e-07,
                   -0.009096325747258582
                 ],
-                "centerline_to_centroid_m": 0.02288935376029924,
+                "centerline_to_centroid_m": 0.01416158234092271,
                 "compactness": 0.931094076073723,
                 "x_span_m": 0.33926683107923894,
                 "z_span_m": 0.24954296284704242,
@@ -656,7 +656,7 @@
                     -5.8265968002259e-07,
                     -0.009096325747258582
                   ],
-                  "centerline_to_centroid_m": 0.02288935376029924,
+                  "centerline_to_centroid_m": 0.01416158234092271,
                   "compactness": 0.931094076073723,
                   "x_span_m": 0.33926683107923894,
                   "z_span_m": 0.24954296284704242,
@@ -685,10 +685,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.0050286919154033365,
-                0.015100041399466427
+                -0.002814750022329831,
+                0.004186382679452337
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -700,7 +700,7 @@
                   -4.341054401249368e-07,
                   -0.009729651772539295
                 ],
-                "centerline_to_centroid_m": 0.025333713498407684,
+                "centerline_to_centroid_m": 0.01419775999758683,
                 "compactness": 0.9291385907434484,
                 "x_span_m": 0.34177000446762196,
                 "z_span_m": 0.24944092754931713,
@@ -718,7 +718,7 @@
                     -4.341054401249368e-07,
                     -0.009729651772539295
                   ],
-                  "centerline_to_centroid_m": 0.025333713498407684,
+                  "centerline_to_centroid_m": 0.01419775999758683,
                   "compactness": 0.9291385907434484,
                   "x_span_m": 0.34177000446762196,
                   "z_span_m": 0.24944092754931713,
@@ -747,10 +747,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.0057480857872540675,
-                0.016816250910958883
+                -0.0030555351572617534,
+                0.0035432834703814195
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -762,7 +762,7 @@
                   -2.426303096794903e-07,
                   -0.010457668485728084
                 ],
-                "centerline_to_centroid_m": 0.027873004506400276,
+                "centerline_to_centroid_m": 0.014330438517454228,
                 "compactness": 0.9271005506473129,
                 "x_span_m": 0.34457859129982293,
                 "z_span_m": 0.24894597263969592,
@@ -780,7 +780,7 @@
                     -2.426303096794903e-07,
                     -0.010457668485728084
                   ],
-                  "centerline_to_centroid_m": 0.027873004506400276,
+                  "centerline_to_centroid_m": 0.014330438517454228,
                   "compactness": 0.9271005506473129,
                   "x_span_m": 0.34457859129982293,
                   "z_span_m": 0.24894597263969592,
@@ -809,10 +809,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.0064674796591048,
-                0.01853246042245133
+                -0.0032963202921936757,
+                0.002900184261310502
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -824,7 +824,7 @@
                   -2.9720037368929173e-08,
                   -0.011324301839024354
                 ],
-                "centerline_to_centroid_m": 0.030549208851500916,
+                "centerline_to_centroid_m": 0.014601422408611639,
                 "compactness": 0.9256196863316319,
                 "x_span_m": 0.3473871781320239,
                 "z_span_m": 0.2484510177300747,
@@ -842,7 +842,7 @@
                     -2.9720037368929173e-08,
                     -0.011324301839024354
                   ],
-                  "centerline_to_centroid_m": 0.030549208851500916,
+                  "centerline_to_centroid_m": 0.014601422408611639,
                   "compactness": 0.9256196863316319,
                   "x_span_m": 0.3473871781320239,
                   "z_span_m": 0.2484510177300747,
@@ -859,7 +859,7 @@
                     -0.7770558938330204,
                     -0.08075426263169741
                   ],
-                  "centerline_to_centroid_m": 0.7769584013535741,
+                  "centerline_to_centroid_m": 0.7782685552757848,
                   "compactness": 0.7388972238224728,
                   "x_span_m": 0.0007517526464293489,
                   "z_span_m": 0.0005162185682134474,
@@ -888,10 +888,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.007186873530955533,
-                0.020248669933943787
+                -0.0035371054271255984,
+                0.0022570850522395857
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -903,7 +903,7 @@
                   2.847354940870258e-07,
                   -0.012255386530623752
                 ],
-                "centerline_to_centroid_m": 0.03328917137146538,
+                "centerline_to_centroid_m": 0.014937367927650923,
                 "compactness": 0.9230511209653107,
                 "x_span_m": 0.3519506436502564,
                 "z_span_m": 0.24798592620254095,
@@ -921,7 +921,7 @@
                     2.847354940870258e-07,
                     -0.012255386530623752
                   ],
-                  "centerline_to_centroid_m": 0.03328917137146538,
+                  "centerline_to_centroid_m": 0.014937367927650923,
                   "compactness": 0.9230511209653107,
                   "x_span_m": 0.3519506436502564,
                   "z_span_m": 0.24798592620254095,
@@ -938,7 +938,7 @@
                     0.7757114890167142,
                     -0.08121012897231784
                   ],
-                  "centerline_to_centroid_m": 0.7894452064300116,
+                  "centerline_to_centroid_m": 0.7837060340202321,
                   "compactness": 0.9296206904444166,
                   "x_span_m": 0.008323224821169206,
                   "z_span_m": 0.00916949139922521,
@@ -955,7 +955,7 @@
                     -0.775724565152774,
                     -0.0812217649944399
                   ],
-                  "centerline_to_centroid_m": 0.7752073481385149,
+                  "centerline_to_centroid_m": 0.7766866751545735,
                   "compactness": 0.9301662779298923,
                   "x_span_m": 0.008309639319450945,
                   "z_span_m": 0.009118882752012905,
@@ -972,7 +972,7 @@
                     -0.7934927298948747,
                     -0.06934744223892998
                   ],
-                  "centerline_to_centroid_m": 0.7913939367146369,
+                  "centerline_to_centroid_m": 0.7931942365882542,
                   "compactness": 0.9233391841152156,
                   "x_span_m": 0.00901865722271733,
                   "z_span_m": 0.007811283594517229,
@@ -989,7 +989,7 @@
                     0.7938474662014563,
                     -0.06933993430969254
                   ],
-                  "centerline_to_centroid_m": 0.8060286170111232,
+                  "centerline_to_centroid_m": 0.8005924607768986,
                   "compactness": 0.9264762860885377,
                   "x_span_m": 0.008504786706947431,
                   "z_span_m": 0.007588385056631078,
@@ -1086,10 +1086,10 @@
             "selection_mode": "spine_centerline_containment_then_area",
             "fallback_used": false,
             "centerline_xz_m": [
-              -0.005811308870036631,
-              0.011561200781910135
+              -0.003098272191086027,
+              -0.0017477814442735389
             ],
-            "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+            "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
             "centerline_inside": true,
             "selected_metrics": {
               "contour_id": 0,
@@ -1101,7 +1101,7 @@
                 1.281551818976319e-06,
                 -0.01892917064323022
               ],
-              "centerline_to_centroid_m": 0.03103947417491577,
+              "centerline_to_centroid_m": 0.017458733293431738,
               "compactness": 0.9002249359400631,
               "x_span_m": 0.37953644935872155,
               "z_span_m": 0.2530232883836771,
@@ -1119,7 +1119,7 @@
                   1.281551818976319e-06,
                   -0.01892917064323022
                 ],
-                "centerline_to_centroid_m": 0.03103947417491577,
+                "centerline_to_centroid_m": 0.017458733293431738,
                 "compactness": 0.9002249359400631,
                 "x_span_m": 0.37953644935872155,
                 "z_span_m": 0.2530232883836771,
@@ -1136,7 +1136,7 @@
                   0.828759033511412,
                   -0.08731247534857979
                 ],
-                "centerline_to_centroid_m": 0.8404068420796236,
+                "centerline_to_centroid_m": 0.836246311736893,
                 "compactness": 0.9222798498073089,
                 "x_span_m": 0.007173696119814776,
                 "z_span_m": 0.00758423340064196,
@@ -1153,7 +1153,7 @@
                   -0.8287377956167038,
                   -0.08733761827554172
                 ],
-                "centerline_to_centroid_m": 0.8288479830464518,
+                "centerline_to_centroid_m": 0.8300639992261346,
                 "compactness": 0.9223970631869367,
                 "x_span_m": 0.00720873707683245,
                 "z_span_m": 0.007503601019529946,
@@ -1170,7 +1170,7 @@
                   -0.8477340423984275,
                   -0.07408426992533185
                 ],
-                "centerline_to_centroid_m": 0.8462677093476879,
+                "centerline_to_centroid_m": 0.8477276401530855,
                 "compactness": 0.647117534154451,
                 "x_span_m": 0.006605760404555183,
                 "z_span_m": 0.003477046239257167,
@@ -1187,7 +1187,7 @@
                   0.8478253056012557,
                   -0.07401242345396777
                 ],
-                "centerline_to_centroid_m": 0.8579150976238109,
+                "centerline_to_centroid_m": 0.853986600438033,
                 "compactness": 0.6292599977693345,
                 "x_span_m": 0.005110459665166656,
                 "z_span_m": 0.002600377162673584,
@@ -1217,10 +1217,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.004401294743994297,
-                0.008380782562830834
+                -0.0025672766391849657,
+                -0.0006161154698370369
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -1232,7 +1232,7 @@
                   5.686872947669031e-07,
                   -0.017615672490699667
                 ],
-                "centerline_to_centroid_m": 0.02636649534955208,
+                "centerline_to_centroid_m": 0.017192404384677663,
                 "compactness": 0.9083653945050406,
                 "x_span_m": 0.3701706501587532,
                 "z_span_m": 0.25312695839895594,
@@ -1250,7 +1250,7 @@
                     5.686872947669031e-07,
                     -0.017615672490699667
                   ],
-                  "centerline_to_centroid_m": 0.02636649534955208,
+                  "centerline_to_centroid_m": 0.017192404384677663,
                   "compactness": 0.9083653945050406,
                   "x_span_m": 0.3701706501587532,
                   "z_span_m": 0.25312695839895594,
@@ -1279,10 +1279,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005106301807015464,
-                0.009970991672370484
+                -0.002832774415135497,
+                -0.001181948457055288
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -1294,7 +1294,7 @@
                   8.838285064823969e-07,
                   -0.0182095063498214
                 ],
-                "centerline_to_centroid_m": 0.028639549820038065,
+                "centerline_to_centroid_m": 0.01726173070214171,
                 "compactness": 0.9048955471546746,
                 "x_span_m": 0.37389995598799997,
                 "z_span_m": 0.2532564327851781,
@@ -1312,7 +1312,7 @@
                     8.838285064823969e-07,
                     -0.0182095063498214
                   ],
-                  "centerline_to_centroid_m": 0.028639549820038065,
+                  "centerline_to_centroid_m": 0.01726173070214171,
                   "compactness": 0.9048955471546746,
                   "x_span_m": 0.37389995598799997,
                   "z_span_m": 0.2532564327851781,
@@ -1341,10 +1341,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005811308870036631,
-                0.011561200781910135
+                -0.003098272191086027,
+                -0.0017477814442735389
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -1356,7 +1356,7 @@
                   1.281551818976319e-06,
                   -0.01892917064323022
                 ],
-                "centerline_to_centroid_m": 0.03103947417491577,
+                "centerline_to_centroid_m": 0.017458733293431738,
                 "compactness": 0.9002249359400631,
                 "x_span_m": 0.37953644935872155,
                 "z_span_m": 0.2530232883836771,
@@ -1374,7 +1374,7 @@
                     1.281551818976319e-06,
                     -0.01892917064323022
                   ],
-                  "centerline_to_centroid_m": 0.03103947417491577,
+                  "centerline_to_centroid_m": 0.017458733293431738,
                   "compactness": 0.9002249359400631,
                   "x_span_m": 0.37953644935872155,
                   "z_span_m": 0.2530232883836771,
@@ -1391,7 +1391,7 @@
                     0.828759033511412,
                     -0.08731247534857979
                   ],
-                  "centerline_to_centroid_m": 0.8404068420796236,
+                  "centerline_to_centroid_m": 0.836246311736893,
                   "compactness": 0.9222798498073089,
                   "x_span_m": 0.007173696119814776,
                   "z_span_m": 0.00758423340064196,
@@ -1408,7 +1408,7 @@
                     -0.8287377956167038,
                     -0.08733761827554172
                   ],
-                  "centerline_to_centroid_m": 0.8288479830464518,
+                  "centerline_to_centroid_m": 0.8300639992261346,
                   "compactness": 0.9223970631869367,
                   "x_span_m": 0.00720873707683245,
                   "z_span_m": 0.007503601019529946,
@@ -1425,7 +1425,7 @@
                     -0.8477340423984275,
                     -0.07408426992533185
                   ],
-                  "centerline_to_centroid_m": 0.8462677093476879,
+                  "centerline_to_centroid_m": 0.8477276401530855,
                   "compactness": 0.647117534154451,
                   "x_span_m": 0.006605760404555183,
                   "z_span_m": 0.003477046239257167,
@@ -1442,7 +1442,7 @@
                     0.8478253056012557,
                     -0.07401242345396777
                   ],
-                  "centerline_to_centroid_m": 0.8579150976238109,
+                  "centerline_to_centroid_m": 0.853986600438033,
                   "compactness": 0.6292599977693345,
                   "x_span_m": 0.005110459665166656,
                   "z_span_m": 0.002600377162673584,
@@ -1471,10 +1471,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.006516315933057799,
-                0.013151409891449785
+                -0.003363769967036558,
+                -0.0023136144314917896
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -1486,7 +1486,7 @@
                   1.5246443856518022e-06,
                   -0.01978345293058245
                 ],
-                "centerline_to_centroid_m": 0.03357361218128085,
+                "centerline_to_centroid_m": 0.017791022033766854,
                 "compactness": 0.8948752565069527,
                 "x_span_m": 0.38593679269639036,
                 "z_span_m": 0.2527802392760809,
@@ -1504,7 +1504,7 @@
                     1.5246443856518022e-06,
                     -0.01978345293058245
                   ],
-                  "centerline_to_centroid_m": 0.03357361218128085,
+                  "centerline_to_centroid_m": 0.017791022033766854,
                   "compactness": 0.8948752565069527,
                   "x_span_m": 0.38593679269639036,
                   "z_span_m": 0.2527802392760809,
@@ -1521,7 +1521,7 @@
                     0.8273624557646949,
                     -0.08745541009760605
                   ],
-                  "centerline_to_centroid_m": 0.8399259122782574,
+                  "centerline_to_centroid_m": 0.8350779529407647,
                   "compactness": 0.95259310384513,
                   "x_span_m": 0.011301721525949993,
                   "z_span_m": 0.011250514270473855,
@@ -1538,7 +1538,7 @@
                     -0.8273760969441072,
                     -0.08745765170856894
                   ],
-                  "centerline_to_centroid_m": 0.8270023962223715,
+                  "centerline_to_centroid_m": 0.8283995546196334,
                   "compactness": 0.9537868688259432,
                   "x_span_m": 0.011280186024146377,
                   "z_span_m": 0.011228093445218731,
@@ -1555,7 +1555,7 @@
                     -0.8455080065230506,
                     -0.07393727836065228
                   ],
-                  "centerline_to_centroid_m": 0.843499553349334,
+                  "centerline_to_centroid_m": 0.8451845150019899,
                   "compactness": 0.9487401549487966,
                   "x_span_m": 0.011667057634923705,
                   "z_span_m": 0.010069532534712822,
@@ -1572,7 +1572,7 @@
                     0.8458016761081273,
                     -0.07389903355661138
                   ],
-                  "centerline_to_centroid_m": 0.856751853958672,
+                  "centerline_to_centroid_m": 0.8521774621751922,
                   "compactness": 0.9524648551443969,
                   "x_span_m": 0.011192766238809937,
                   "z_span_m": 0.00991938167191099,
@@ -1589,7 +1589,7 @@
                     -0.806833815586401,
                     -0.014896663056630352
                   ],
-                  "centerline_to_centroid_m": 0.8008088377680904,
+                  "centerline_to_centroid_m": 0.8035685703910315,
                   "compactness": 0.6511589578831531,
                   "x_span_m": 0.008507733387443261,
                   "z_span_m": 0.0076253829398595895,
@@ -1606,7 +1606,7 @@
                     -0.8055483320419895,
                     -0.10964735174621054
                   ],
-                  "centerline_to_centroid_m": 0.808413074255264,
+                  "centerline_to_centroid_m": 0.8093334311625395,
                   "compactness": 0.9379589400111349,
                   "x_span_m": 0.00742713822204899,
                   "z_span_m": 0.006588213123516207,
@@ -1623,7 +1623,7 @@
                     0.8055543244089934,
                     -0.10964393201568103
                   ],
-                  "centerline_to_centroid_m": 0.8213022713347615,
+                  "centerline_to_centroid_m": 0.8160075247702503,
                   "compactness": 0.9384708661599441,
                   "x_span_m": 0.007405145620647979,
                   "z_span_m": 0.006593337794344484,
@@ -1640,7 +1640,7 @@
                     0.8066670475568247,
                     -0.014798352984519073
                   ],
-                  "centerline_to_centroid_m": 0.8136635495716527,
+                  "centerline_to_centroid_m": 0.8101270233951664,
                   "compactness": 0.6039489529814571,
                   "x_span_m": 0.008108542818689779,
                   "z_span_m": 0.007576399339718726,
@@ -1669,10 +1669,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.007221322996078965,
-                0.014741619000989435
+                -0.0036292677429870888,
+                -0.002879447418710041
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -1684,7 +1684,7 @@
                   1.8843942144173853e-06,
                   -0.020687531934298096
                 ],
-                "centerline_to_centroid_m": 0.03615797921619202,
+                "centerline_to_centroid_m": 0.0181745189745927,
                 "compactness": 0.8871552928170818,
                 "x_span_m": 0.3946884680790049,
                 "z_span_m": 0.2525371901684847,
@@ -1702,7 +1702,7 @@
                     1.8843942144173853e-06,
                     -0.020687531934298096
                   ],
-                  "centerline_to_centroid_m": 0.03615797921619202,
+                  "centerline_to_centroid_m": 0.0181745189745927,
                   "compactness": 0.8871552928170818,
                   "x_span_m": 0.3946884680790049,
                   "z_span_m": 0.2525371901684847,
@@ -1719,7 +1719,7 @@
                     -0.8043750429490192,
                     -0.01650435232894864
                   ],
-                  "centerline_to_centroid_m": 0.7977658578550239,
+                  "centerline_to_centroid_m": 0.8008616825295878,
                   "compactness": 0.809943765601592,
                   "x_span_m": 0.022479259195509083,
                   "z_span_m": 0.01592117847608946,
@@ -1736,7 +1736,7 @@
                     0.8042502788801102,
                     -0.016362297984335517
                   ],
-                  "centerline_to_centroid_m": 0.8120674936871556,
+                  "centerline_to_centroid_m": 0.8079920476782655,
                   "compactness": 0.7972222928742542,
                   "x_span_m": 0.022336836242116798,
                   "z_span_m": 0.015578628096849852,
@@ -1753,7 +1753,7 @@
                     -0.8444828518205639,
                     -0.07368955642164102
                   ],
-                  "centerline_to_centroid_m": 0.8419186067762975,
+                  "centerline_to_centroid_m": 0.843829853343145,
                   "compactness": 0.9626911635664328,
                   "x_span_m": 0.013958618835817393,
                   "z_span_m": 0.012755853891428262,
@@ -1770,7 +1770,7 @@
                     0.8446888672951371,
                     -0.07367751246901263
                   ],
-                  "centerline_to_centroid_m": 0.8564863776686267,
+                  "centerline_to_centroid_m": 0.8512673048164296,
                   "compactness": 0.9654353044728635,
                   "x_span_m": 0.013561707841355908,
                   "z_span_m": 0.01272004668657932,
@@ -1787,7 +1787,7 @@
                     0.8269984206512391,
                     -0.08801001306470871
                   ],
-                  "centerline_to_centroid_m": 0.840523930999684,
+                  "centerline_to_centroid_m": 0.8349787841222933,
                   "compactness": 0.955184380195519,
                   "x_span_m": 0.012859074618612909,
                   "z_span_m": 0.0127741725844049,
@@ -1804,7 +1804,7 @@
                     -0.8270216314000876,
                     -0.08800345614915944
                   ],
-                  "centerline_to_centroid_m": 0.8262137109289082,
+                  "centerline_to_centroid_m": 0.8277808172403903,
                   "compactness": 0.9562004773308741,
                   "x_span_m": 0.012713450381707014,
                   "z_span_m": 0.012775702898950081,
@@ -1821,7 +1821,7 @@
                     -0.8045615290101779,
                     -0.10978402765832745
                   ],
-                  "centerline_to_centroid_m": 0.8070056014691142,
+                  "centerline_to_centroid_m": 0.8080353187916877,
                   "compactness": 0.9561321784128249,
                   "x_span_m": 0.011057759943141288,
                   "z_span_m": 0.010183106032928713,
@@ -1838,7 +1838,7 @@
                     0.8045714618918915,
                     -0.1097801761674994
                   ],
-                  "centerline_to_centroid_m": 0.8212875276467735,
+                  "centerline_to_centroid_m": 0.8152399555893788,
                   "compactness": 0.956630384496236,
                   "x_span_m": 0.011009343131739846,
                   "z_span_m": 0.010186376513815334,
@@ -1855,7 +1855,7 @@
                     -0.8470888510216548,
                     -0.04586071936390711
                   ],
-                  "centerline_to_centroid_m": 0.8420511314920756,
+                  "centerline_to_centroid_m": 0.8445539996724015,
                   "compactness": 0.8231633295980573,
                   "x_span_m": 0.005470229912015956,
                   "z_span_m": 0.003743865955276246,
@@ -1872,7 +1872,7 @@
                     0.8473012615135892,
                     -0.045875444722318644
                   ],
-                  "centerline_to_centroid_m": 0.856669875653112,
+                  "centerline_to_centroid_m": 0.8520160922218599,
                   "compactness": 0.8047474873076728,
                   "x_span_m": 0.005238652291671531,
                   "z_span_m": 0.003911680240161093,
@@ -1954,10 +1954,10 @@
             "selection_mode": "spine_centerline_containment_then_area",
             "fallback_used": false,
             "centerline_xz_m": [
-              -0.005793303365795829,
-              0.01152058768969106
+              -0.0030914915195416675,
+              -0.0017333303716739485
             ],
-            "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+            "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
             "centerline_inside": true,
             "selected_metrics": {
               "contour_id": 0,
@@ -1969,7 +1969,7 @@
                 1.2744860168669184e-06,
                 -0.018908212658872794
               ],
-              "centerline_to_centroid_m": 0.030975619818390688,
+              "centerline_to_centroid_m": 0.017451125555226377,
               "compactness": 0.9003413870059552,
               "x_span_m": 0.3793729880047103,
               "z_span_m": 0.25302949572820893,
@@ -1987,7 +1987,7 @@
                   1.2744860168669184e-06,
                   -0.018908212658872794
                 ],
-                "centerline_to_centroid_m": 0.030975619818390688,
+                "centerline_to_centroid_m": 0.017451125555226377,
                 "compactness": 0.9003413870059552,
                 "x_span_m": 0.3793729880047103,
                 "z_span_m": 0.25302949572820893,
@@ -2004,7 +2004,7 @@
                   0.8288083021206767,
                   -0.08732246590224702
                 ],
-                "centerline_to_centroid_m": 0.8404342860235869,
+                "centerline_to_centroid_m": 0.836291077783034,
                 "compactness": 0.9241742166915247,
                 "x_span_m": 0.007058270313650472,
                 "z_span_m": 0.007389727865579621,
@@ -2021,7 +2021,7 @@
                   -0.8287848241779626,
                   -0.08734218264657351
                 ],
-                "centerline_to_centroid_m": 0.828908252273606,
+                "centerline_to_centroid_m": 0.8301194824748998,
                 "compactness": 0.9247330700525022,
                 "x_span_m": 0.007096699021947206,
                 "z_span_m": 0.007327097524979245,
@@ -2038,7 +2038,7 @@
                   -0.8477255630578315,
                   -0.07405417817745177
                 ],
-                "centerline_to_centroid_m": 0.8462700340100396,
+                "centerline_to_centroid_m": 0.8477246132033064,
                 "compactness": 0.632038287491085,
                 "x_span_m": 0.006103850864078608,
                 "z_span_m": 0.0031543371387562774,
@@ -2055,7 +2055,7 @@
                   0.8478239348629085,
                   -0.07398332702169678
                 ],
-                "centerline_to_centroid_m": 0.8578888674135904,
+                "centerline_to_centroid_m": 0.8539772390828431,
                 "compactness": 0.629259997768984,
                 "x_span_m": 0.004443766985237074,
                 "z_span_m": 0.002261141060053068,
@@ -2085,10 +2085,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.004383289239753499,
-                0.008340169470611766
+                -0.002560495967640606,
+                -0.0006016643972374465
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -2100,7 +2100,7 @@
                   5.609804899749265e-07,
                   -0.01760104442611154
                 ],
-                "centerline_to_centroid_m": 0.026309023569662925,
+                "centerline_to_centroid_m": 0.017191216770713218,
                 "compactness": 0.9084527920764719,
                 "x_span_m": 0.37007540567760433,
                 "z_span_m": 0.25311601247177523,
@@ -2118,7 +2118,7 @@
                     5.609804899749265e-07,
                     -0.01760104442611154
                   ],
-                  "centerline_to_centroid_m": 0.026309023569662925,
+                  "centerline_to_centroid_m": 0.017191216770713218,
                   "compactness": 0.9084527920764719,
                   "x_span_m": 0.37007540567760433,
                   "z_span_m": 0.25311601247177523,
@@ -2147,10 +2147,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005088296302774662,
-                0.00993037858015141
+                -0.0028259937435911367,
+                -0.0011674973844556977
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -2162,7 +2162,7 @@
                   8.772540555642634e-07,
                   -0.018193265849225926
                 ],
-                "centerline_to_centroid_m": 0.028580396489229935,
+                "centerline_to_centroid_m": 0.01725885255320586,
                 "compactness": 0.9049761959310131,
                 "x_span_m": 0.373804711506851,
                 "z_span_m": 0.2532622400426077,
@@ -2180,7 +2180,7 @@
                     8.772540555642634e-07,
                     -0.018193265849225926
                   ],
-                  "centerline_to_centroid_m": 0.028580396489229935,
+                  "centerline_to_centroid_m": 0.01725885255320586,
                   "compactness": 0.9049761959310131,
                   "x_span_m": 0.373804711506851,
                   "z_span_m": 0.2532622400426077,
@@ -2209,10 +2209,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005793303365795829,
-                0.01152058768969106
+                -0.0030914915195416675,
+                -0.0017333303716739485
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -2224,7 +2224,7 @@
                   1.2744860168669184e-06,
                   -0.018908212658872794
                 ],
-                "centerline_to_centroid_m": 0.030975619818390688,
+                "centerline_to_centroid_m": 0.017451125555226377,
                 "compactness": 0.9003413870059552,
                 "x_span_m": 0.3793729880047103,
                 "z_span_m": 0.25302949572820893,
@@ -2242,7 +2242,7 @@
                     1.2744860168669184e-06,
                     -0.018908212658872794
                   ],
-                  "centerline_to_centroid_m": 0.030975619818390688,
+                  "centerline_to_centroid_m": 0.017451125555226377,
                   "compactness": 0.9003413870059552,
                   "x_span_m": 0.3793729880047103,
                   "z_span_m": 0.25302949572820893,
@@ -2259,7 +2259,7 @@
                     0.8288083021206767,
                     -0.08732246590224702
                   ],
-                  "centerline_to_centroid_m": 0.8404342860235869,
+                  "centerline_to_centroid_m": 0.836291077783034,
                   "compactness": 0.9241742166915247,
                   "x_span_m": 0.007058270313650472,
                   "z_span_m": 0.007389727865579621,
@@ -2276,7 +2276,7 @@
                     -0.8287848241779626,
                     -0.08734218264657351
                   ],
-                  "centerline_to_centroid_m": 0.828908252273606,
+                  "centerline_to_centroid_m": 0.8301194824748998,
                   "compactness": 0.9247330700525022,
                   "x_span_m": 0.007096699021947206,
                   "z_span_m": 0.007327097524979245,
@@ -2293,7 +2293,7 @@
                     -0.8477255630578315,
                     -0.07405417817745177
                   ],
-                  "centerline_to_centroid_m": 0.8462700340100396,
+                  "centerline_to_centroid_m": 0.8477246132033064,
                   "compactness": 0.632038287491085,
                   "x_span_m": 0.006103850864078608,
                   "z_span_m": 0.0031543371387562774,
@@ -2310,7 +2310,7 @@
                     0.8478239348629085,
                     -0.07398332702169678
                   ],
-                  "centerline_to_centroid_m": 0.8578888674135904,
+                  "centerline_to_centroid_m": 0.8539772390828431,
                   "compactness": 0.629259997768984,
                   "x_span_m": 0.004443766985237074,
                   "z_span_m": 0.002261141060053068,
@@ -2339,10 +2339,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.006498310428816996,
-                0.01311079679923071
+                -0.0033569892954921983,
+                -0.0022991633588921997
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -2354,7 +2354,7 @@
                   1.5023730306663947e-06,
                   -0.019761292643501502
                 ],
-                "centerline_to_centroid_m": 0.03350853370098503,
+                "centerline_to_centroid_m": 0.017782165937813853,
                 "compactness": 0.8950507019257018,
                 "x_span_m": 0.385773331342379,
                 "z_span_m": 0.2527864466206127,
@@ -2372,7 +2372,7 @@
                     1.5023730306663947e-06,
                     -0.019761292643501502
                   ],
-                  "centerline_to_centroid_m": 0.03350853370098503,
+                  "centerline_to_centroid_m": 0.017782165937813853,
                   "compactness": 0.8950507019257018,
                   "x_span_m": 0.385773331342379,
                   "z_span_m": 0.2527864466206127,
@@ -2389,7 +2389,7 @@
                     0.8273833713951024,
                     -0.08743871126191594
                   ],
-                  "centerline_to_centroid_m": 0.8399219385471647,
+                  "centerline_to_centroid_m": 0.8350917850736352,
                   "compactness": 0.9520714879395449,
                   "x_span_m": 0.011218960075427664,
                   "z_span_m": 0.011182320231281198,
@@ -2406,7 +2406,7 @@
                     -0.8273962125413763,
                     -0.08744054820118416
                   ],
-                  "centerline_to_centroid_m": 0.8270332149763959,
+                  "centerline_to_centroid_m": 0.8284260358417903,
                   "compactness": 0.9529587671589277,
                   "x_span_m": 0.011197609830508437,
                   "z_span_m": 0.011159653107514503,
@@ -2423,7 +2423,7 @@
                     -0.8455481250555208,
                     -0.07394501115820443
                   ],
-                  "centerline_to_centroid_m": 0.8435539728578295,
+                  "centerline_to_centroid_m": 0.8452331256284559,
                   "compactness": 0.9484103358030651,
                   "x_span_m": 0.011578059305490718,
                   "z_span_m": 0.009991923682742931,
@@ -2440,7 +2440,7 @@
                     0.8458448543414612,
                     -0.07390757391636131
                   ],
-                  "centerline_to_centroid_m": 0.8567736383506496,
+                  "centerline_to_centroid_m": 0.8522156626693549,
                   "compactness": 0.9518117848364109,
                   "x_span_m": 0.01110580267826311,
                   "z_span_m": 0.009840573604749839,
@@ -2457,7 +2457,7 @@
                     -0.8055638525003095,
                     -0.10967032769331753
                   ],
-                  "centerline_to_centroid_m": 0.8084435323865624,
+                  "centerline_to_centroid_m": 0.8093604995942429,
                   "compactness": 0.9348602126946794,
                   "x_span_m": 0.007306848233172736,
                   "z_span_m": 0.006430881897797294,
@@ -2474,7 +2474,7 @@
                     0.8055695076897286,
                     -0.10966719268798512
                   ],
-                  "centerline_to_centroid_m": 0.8212968865923809,
+                  "centerline_to_centroid_m": 0.8160208154494548,
                   "compactness": 0.9353336596799512,
                   "x_span_m": 0.0072874172873230725,
                   "z_span_m": 0.00643600396913116,
@@ -2491,7 +2491,7 @@
                     -0.8069496462876041,
                     -0.014823827071121358
                   ],
-                  "centerline_to_centroid_m": 0.8009386270426061,
+                  "centerline_to_centroid_m": 0.8036902547454128,
                   "compactness": 0.6205860102116947,
                   "x_span_m": 0.008102540518909906,
                   "z_span_m": 0.0070443210612932995,
@@ -2508,7 +2508,7 @@
                     0.8067786954273626,
                     -0.014737236182767451
                   ],
-                  "centerline_to_centroid_m": 0.8137536489597812,
+                  "centerline_to_centroid_m": 0.8102311604208646,
                   "compactness": 0.5653399528195481,
                   "x_span_m": 0.007714356773271924,
                   "z_span_m": 0.00700446992846334,
@@ -2537,10 +2537,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.007203317491838165,
-                0.01470100590877036
+                -0.003622487071442729,
+                -0.00286499634611045
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -2552,7 +2552,7 @@
                   1.8759902159099257e-06,
                   -0.020664173125844145
                 ],
-                "centerline_to_centroid_m": 0.03609169850899472,
+                "centerline_to_centroid_m": 0.018164435076239688,
                 "compactness": 0.8873466091547242,
                 "x_span_m": 0.3944599728911402,
                 "z_span_m": 0.2525433975130166,
@@ -2570,7 +2570,7 @@
                     1.8759902159099257e-06,
                     -0.020664173125844145
                   ],
-                  "centerline_to_centroid_m": 0.03609169850899472,
+                  "centerline_to_centroid_m": 0.018164435076239688,
                   "compactness": 0.8873466091547242,
                   "x_span_m": 0.3944599728911402,
                   "z_span_m": 0.2525433975130166,
@@ -2587,7 +2587,7 @@
                     -0.8044445588031213,
                     -0.016455930111086314
                   ],
-                  "centerline_to_centroid_m": 0.7978498301746395,
+                  "centerline_to_centroid_m": 0.8009373908447661,
                   "compactness": 0.8075422864207549,
                   "x_span_m": 0.0222808596733014,
                   "z_span_m": 0.01574571858532644,
@@ -2604,7 +2604,7 @@
                     0.8043187437447304,
                     -0.016315630339991248
                   ],
-                  "centerline_to_centroid_m": 0.8121145778754603,
+                  "centerline_to_centroid_m": 0.8080531863730197,
                   "compactness": 0.794836913868646,
                   "x_span_m": 0.022138164993821374,
                   "z_span_m": 0.015398184458970336,
@@ -2621,7 +2621,7 @@
                     -0.8445057468525596,
                     -0.07370023686152179
                   ],
-                  "centerline_to_centroid_m": 0.8419561377748239,
+                  "centerline_to_centroid_m": 0.8438615335936303,
                   "compactness": 0.9629338056005283,
                   "x_span_m": 0.013909714133457873,
                   "z_span_m": 0.01270516129074864,
@@ -2638,7 +2638,7 @@
                     0.8447131746212656,
                     -0.07368704151907647
                   ],
-                  "centerline_to_centroid_m": 0.8564894374494079,
+                  "centerline_to_centroid_m": 0.8512867654216686,
                   "compactness": 0.965482128524663,
                   "x_span_m": 0.013513049247850462,
                   "z_span_m": 0.012669178865002295,
@@ -2655,7 +2655,7 @@
                     0.8270011537414889,
                     -0.087993281238024
                   ],
-                  "centerline_to_centroid_m": 0.8405017646848,
+                  "centerline_to_centroid_m": 0.834974525099999,
                   "compactness": 0.955429231207481,
                   "x_span_m": 0.01284182973366288,
                   "z_span_m": 0.012755477333950563,
@@ -2672,7 +2672,7 @@
                     -0.8270250529802728,
                     -0.0879866742215942
                   ],
-                  "centerline_to_centroid_m": 0.826227836392496,
+                  "centerline_to_centroid_m": 0.8277907257209294,
                   "compactness": 0.9565041736290479,
                   "x_span_m": 0.012695048342789339,
                   "z_span_m": 0.012757016247582034,
@@ -2689,7 +2689,7 @@
                     -0.8045808888492952,
                     -0.10976741766102857
                   ],
-                  "centerline_to_centroid_m": 0.8070336918430776,
+                  "centerline_to_centroid_m": 0.8080609439030723,
                   "compactness": 0.9561101119818315,
                   "x_span_m": 0.011003743036712366,
                   "z_span_m": 0.010126592714188504,
@@ -2706,7 +2706,7 @@
                     0.8045912256883306,
                     -0.10976352943900308
                   ],
-                  "centerline_to_centroid_m": 0.8212805859731716,
+                  "centerline_to_centroid_m": 0.8152525387083133,
                   "compactness": 0.9570374851765323,
                   "x_span_m": 0.010934811949757872,
                   "z_span_m": 0.010129977451782443,
@@ -2723,7 +2723,7 @@
                     -0.8471062540132653,
                     -0.04586030548730965
                   ],
-                  "centerline_to_centroid_m": 0.8420834965817402,
+                  "centerline_to_centroid_m": 0.8445788664787405,
                   "compactness": 0.7974174169584625,
                   "x_span_m": 0.005182006410488271,
                   "z_span_m": 0.003384623401973541,
@@ -2740,7 +2740,7 @@
                     0.8473450043145098,
                     -0.04585789407862108
                   ],
-                  "centerline_to_centroid_m": 0.8566914349225913,
+                  "centerline_to_centroid_m": 0.8520528508555906,
                   "compactness": 0.7795349295077009,
                   "x_span_m": 0.004909551636700704,
                   "z_span_m": 0.0035355282703015967,
@@ -2837,10 +2837,10 @@
             "selection_mode": "spine_centerline_containment_then_area",
             "fallback_used": false,
             "centerline_xz_m": [
-              -0.0058124198764386865,
-              0.015508974701206074
+              -0.0031513371370520777,
+              0.002637356886339739
             ],
-            "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+            "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
             "centerline_inside": true,
             "selected_metrics": {
               "contour_id": 0,
@@ -2852,7 +2852,7 @@
                 -2.487304126949676e-07,
                 -0.01169207484952588
               ],
-              "centerline_to_centroid_m": 0.027815075590263496,
+              "centerline_to_centroid_m": 0.014671808750774047,
               "compactness": 0.9279946849902688,
               "x_span_m": 0.33877086824537195,
               "z_span_m": 0.24637118006087605,
@@ -2870,7 +2870,7 @@
                   -2.487304126949676e-07,
                   -0.01169207484952588
                 ],
-                "centerline_to_centroid_m": 0.027815075590263496,
+                "centerline_to_centroid_m": 0.014671808750774047,
                 "compactness": 0.9279946849902688,
                 "x_span_m": 0.33877086824537195,
                 "z_span_m": 0.24637118006087605,
@@ -2900,10 +2900,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.004373963547954796,
-                0.01210917908590145
+                -0.0026782073094094153,
+                0.00390683126459219
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -2915,7 +2915,7 @@
                   -5.933319124755428e-07,
                   -0.010296762489948895
                 ],
-                "centerline_to_centroid_m": 0.022828766610287668,
+                "centerline_to_centroid_m": 0.01445377778148417,
                 "compactness": 0.932073112612264,
                 "x_span_m": 0.33332077850968733,
                 "z_span_m": 0.24682164555583058,
@@ -2933,7 +2933,7 @@
                     -5.933319124755428e-07,
                     -0.010296762489948895
                   ],
-                  "centerline_to_centroid_m": 0.022828766610287668,
+                  "centerline_to_centroid_m": 0.01445377778148417,
                   "compactness": 0.932073112612264,
                   "x_span_m": 0.33332077850968733,
                   "z_span_m": 0.24682164555583058,
@@ -2962,10 +2962,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005093191712196743,
-                0.01380907689355377
+                -0.0029147722232307468,
+                0.0032720940754659643
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -2977,7 +2977,7 @@
                   -4.473423444295666e-07,
                   -0.010947425790849136
                 ],
-                "centerline_to_centroid_m": 0.025274898029062565,
+                "centerline_to_centroid_m": 0.01451509678713452,
                 "compactness": 0.9300809854004317,
                 "x_span_m": 0.33589099695298075,
                 "z_span_m": 0.24679682393660235,
@@ -2995,7 +2995,7 @@
                     -4.473423444295666e-07,
                     -0.010947425790849136
                   ],
-                  "centerline_to_centroid_m": 0.025274898029062565,
+                  "centerline_to_centroid_m": 0.01451509678713452,
                   "compactness": 0.9300809854004317,
                   "x_span_m": 0.33589099695298075,
                   "z_span_m": 0.24679682393660235,
@@ -3024,10 +3024,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.0058124198764386865,
-                0.015508974701206074
+                -0.0031513371370520777,
+                0.002637356886339739
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -3039,7 +3039,7 @@
                   -2.487304126949676e-07,
                   -0.01169207484952588
                 ],
-                "centerline_to_centroid_m": 0.027815075590263496,
+                "centerline_to_centroid_m": 0.014671808750774047,
                 "compactness": 0.9279946849902688,
                 "x_span_m": 0.33877086824537195,
                 "z_span_m": 0.24637118006087605,
@@ -3057,7 +3057,7 @@
                     -2.487304126949676e-07,
                     -0.01169207484952588
                   ],
-                  "centerline_to_centroid_m": 0.027815075590263496,
+                  "centerline_to_centroid_m": 0.014671808750774047,
                   "compactness": 0.9279946849902688,
                   "x_span_m": 0.33877086824537195,
                   "z_span_m": 0.24637118006087605,
@@ -3086,10 +3086,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.0065316480406806335,
-                0.017208872508858393
+                -0.0033879020508734087,
+                0.002002619697213514
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -3101,7 +3101,7 @@
                   -3.990895973480103e-08,
                   -0.012576369394638704
                 ],
-                "centerline_to_centroid_m": 0.03049299165441466,
+                "centerline_to_centroid_m": 0.014967449109081942,
                 "compactness": 0.9264502013876296,
                 "x_span_m": 0.3416507395377631,
                 "z_span_m": 0.2459455361851498,
@@ -3119,7 +3119,7 @@
                     -3.990895973480103e-08,
                     -0.012576369394638704
                   ],
-                  "centerline_to_centroid_m": 0.03049299165441466,
+                  "centerline_to_centroid_m": 0.014967449109081942,
                   "compactness": 0.9264502013876296,
                   "x_span_m": 0.3416507395377631,
                   "z_span_m": 0.2459455361851498,
@@ -3136,7 +3136,7 @@
                     -0.7760009227676203,
                     -0.08232844461583794
                   ],
-                  "centerline_to_centroid_m": 0.775880559267459,
+                  "centerline_to_centroid_m": 0.7772017808711124,
                   "compactness": 0.7384116966657563,
                   "x_span_m": 0.004087568332702185,
                   "z_span_m": 0.002804261089838278,
@@ -3153,7 +3153,7 @@
                     0.7761140882026601,
                     -0.08233510633555828
                   ],
-                  "centerline_to_centroid_m": 0.7889507919915276,
+                  "centerline_to_centroid_m": 0.7840511493784055,
                   "compactness": 0.7187223018137028,
                   "x_span_m": 0.003724342056949048,
                   "z_span_m": 0.0024231652078461896,
@@ -3170,7 +3170,7 @@
                     -0.7935280031961448,
                     -0.07027348640101096
                   ],
-                  "centerline_to_centroid_m": 0.7918436879513663,
+                  "centerline_to_centroid_m": 0.7934388539456468,
                   "compactness": 0.6330073990788283,
                   "x_span_m": 0.0007679590438629535,
                   "z_span_m": 0.00040159802636924313,
@@ -3199,10 +3199,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.007250876204922582,
-                0.018908770316510705
+                -0.0036244669646947397,
+                0.0013678825080872883
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -3214,7 +3214,7 @@
                   2.660400193903217e-07,
                   -0.013526473199318463
                 ],
-                "centerline_to_centroid_m": 0.033235885512312144,
+                "centerline_to_centroid_m": 0.015329074378258924,
                 "compactness": 0.9237280276427902,
                 "x_span_m": 0.3463744076694898,
                 "z_span_m": 0.24554879502546997,
@@ -3232,7 +3232,7 @@
                     2.660400193903217e-07,
                     -0.013526473199318463
                   ],
-                  "centerline_to_centroid_m": 0.033235885512312144,
+                  "centerline_to_centroid_m": 0.015329074378258924,
                   "compactness": 0.9237280276427902,
                   "x_span_m": 0.3463744076694898,
                   "z_span_m": 0.24554879502546997,
@@ -3249,7 +3249,7 @@
                     0.7743814256834757,
                     -0.08261773394745853
                   ],
-                  "centerline_to_centroid_m": 0.7881983801197627,
+                  "centerline_to_centroid_m": 0.7825258799341365,
                   "compactness": 0.944147759440676,
                   "x_span_m": 0.009234352146376024,
                   "z_span_m": 0.009657374822635262,
@@ -3266,7 +3266,7 @@
                     -0.7743914251269638,
                     -0.08262544575158885
                   ],
-                  "centerline_to_centroid_m": 0.7738306137863596,
+                  "centerline_to_centroid_m": 0.7753299832889573,
                   "compactness": 0.9445057194942349,
                   "x_span_m": 0.0092169208006323,
                   "z_span_m": 0.009632484880046852,
@@ -3283,7 +3283,7 @@
                     -0.7920752811660091,
                     -0.07050662057451192
                   ],
-                  "centerline_to_centroid_m": 0.7899015500369131,
+                  "centerline_to_centroid_m": 0.7917200456020336,
                   "compactness": 0.9395195822736206,
                   "x_span_m": 0.009808526072680901,
                   "z_span_m": 0.008721255953016566,
@@ -3300,7 +3300,7 @@
                     0.7924029252922921,
                     -0.07047196900810468
                   ],
-                  "centerline_to_centroid_m": 0.8046335307524548,
+                  "centerline_to_centroid_m": 0.7992625185064838,
                   "compactness": 0.9431493839189299,
                   "x_span_m": 0.009400543830710428,
                   "z_span_m": 0.008571449433444789,
@@ -3317,7 +3317,7 @@
                     0.7544682190233787,
                     -0.10344368555347992
                   ],
-                  "centerline_to_centroid_m": 0.7714830545727106,
+                  "centerline_to_centroid_m": 0.76530385164857,
                   "compactness": 0.5861754086858022,
                   "x_span_m": 0.00043809465031907635,
                   "z_span_m": 0.00041943173664402145,
@@ -3334,7 +3334,7 @@
                     -0.7544739170922099,
                     -0.10343964811385878
                   ],
-                  "centerline_to_centroid_m": 0.7571733013816965,
+                  "centerline_to_centroid_m": 0.7581289568614709,
                   "compactness": 0.5737516375400759,
                   "x_span_m": 0.0004238164910155273,
                   "z_span_m": 0.00040363571086976524,
@@ -3416,10 +3416,10 @@
             "selection_mode": "spine_centerline_containment_then_area",
             "fallback_used": false,
             "centerline_xz_m": [
-              -0.005818051477046761,
-              0.015522285005228065
+              -0.0031531894548265478,
+              0.00263238685524534
             ],
-            "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+            "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
             "centerline_inside": true,
             "selected_metrics": {
               "contour_id": 0,
@@ -3431,7 +3431,7 @@
                 -2.4863224276673116e-07,
                 -0.011698783200117122
               ],
-              "centerline_to_centroid_m": 0.02783582914484611,
+              "centerline_to_centroid_m": 0.014673904422015055,
               "compactness": 0.9279777013439161,
               "x_span_m": 0.3387934178141009,
               "z_span_m": 0.2463678472432411,
@@ -3449,7 +3449,7 @@
                   -2.4863224276673116e-07,
                   -0.011698783200117122
                 ],
-                "centerline_to_centroid_m": 0.02783582914484611,
+                "centerline_to_centroid_m": 0.014673904422015055,
                 "compactness": 0.9279777013439161,
                 "x_span_m": 0.3387934178141009,
                 "z_span_m": 0.2463678472432411,
@@ -3479,10 +3479,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.00437959514856287,
-                0.012122489389923448
+                -0.002680059627183886,
+                0.0039018612334977905
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -3494,7 +3494,7 @@
                   -5.922939036715542e-07,
                   -0.010301658336268305
                 ],
-                "centerline_to_centroid_m": 0.02284771470513373,
+                "centerline_to_centroid_m": 0.014454048338055475,
                 "compactness": 0.932058192594915,
                 "x_span_m": 0.3333401163926748,
                 "z_span_m": 0.24682522797265316,
@@ -3512,7 +3512,7 @@
                     -5.922939036715542e-07,
                     -0.010301658336268305
                   ],
-                  "centerline_to_centroid_m": 0.02284771470513373,
+                  "centerline_to_centroid_m": 0.014454048338055475,
                   "compactness": 0.932058192594915,
                   "x_span_m": 0.3333401163926748,
                   "z_span_m": 0.24682522797265316,
@@ -3541,10 +3541,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005098823312804814,
-                0.013822387197575753
+                -0.002916624541005217,
+                0.003267124044371565
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -3556,7 +3556,7 @@
                   -4.4574497940105446e-07,
                   -0.010952740103242096
                 ],
-                "centerline_to_centroid_m": 0.025294275767371466,
+                "centerline_to_centroid_m": 0.01451580638982826,
                 "compactness": 0.9300646633058951,
                 "x_span_m": 0.33591354652170974,
                 "z_span_m": 0.24679349111896734,
@@ -3574,7 +3574,7 @@
                     -4.4574497940105446e-07,
                     -0.010952740103242096
                   ],
-                  "centerline_to_centroid_m": 0.025294275767371466,
+                  "centerline_to_centroid_m": 0.01451580638982826,
                   "compactness": 0.9300646633058951,
                   "x_span_m": 0.33591354652170974,
                   "z_span_m": 0.24679349111896734,
@@ -3603,10 +3603,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005818051477046761,
-                0.015522285005228065
+                -0.0031531894548265478,
+                0.00263238685524534
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -3618,7 +3618,7 @@
                   -2.4863224276673116e-07,
                   -0.011698783200117122
                 ],
-                "centerline_to_centroid_m": 0.02783582914484611,
+                "centerline_to_centroid_m": 0.014673904422015055,
                 "compactness": 0.9279777013439161,
                 "x_span_m": 0.3387934178141009,
                 "z_span_m": 0.2463678472432411,
@@ -3636,7 +3636,7 @@
                     -2.4863224276673116e-07,
                     -0.011698783200117122
                   ],
-                  "centerline_to_centroid_m": 0.02783582914484611,
+                  "centerline_to_centroid_m": 0.014673904422015055,
                   "compactness": 0.9279777013439161,
                   "x_span_m": 0.3387934178141009,
                   "z_span_m": 0.2463678472432411,
@@ -3665,10 +3665,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.00653727964128871,
-                0.017222182812880384
+                -0.003389754368647879,
+                0.0019976496661191145
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -3680,7 +3680,7 @@
                   -3.833521788674867e-08,
                   -0.012583489579764968
                 ],
-                "centerline_to_centroid_m": 0.030514154595392282,
+                "centerline_to_centroid_m": 0.014969963142745324,
                 "compactness": 0.9264397497125948,
                 "x_span_m": 0.3416732891064921,
                 "z_span_m": 0.24594220336751482,
@@ -3698,7 +3698,7 @@
                     -3.833521788674867e-08,
                     -0.012583489579764968
                   ],
-                  "centerline_to_centroid_m": 0.030514154595392282,
+                  "centerline_to_centroid_m": 0.014969963142745324,
                   "compactness": 0.9264397497125948,
                   "x_span_m": 0.3416732891064921,
                   "z_span_m": 0.24594220336751482,
@@ -3715,7 +3715,7 @@
                     -0.7759998039423487,
                     -0.08233787469487183
                   ],
-                  "centerline_to_centroid_m": 0.7758767823273913,
+                  "centerline_to_centroid_m": 0.7771993112268691,
                   "compactness": 0.7384116966665861,
                   "x_span_m": 0.004221028864414,
                   "z_span_m": 0.002895821192482717,
@@ -3732,7 +3732,7 @@
                     0.7761123298338088,
                     -0.08234466367845943
                   ],
-                  "centerline_to_centroid_m": 0.788957519852465,
+                  "centerline_to_centroid_m": 0.7840517362370222,
                   "compactness": 0.7187223018128339,
                   "x_span_m": 0.003879459738954205,
                   "z_span_m": 0.00252408928098688,
@@ -3749,7 +3749,7 @@
                     -0.7935341840820929,
                     -0.07028179828163494
                   ],
-                  "centerline_to_centroid_m": 0.7918466229686135,
+                  "centerline_to_centroid_m": 0.7934434689395441,
                   "compactness": 0.6330073991014294,
                   "x_span_m": 0.000939695043571831,
                   "z_span_m": 0.000491405990857452,
@@ -3778,10 +3778,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.0072565078055306514,
-                0.01892208062053269
+                -0.00362631928246921,
+                0.0013629124769928896
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -3793,7 +3793,7 @@
                   2.680260596003756e-07,
                   -0.013534160740316074
                 ],
-                "centerline_to_centroid_m": 0.033257606629816625,
+                "centerline_to_centroid_m": 0.01533215333696628,
                 "compactness": 0.9237070134508165,
                 "x_span_m": 0.3464136672754361,
                 "z_span_m": 0.24554578112809827,
@@ -3811,7 +3811,7 @@
                     2.680260596003756e-07,
                     -0.013534160740316074
                   ],
-                  "centerline_to_centroid_m": 0.033257606629816625,
+                  "centerline_to_centroid_m": 0.01533215333696628,
                   "compactness": 0.9237070134508165,
                   "x_span_m": 0.3464136672754361,
                   "z_span_m": 0.24554578112809827,
@@ -3828,7 +3828,7 @@
                     0.7743722203632778,
                     -0.08262040945965117
                   ],
-                  "centerline_to_centroid_m": 0.7881968954458481,
+                  "centerline_to_centroid_m": 0.7825183231429339,
                   "compactness": 0.9442227613122482,
                   "x_span_m": 0.009266258881707956,
                   "z_span_m": 0.00967670440509534,
@@ -3845,7 +3845,7 @@
                     -0.7743821384536489,
                     -0.08262801401843979
                   ],
-                  "centerline_to_centroid_m": 0.7738179081143428,
+                  "centerline_to_centroid_m": 0.7753186496659276,
                   "compactness": 0.9445710467444757,
                   "x_span_m": 0.009249769165975197,
                   "z_span_m": 0.009651892691007621,
@@ -3862,7 +3862,7 @@
                     -0.7920609550658627,
                     -0.07050270282012673
                   ],
-                  "centerline_to_centroid_m": 0.7898827839198701,
+                  "centerline_to_centroid_m": 0.7917031271663173,
                   "compactness": 0.9392320523233975,
                   "x_span_m": 0.009832164264974907,
                   "z_span_m": 0.008743280253349875,
@@ -3879,7 +3879,7 @@
                     0.792385942691928,
                     -0.0704680302892262
                   ],
-                  "centerline_to_centroid_m": 0.804623291090955,
+                  "centerline_to_centroid_m": 0.7992466487588674,
                   "compactness": 0.9434277680320717,
                   "x_span_m": 0.009423579839751173,
                   "z_span_m": 0.008593808968709607,
@@ -3896,7 +3896,7 @@
                     0.7543995785033786,
                     -0.10349780339457117
                   ],
-                  "centerline_to_centroid_m": 0.7714315405878062,
+                  "centerline_to_centroid_m": 0.7652444259497337,
                   "compactness": 0.58617540871081,
                   "x_span_m": 0.0006973853912014549,
                   "z_span_m": 0.0006676766436859022,
@@ -3913,7 +3913,7 @@
                     -0.7544025902870776,
                     -0.10349584126813642
                   ],
-                  "centerline_to_centroid_m": 0.757108589415721,
+                  "centerline_to_centroid_m": 0.7580635641821646,
                   "compactness": 0.5737516375745871,
                   "x_span_m": 0.0006912914254444402,
                   "z_span_m": 0.0006583743479608439,
@@ -4010,10 +4010,10 @@
             "selection_mode": "spine_centerline_containment_then_area",
             "fallback_used": false,
             "centerline_xz_m": [
-              -0.0057787920839043536,
-              0.01619962657579769
+              -0.002915898858569521,
+              0.001252411754875028
             ],
-            "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+            "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
             "centerline_inside": true,
             "selected_metrics": {
               "contour_id": 0,
@@ -4025,7 +4025,7 @@
                 9.333758772128362e-07,
                 -0.014962114041460712
               ],
-              "centerline_to_centroid_m": 0.031693205970487415,
+              "centerline_to_centroid_m": 0.016474791564203315,
               "compactness": 0.9105576677478192,
               "x_span_m": 0.3772779757542362,
               "z_span_m": 0.26202495031196193,
@@ -4043,7 +4043,7 @@
                   9.333758772128362e-07,
                   -0.014962114041460712
                 ],
-                "centerline_to_centroid_m": 0.031693205970487415,
+                "centerline_to_centroid_m": 0.016474791564203315,
                 "compactness": 0.9105576677478192,
                 "x_span_m": 0.3772779757542362,
                 "z_span_m": 0.26202495031196193,
@@ -4060,7 +4060,7 @@
                   -0.8112180614403376,
                   -0.08449874647832739
                 ],
-                "centerline_to_centroid_m": 0.8117096642009216,
+                "centerline_to_centroid_m": 0.8128380202553881,
                 "compactness": 0.7430294745062384,
                 "x_span_m": 0.004645892187161715,
                 "z_span_m": 0.0032034937906702116,
@@ -4077,7 +4077,7 @@
                   0.81132794396087,
                   -0.08450301740504772
                 ],
-                "centerline_to_centroid_m": 0.8232887953777079,
+                "centerline_to_centroid_m": 0.8187472315676987,
                 "compactness": 0.7255749766304427,
                 "x_span_m": 0.004317952737811104,
                 "z_span_m": 0.002831234595318005,
@@ -4107,10 +4107,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.0043181314341584655,
-                0.012628983914598546
+                -0.002379836079854052,
+                0.0025091104974556493
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -4122,7 +4122,7 @@
                   3.552296399503272e-07,
                   -0.013613425132794617
                 ],
-                "centerline_to_centroid_m": 0.026595363499604726,
+                "centerline_to_centroid_m": 0.016297284001283163,
                 "compactness": 0.9169735348887704,
                 "x_span_m": 0.36902710659642124,
                 "z_span_m": 0.26238133385615564,
@@ -4140,7 +4140,7 @@
                     3.552296399503272e-07,
                     -0.013613425132794617
                   ],
-                  "centerline_to_centroid_m": 0.026595363499604726,
+                  "centerline_to_centroid_m": 0.016297284001283163,
                   "compactness": 0.9169735348887704,
                   "x_span_m": 0.36902710659642124,
                   "z_span_m": 0.26238133385615564,
@@ -4169,10 +4169,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005048461759031408,
-                0.014414305245198114
+                -0.0026478674692117865,
+                0.0018807611261653394
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -4184,7 +4184,7 @@
                   6.14709637740446e-07,
                   -0.014217403198643203
                 ],
-                "centerline_to_centroid_m": 0.029073491389917425,
+                "centerline_to_centroid_m": 0.01631457484828281,
                 "compactness": 0.9142226774280006,
                 "x_span_m": 0.37224284012645886,
                 "z_span_m": 0.2624459155899526,
@@ -4202,7 +4202,7 @@
                     6.14709637740446e-07,
                     -0.014217403198643203
                   ],
-                  "centerline_to_centroid_m": 0.029073491389917425,
+                  "centerline_to_centroid_m": 0.01631457484828281,
                   "compactness": 0.9142226774280006,
                   "x_span_m": 0.37224284012645886,
                   "z_span_m": 0.2624459155899526,
@@ -4231,10 +4231,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.0057787920839043536,
-                0.01619962657579769
+                -0.002915898858569521,
+                0.001252411754875028
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -4246,7 +4246,7 @@
                   9.333758772128362e-07,
                   -0.014962114041460712
                 ],
-                "centerline_to_centroid_m": 0.031693205970487415,
+                "centerline_to_centroid_m": 0.016474791564203315,
                 "compactness": 0.9105576677478192,
                 "x_span_m": 0.3772779757542362,
                 "z_span_m": 0.26202495031196193,
@@ -4264,7 +4264,7 @@
                     9.333758772128362e-07,
                     -0.014962114041460712
                   ],
-                  "centerline_to_centroid_m": 0.031693205970487415,
+                  "centerline_to_centroid_m": 0.016474791564203315,
                   "compactness": 0.9105576677478192,
                   "x_span_m": 0.3772779757542362,
                   "z_span_m": 0.26202495031196193,
@@ -4281,7 +4281,7 @@
                     -0.8112180614403376,
                     -0.08449874647832739
                   ],
-                  "centerline_to_centroid_m": 0.8117096642009216,
+                  "centerline_to_centroid_m": 0.8128380202553881,
                   "compactness": 0.7430294745062384,
                   "x_span_m": 0.004645892187161715,
                   "z_span_m": 0.0032034937906702116,
@@ -4298,7 +4298,7 @@
                     0.81132794396087,
                     -0.08450301740504772
                   ],
-                  "centerline_to_centroid_m": 0.8232887953777079,
+                  "centerline_to_centroid_m": 0.8187472315676987,
                   "compactness": 0.7255749766304427,
                   "x_span_m": 0.004317952737811104,
                   "z_span_m": 0.002831234595318005,
@@ -4327,10 +4327,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.006509122408777292,
-                0.017984947906397257
+                -0.003183930247927255,
+                0.0006240623835847177
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -4342,7 +4342,7 @@
                   1.1489273535984639e-06,
                   -0.015841518616485098
                 ],
-                "centerline_to_centroid_m": 0.03444725635364489,
+                "centerline_to_centroid_m": 0.01677081056546367,
                 "compactness": 0.9064675631156195,
                 "x_span_m": 0.38289616939090493,
                 "z_span_m": 0.26154260507503374,
@@ -4360,7 +4360,7 @@
                     1.1489273535984639e-06,
                     -0.015841518616485098
                   ],
-                  "centerline_to_centroid_m": 0.03444725635364489,
+                  "centerline_to_centroid_m": 0.01677081056546367,
                   "compactness": 0.9064675631156195,
                   "x_span_m": 0.38289616939090493,
                   "z_span_m": 0.26154260507503374,
@@ -4377,7 +4377,7 @@
                     0.8095400715779034,
                     -0.08477494820398158
                   ],
-                  "centerline_to_centroid_m": 0.8224936980031683,
+                  "centerline_to_centroid_m": 0.8171984423340074,
                   "compactness": 0.9482471974239184,
                   "x_span_m": 0.009851166448760829,
                   "z_span_m": 0.01008664272924717,
@@ -4394,7 +4394,7 @@
                     -0.8095495807235025,
                     -0.08478164375775658
                   ],
-                  "centerline_to_centroid_m": 0.8095893712571768,
+                  "centerline_to_centroid_m": 0.8108758825544132,
                   "compactness": 0.9486809181798339,
                   "x_span_m": 0.009834777561732788,
                   "z_span_m": 0.010060876831563911,
@@ -4411,7 +4411,7 @@
                     -0.8279027652982692,
                     -0.07182001981105064
                   ],
-                  "centerline_to_centroid_m": 0.8262883569347943,
+                  "centerline_to_centroid_m": 0.827894499276216,
                   "compactness": 0.9354129788143207,
                   "x_span_m": 0.01001606063884719,
                   "z_span_m": 0.008666403102376263,
@@ -4428,7 +4428,7 @@
                     0.8282826262792553,
                     -0.07180603379730616
                   ],
-                  "centerline_to_centroid_m": 0.839606862807194,
+                  "centerline_to_centroid_m": 0.8346153326269197,
                   "compactness": 0.9319993766961219,
                   "x_span_m": 0.009572075220558363,
                   "z_span_m": 0.00844987411940297,
@@ -4445,7 +4445,7 @@
                     -0.7881446416520608,
                     -0.10691002810184826
                   ],
-                  "centerline_to_centroid_m": 0.7915509080121237,
+                  "centerline_to_centroid_m": 0.7922921803631616,
                   "compactness": 0.5866360000553195,
                   "x_span_m": 0.0035308608088051585,
                   "z_span_m": 0.00341531028523398,
@@ -4462,7 +4462,7 @@
                     0.7881709943999868,
                     -0.10688964211526301
                   ],
-                  "centerline_to_centroid_m": 0.8044315702931287,
+                  "centerline_to_centroid_m": 0.7986249516635273,
                   "compactness": 0.5973088405516686,
                   "x_span_m": 0.003451776545603802,
                   "z_span_m": 0.003359950710644405,
@@ -4491,10 +4491,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.007239452733650238,
-                0.019770269236996832
+                -0.0034519616372849895,
+                -4.286987705592708e-06
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -4506,7 +4506,7 @@
                   1.5009734554235826e-06,
                   -0.01677810135277249
                 ],
-                "centerline_to_centroid_m": 0.03725875472094528,
+                "centerline_to_centroid_m": 0.017125631444052113,
                 "compactness": 0.900305703956665,
                 "x_span_m": 0.3908520947056491,
                 "z_span_m": 0.26106025983810555,
@@ -4524,7 +4524,7 @@
                     1.5009734554235826e-06,
                     -0.01677810135277249
                   ],
-                  "centerline_to_centroid_m": 0.03725875472094528,
+                  "centerline_to_centroid_m": 0.017125631444052113,
                   "compactness": 0.900305703956665,
                   "x_span_m": 0.3908520947056491,
                   "z_span_m": 0.26106025983810555,
@@ -4541,7 +4541,7 @@
                     -0.7872870839426234,
                     -0.014731621678001546
                   ],
-                  "centerline_to_centroid_m": 0.7808102762076333,
+                  "centerline_to_centroid_m": 0.7839734646953969,
                   "compactness": 0.7739574230381749,
                   "x_span_m": 0.01909639283526443,
                   "z_span_m": 0.01295766924407766,
@@ -4558,7 +4558,7 @@
                     0.7870878856163958,
                     -0.01465393053901552
                   ],
-                  "centerline_to_centroid_m": 0.7950729186561992,
+                  "centerline_to_centroid_m": 0.7906755732612797,
                   "compactness": 0.7686940995933012,
                   "x_span_m": 0.01850759167002536,
                   "z_span_m": 0.012737904570909118,
@@ -4575,7 +4575,7 @@
                     0.808878620413401,
                     -0.08529882891368472
                   ],
-                  "centerline_to_centroid_m": 0.8228537079599587,
+                  "centerline_to_centroid_m": 0.8167962618775682,
                   "compactness": 0.956643488299564,
                   "x_span_m": 0.012176486190635716,
                   "z_span_m": 0.012242777214374334,
@@ -4592,7 +4592,7 @@
                     -0.826533490214641,
                     -0.07147756949232431
                   ],
-                  "centerline_to_centroid_m": 0.8243596835876165,
+                  "centerline_to_centroid_m": 0.8261789350965213,
                   "compactness": 0.9614031598689138,
                   "x_span_m": 0.012873222703676968,
                   "z_span_m": 0.011630474514943728,
@@ -4609,7 +4609,7 @@
                     -0.8089045970324138,
                     -0.08529151822193916
                   ],
-                  "centerline_to_centroid_m": 0.8085202426455531,
+                  "centerline_to_centroid_m": 0.8099554677119971,
                   "compactness": 0.9583889647675135,
                   "x_span_m": 0.012052008323755858,
                   "z_span_m": 0.01224153696201652,
@@ -4626,7 +4626,7 @@
                     0.8267506079497352,
                     -0.0714383868972465
                   ],
-                  "centerline_to_centroid_m": 0.8389627168548621,
+                  "centerline_to_centroid_m": 0.8332701465783935,
                   "compactness": 0.9626633330291529,
                   "x_span_m": 0.012483464583954884,
                   "z_span_m": 0.011511654681897424,
@@ -4643,7 +4643,7 @@
                     -0.786988226587889,
                     -0.1069178076158739
                   ],
-                  "centerline_to_centroid_m": 0.7899734293910573,
+                  "centerline_to_centroid_m": 0.7907968003133631,
                   "compactness": 0.9501539355744215,
                   "x_span_m": 0.009866745696334056,
                   "z_span_m": 0.009341009123454494,
@@ -4660,7 +4660,7 @@
                     0.7870017813159212,
                     -0.10691261153221777
                   ],
-                  "centerline_to_centroid_m": 0.8042808527775439,
+                  "centerline_to_centroid_m": 0.7976506187583936,
                   "compactness": 0.9503154248034696,
                   "x_span_m": 0.009828979742134925,
                   "z_span_m": 0.009345716551025882,
@@ -4742,10 +4742,10 @@
             "selection_mode": "spine_centerline_containment_then_area",
             "fallback_used": false,
             "centerline_xz_m": [
-              -0.005761298538005551,
-              0.016156862911771576
+              -0.0029094787233890952,
+              0.0012674625588643892
             ],
-            "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+            "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
             "centerline_inside": true,
             "selected_metrics": {
               "contour_id": 0,
@@ -4757,7 +4757,7 @@
                 9.295199991783604e-07,
                 -0.014941950202841793
               ],
-              "centerline_to_centroid_m": 0.031628143311457683,
+              "centerline_to_centroid_m": 0.016468622839282757,
               "compactness": 0.9106377037095659,
               "x_span_m": 0.3771434035957153,
               "z_span_m": 0.2620365038901907,
@@ -4775,7 +4775,7 @@
                   9.295199991783604e-07,
                   -0.014941950202841793
                 ],
-                "centerline_to_centroid_m": 0.031628143311457683,
+                "centerline_to_centroid_m": 0.016468622839282757,
                 "compactness": 0.9106377037095659,
                 "x_span_m": 0.3771434035957153,
                 "z_span_m": 0.2620365038901907,
@@ -4792,7 +4792,7 @@
                   -0.8112319283741704,
                   -0.08446960048222345
                 ],
-                "centerline_to_centroid_m": 0.811731865004603,
+                "centerline_to_centroid_m": 0.8128567072912367,
                 "compactness": 0.7430294745058101,
                 "x_span_m": 0.004220918926337691,
                 "z_span_m": 0.0029104609032491874,
@@ -4809,7 +4809,7 @@
                   0.81134704376413,
                   -0.084473940981061
                 ],
-                "centerline_to_centroid_m": 0.8232816053768368,
+                "centerline_to_centroid_m": 0.8187583725950313,
                 "compactness": 0.7255749766311123,
                 "x_span_m": 0.0038242917748826377,
                 "z_span_m": 0.0025075464770202144,
@@ -4839,10 +4839,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.004300637888259665,
-                0.012586220250572433
+                -0.0023734159446736265,
+                0.0025241613014450105
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -4854,7 +4854,7 @@
                   3.486292960169888e-07,
                   -0.013599779579805698
                 ],
-                "centerline_to_centroid_m": 0.026536862515014074,
+                "centerline_to_centroid_m": 0.016297736891811118,
                 "compactness": 0.9170432235202878,
                 "x_span_m": 0.3689500803793929,
                 "z_span_m": 0.26237032244744496,
@@ -4872,7 +4872,7 @@
                     3.486292960169888e-07,
                     -0.013599779579805698
                   ],
-                  "centerline_to_centroid_m": 0.026536862515014074,
+                  "centerline_to_centroid_m": 0.016297736891811118,
                   "compactness": 0.9170432235202878,
                   "x_span_m": 0.3689500803793929,
                   "z_span_m": 0.26237032244744496,
@@ -4901,10 +4901,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005030968213132607,
-                0.014371541581172001
+                -0.0026414473340313606,
+                0.0018958119301547005
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -4916,7 +4916,7 @@
                   6.092299288013875e-07,
                   -0.014201732974887665
                 ],
-                "centerline_to_centroid_m": 0.029012907307291544,
+                "centerline_to_centroid_m": 0.01631292171430429,
                 "compactness": 0.9142842212233213,
                 "x_span_m": 0.37216581390943054,
                 "z_span_m": 0.2624554595087525,
@@ -4934,7 +4934,7 @@
                     6.092299288013875e-07,
                     -0.014201732974887665
                   ],
-                  "centerline_to_centroid_m": 0.029012907307291544,
+                  "centerline_to_centroid_m": 0.01631292171430429,
                   "compactness": 0.9142842212233213,
                   "x_span_m": 0.37216581390943054,
                   "z_span_m": 0.2624554595087525,
@@ -4963,10 +4963,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005761298538005551,
-                0.016156862911771576
+                -0.0029094787233890952,
+                0.0012674625588643892
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -4978,7 +4978,7 @@
                   9.295199991783604e-07,
                   -0.014941950202841793
                 ],
-                "centerline_to_centroid_m": 0.031628143311457683,
+                "centerline_to_centroid_m": 0.016468622839282757,
                 "compactness": 0.9106377037095659,
                 "x_span_m": 0.3771434035957153,
                 "z_span_m": 0.2620365038901907,
@@ -4996,7 +4996,7 @@
                     9.295199991783604e-07,
                     -0.014941950202841793
                   ],
-                  "centerline_to_centroid_m": 0.031628143311457683,
+                  "centerline_to_centroid_m": 0.016468622839282757,
                   "compactness": 0.9106377037095659,
                   "x_span_m": 0.3771434035957153,
                   "z_span_m": 0.2620365038901907,
@@ -5013,7 +5013,7 @@
                     -0.8112319283741704,
                     -0.08446960048222345
                   ],
-                  "centerline_to_centroid_m": 0.811731865004603,
+                  "centerline_to_centroid_m": 0.8128567072912367,
                   "compactness": 0.7430294745058101,
                   "x_span_m": 0.004220918926337691,
                   "z_span_m": 0.0029104609032491874,
@@ -5030,7 +5030,7 @@
                     0.81134704376413,
                     -0.084473940981061
                   ],
-                  "centerline_to_centroid_m": 0.8232816053768368,
+                  "centerline_to_centroid_m": 0.8187583725950313,
                   "compactness": 0.7255749766311123,
                   "x_span_m": 0.0038242917748826377,
                   "z_span_m": 0.0025075464770202144,
@@ -5059,10 +5059,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.006491628862878494,
-                0.017942184242371144
+                -0.0031775101127468294,
+                0.0006391131875740788
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -5074,7 +5074,7 @@
                   1.1291242493837096e-06,
                   -0.0158200663985337
                 ],
-                "centerline_to_centroid_m": 0.03438088821741946,
+                "centerline_to_centroid_m": 0.016763303375132207,
                 "compactness": 0.9065958839987401,
                 "x_span_m": 0.38276159723238407,
                 "z_span_m": 0.2615541586532625,
@@ -5092,7 +5092,7 @@
                     1.1291242493837096e-06,
                     -0.0158200663985337
                   ],
-                  "centerline_to_centroid_m": 0.03438088821741946,
+                  "centerline_to_centroid_m": 0.016763303375132207,
                   "compactness": 0.9065958839987401,
                   "x_span_m": 0.38276159723238407,
                   "z_span_m": 0.2615541586532625,
@@ -5109,7 +5109,7 @@
                     0.8095684083432376,
                     -0.08476652335866161
                   ],
-                  "centerline_to_centroid_m": 0.8224980625763941,
+                  "centerline_to_centroid_m": 0.8172209314014965,
                   "compactness": 0.947206000475058,
                   "x_span_m": 0.009770718023321856,
                   "z_span_m": 0.01002449532962385,
@@ -5126,7 +5126,7 @@
                     -0.8095780416648035,
                     -0.08477359493312996
                   ],
-                  "centerline_to_centroid_m": 0.8096285059943815,
+                  "centerline_to_centroid_m": 0.810911307108214,
                   "compactness": 0.9475012258043842,
                   "x_span_m": 0.00975466054039853,
                   "z_span_m": 0.009998499268944736,
@@ -5143,7 +5143,7 @@
                     -0.8279522663578202,
                     -0.07185850624777763
                   ],
-                  "centerline_to_centroid_m": 0.8263544898928689,
+                  "centerline_to_centroid_m": 0.8279548921063956,
                   "compactness": 0.9319604600878819,
                   "x_span_m": 0.009934816926766454,
                   "z_span_m": 0.008541068275188135,
@@ -5160,7 +5160,7 @@
                     0.8283383962755141,
                     -0.07184631719475372
                   ],
-                  "centerline_to_centroid_m": 0.8396446545193351,
+                  "centerline_to_centroid_m": 0.8346692998993088,
                   "compactness": 0.930543889772207,
                   "x_span_m": 0.009446208801547673,
                   "z_span_m": 0.008292638618790288,
@@ -5177,7 +5177,7 @@
                     -0.7883769286476323,
                     -0.1067451618011664
                   ],
-                  "centerline_to_centroid_m": 0.7917648364778996,
+                  "centerline_to_centroid_m": 0.7925083654967812,
                   "compactness": 0.5851658030683505,
                   "x_span_m": 0.00270121224426656,
                   "z_span_m": 0.0026131757882822265,
@@ -5194,7 +5194,7 @@
                     0.7883947782061022,
                     -0.10673121927706097
                   ],
-                  "centerline_to_centroid_m": 0.8046041621121235,
+                  "centerline_to_centroid_m": 0.7988210537585406,
                   "compactness": 0.5973088405500345,
                   "x_span_m": 0.0026435692864035243,
                   "z_span_m": 0.0025732437732105956,
@@ -5223,10 +5223,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.007221959187751439,
-                0.01972750557297072
+                -0.0034455415021045635,
+                1.0763816283768449e-05
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -5238,7 +5238,7 @@
                   1.4927076425032302e-06,
                   -0.0167553311392696
                 ],
-                "centerline_to_centroid_m": 0.037191069248638985,
+                "centerline_to_centroid_m": 0.017116774956217617,
                 "compactness": 0.9004476224237332,
                 "x_span_m": 0.3906573075247325,
                 "z_span_m": 0.26107181341633434,
@@ -5256,7 +5256,7 @@
                     1.4927076425032302e-06,
                     -0.0167553311392696
                   ],
-                  "centerline_to_centroid_m": 0.037191069248638985,
+                  "centerline_to_centroid_m": 0.017116774956217617,
                   "compactness": 0.9004476224237332,
                   "x_span_m": 0.3906573075247325,
                   "z_span_m": 0.26107181341633434,
@@ -5273,7 +5273,7 @@
                     -0.7873139566780093,
                     -0.014714424280622548
                   ],
-                  "centerline_to_centroid_m": 0.7808519520884738,
+                  "centerline_to_centroid_m": 0.7840067113710659,
                   "compactness": 0.7732776883380383,
                   "x_span_m": 0.018812965639539492,
                   "z_span_m": 0.012780848002880768,
@@ -5290,7 +5290,7 @@
                     0.7871068575274403,
                     -0.014643441822829659
                   ],
-                  "centerline_to_centroid_m": 0.7950720917558618,
+                  "centerline_to_centroid_m": 0.7906882074207773,
                   "compactness": 0.7695937649408966,
                   "x_span_m": 0.018200470199514207,
                   "z_span_m": 0.012569385071381962,
@@ -5307,7 +5307,7 @@
                     0.8088864036014195,
                     -0.0852867105095702
                   ],
-                  "centerline_to_centroid_m": 0.8228370709890578,
+                  "centerline_to_centroid_m": 0.8167979237008652,
                   "compactness": 0.9569372769671147,
                   "x_span_m": 0.012138603987263519,
                   "z_span_m": 0.012196577827522675,
@@ -5324,7 +5324,7 @@
                     -0.8089121789800121,
                     -0.08527947079600319
                   ],
-                  "centerline_to_centroid_m": 0.8085379852528374,
+                  "centerline_to_centroid_m": 0.8099697082053045,
                   "compactness": 0.9586852427968688,
                   "x_span_m": 0.01201849550771672,
                   "z_span_m": 0.012194865942734598,
@@ -5341,7 +5341,7 @@
                     -0.8265540237024978,
                     -0.07148059104154908
                   ],
-                  "centerline_to_centroid_m": 0.8243930790769898,
+                  "centerline_to_centroid_m": 0.8262073512682174,
                   "compactness": 0.9607602723058483,
                   "x_span_m": 0.012826913774330095,
                   "z_span_m": 0.01155947634118984,
@@ -5358,7 +5358,7 @@
                     0.8267717510057332,
                     -0.07144151222304267
                   ],
-                  "centerline_to_centroid_m": 0.8389620363569402,
+                  "centerline_to_centroid_m": 0.833286373661687,
                   "compactness": 0.9620563949038218,
                   "x_span_m": 0.01243737870851569,
                   "z_span_m": 0.011439561718168567,
@@ -5375,7 +5375,7 @@
                     -0.7870164586584505,
                     -0.10690598221904513
                   ],
-                  "centerline_to_centroid_m": 0.7900098111005512,
+                  "centerline_to_centroid_m": 0.7908315704345775,
                   "compactness": 0.9495255036632146,
                   "x_span_m": 0.009794221095519084,
                   "z_span_m": 0.009277234947099339,
@@ -5392,7 +5392,7 @@
                     0.7870301321297777,
                     -0.10690059304953382
                   ],
-                  "centerline_to_centroid_m": 0.804282947676388,
+                  "centerline_to_centroid_m": 0.7976727579845435,
                   "compactness": 0.9496727738901866,
                   "x_span_m": 0.00975879052467643,
                   "z_span_m": 0.009282019583847362,
@@ -5489,10 +5489,10 @@
             "selection_mode": "spine_centerline_containment_then_area",
             "fallback_used": false,
             "centerline_xz_m": [
-              -0.005829525956435655,
-              0.015069233703375026
+              -0.003142760312145251,
+              0.0020749602541436612
             ],
-            "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+            "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
             "centerline_inside": true,
             "selected_metrics": {
               "contour_id": 0,
@@ -5504,7 +5504,7 @@
                 2.113527093550997e-07,
                 -0.01305188593583507
               ],
-              "centerline_to_centroid_m": 0.028719039100506216,
+              "centerline_to_centroid_m": 0.01544991089104895,
               "compactness": 0.920797163017437,
               "x_span_m": 0.35044243520488705,
               "z_span_m": 0.24880707412817557,
@@ -5522,7 +5522,7 @@
                   2.113527093550997e-07,
                   -0.01305188593583507
                 ],
-                "centerline_to_centroid_m": 0.028719039100506216,
+                "centerline_to_centroid_m": 0.01544991089104895,
                 "compactness": 0.920797163017437,
                 "x_span_m": 0.35044243520488705,
                 "z_span_m": 0.24880707412817557,
@@ -5552,10 +5552,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.00437705711316359,
-                0.011697827114058257
+                -0.0026491636648243526,
+                0.003341043184440414
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -5567,7 +5567,7 @@
                   -2.1981964304992946e-07,
                   -0.011659379033985498
                 ],
-                "centerline_to_centroid_m": 0.023763749361920255,
+                "centerline_to_centroid_m": 0.015232516871021994,
                 "compactness": 0.9257973548432757,
                 "x_span_m": 0.34433505862977254,
                 "z_span_m": 0.24917198553163758,
@@ -5585,7 +5585,7 @@
                     -2.1981964304992946e-07,
                     -0.011659379033985498
                   ],
-                  "centerline_to_centroid_m": 0.023763749361920255,
+                  "centerline_to_centroid_m": 0.015232516871021994,
                   "compactness": 0.9257973548432757,
                   "x_span_m": 0.34433505862977254,
                   "z_span_m": 0.24917198553163758,
@@ -5614,10 +5614,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005103291534799624,
-                0.013383530408716648
+                -0.0028959619884848025,
+                0.002708001719292037
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -5629,7 +5629,7 @@
                   -1.142665725962352e-08,
                   -0.012309167415240707
                 ],
-                "centerline_to_centroid_m": 0.026194621381790278,
+                "centerline_to_centroid_m": 0.015293851655868518,
                 "compactness": 0.9234228353883535,
                 "x_span_m": 0.3473329190898701,
                 "z_span_m": 0.24919032489314036,
@@ -5647,7 +5647,7 @@
                     -1.142665725962352e-08,
                     -0.012309167415240707
                   ],
-                  "centerline_to_centroid_m": 0.026194621381790278,
+                  "centerline_to_centroid_m": 0.015293851655868518,
                   "compactness": 0.9234228353883535,
                   "x_span_m": 0.3473329190898701,
                   "z_span_m": 0.24919032489314036,
@@ -5676,10 +5676,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005829525956435655,
-                0.015069233703375026
+                -0.003142760312145251,
+                0.0020749602541436612
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -5691,7 +5691,7 @@
                   2.113527093550997e-07,
                   -0.01305188593583507
                 ],
-                "centerline_to_centroid_m": 0.028719039100506216,
+                "centerline_to_centroid_m": 0.01544991089104895,
                 "compactness": 0.920797163017437,
                 "x_span_m": 0.35044243520488705,
                 "z_span_m": 0.24880707412817557,
@@ -5709,7 +5709,7 @@
                     2.113527093550997e-07,
                     -0.01305188593583507
                   ],
-                  "centerline_to_centroid_m": 0.028719039100506216,
+                  "centerline_to_centroid_m": 0.01544991089104895,
                   "compactness": 0.920797163017437,
                   "x_span_m": 0.35044243520488705,
                   "z_span_m": 0.24880707412817557,
@@ -5738,10 +5738,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.006555760378071686,
-                0.01675493699803341
+                -0.0033895586358057006,
+                0.0014419187889952853
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -5753,7 +5753,7 @@
                   5.370521040978803e-07,
                   -0.013949778430166057
                 ],
-                "centerline_to_centroid_m": 0.03139688815025527,
+                "centerline_to_centroid_m": 0.01576061839077146,
                 "compactness": 0.918346613685843,
                 "x_span_m": 0.35467021280319755,
                 "z_span_m": 0.24842236884450086,
@@ -5771,7 +5771,7 @@
                     5.370521040978803e-07,
                     -0.013949778430166057
                   ],
-                  "centerline_to_centroid_m": 0.03139688815025527,
+                  "centerline_to_centroid_m": 0.01576061839077146,
                   "compactness": 0.918346613685843,
                   "x_span_m": 0.35467021280319755,
                   "z_span_m": 0.24842236884450086,
@@ -5788,7 +5788,7 @@
                     0.7955323494358736,
                     -0.08335154118114087
                   ],
-                  "centerline_to_centroid_m": 0.8083109815401156,
+                  "centerline_to_centroid_m": 0.8034090776501096,
                   "compactness": 0.9178912848084853,
                   "x_span_m": 0.007554069569775113,
                   "z_span_m": 0.008329209335937254,
@@ -5805,7 +5805,7 @@
                     -0.7955365954014941,
                     -0.08336595540109398
                   ],
-                  "centerline_to_centroid_m": 0.7953080856680979,
+                  "centerline_to_centroid_m": 0.7966739002762064,
                   "compactness": 0.9164690655588852,
                   "x_span_m": 0.0075664857768904525,
                   "z_span_m": 0.008260098059503423,
@@ -5822,7 +5822,7 @@
                     -0.8137474478069227,
                     -0.07153175295782281
                   ],
-                  "centerline_to_centroid_m": 0.812005517147265,
+                  "centerline_to_centroid_m": 0.8136369370364651,
                   "compactness": 0.9067443433639579,
                   "x_span_m": 0.007910994273984895,
                   "z_span_m": 0.006525763704868778,
@@ -5839,7 +5839,7 @@
                     0.8140983221024851,
                     -0.07136740401653217
                   ],
-                  "centerline_to_centroid_m": 0.8253718374635107,
+                  "centerline_to_centroid_m": 0.8207238467605176,
                   "compactness": 0.8823377494838144,
                   "x_span_m": 0.007528900699132479,
                   "z_span_m": 0.005865036810986518,
@@ -5868,10 +5868,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.00728199479970772,
-                0.018440640292691796
+                -0.00363635695946615,
+                0.000808877323846908
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -5883,7 +5883,7 @@
                   7.72295092560654e-07,
                   -0.014905813533096817
                 ],
-                "centerline_to_centroid_m": 0.034132457856306773,
+                "centerline_to_centroid_m": 0.016130102849755096,
                 "compactness": 0.9143300036834664,
                 "x_span_m": 0.36014107127396433,
                 "z_span_m": 0.24802600925706983,
@@ -5901,7 +5901,7 @@
                     7.72295092560654e-07,
                     -0.014905813533096817
                   ],
-                  "centerline_to_centroid_m": 0.034132457856306773,
+                  "centerline_to_centroid_m": 0.016130102849755096,
                   "compactness": 0.9143300036834664,
                   "x_span_m": 0.36014107127396433,
                   "z_span_m": 0.24802600925706983,
@@ -5918,7 +5918,7 @@
                     0.794321355132259,
                     -0.08372240971191128
                   ],
-                  "centerline_to_centroid_m": 0.8080873835225953,
+                  "centerline_to_centroid_m": 0.802422612327558,
                   "compactness": 0.9551784493493847,
                   "x_span_m": 0.011097165942814957,
                   "z_span_m": 0.011169574878486216,
@@ -5935,7 +5935,7 @@
                     -0.794338060285532,
                     -0.08372189357133543
                   ],
-                  "centerline_to_centroid_m": 0.7936588899165337,
+                  "centerline_to_centroid_m": 0.7952072905041022,
                   "compactness": 0.9569541540783559,
                   "x_span_m": 0.011057370694081858,
                   "z_span_m": 0.011159921804289319,
@@ -5952,7 +5952,7 @@
                     -0.8119244861620895,
                     -0.07092686715930828
                   ],
-                  "centerline_to_centroid_m": 0.8095900754666178,
+                  "centerline_to_centroid_m": 0.8114651667486591,
                   "compactness": 0.9522397116503126,
                   "x_span_m": 0.011679526783281657,
                   "z_span_m": 0.010383948986917343,
@@ -5969,7 +5969,7 @@
                     0.8121779855697723,
                     -0.07088789628379928
                   ],
-                  "centerline_to_centroid_m": 0.8243144102064733,
+                  "centerline_to_centroid_m": 0.81895877113696,
                   "compactness": 0.9563183859663781,
                   "x_span_m": 0.011257552276436766,
                   "z_span_m": 0.010253990484317382,
@@ -5986,7 +5986,7 @@
                     -0.773302822823464,
                     -0.10500395731197396
                   ],
-                  "centerline_to_centroid_m": 0.7759036522945223,
+                  "centerline_to_centroid_m": 0.7769059303733264,
                   "compactness": 0.9431650123138062,
                   "x_span_m": 0.007704327884729856,
                   "z_span_m": 0.007180125855045585,
@@ -6003,7 +6003,7 @@
                     0.7733103464893354,
                     -0.10499887283566756
                   ],
-                  "centerline_to_centroid_m": 0.7902921717190904,
+                  "centerline_to_centroid_m": 0.7841182691366004,
                   "compactness": 0.9438223785861426,
                   "x_span_m": 0.007671256400096693,
                   "z_span_m": 0.007185248785928633,
@@ -6020,7 +6020,7 @@
                     -0.7761533744087638,
                     -0.01488703325745393
                   ],
-                  "centerline_to_centroid_m": 0.7695933550948827,
+                  "centerline_to_centroid_m": 0.7726764548358741,
                   "compactness": 0.3268146023264192,
                   "x_span_m": 0.005899381818261884,
                   "z_span_m": 0.004098602897152213,
@@ -6037,7 +6037,7 @@
                     0.776035162386079,
                     -0.014822935570240807
                   ],
-                  "centerline_to_centroid_m": 0.7840231082186363,
+                  "centerline_to_centroid_m": 0.7798282064999615,
                   "compactness": 0.19468580074039948,
                   "x_span_m": 0.005569893021252215,
                   "z_span_m": 0.004059007501736397,
@@ -6119,10 +6119,10 @@
             "selection_mode": "spine_centerline_containment_then_area",
             "fallback_used": false,
             "centerline_xz_m": [
-              -0.005825569800891363,
-              0.015060050849689616
+              -0.0031414158804750044,
+              0.002078408741887428
             ],
-            "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+            "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
             "centerline_inside": true,
             "selected_metrics": {
               "contour_id": 0,
@@ -6134,7 +6134,7 @@
                 2.1099911515642352e-07,
                 -0.013047302527695188
               ],
-              "centerline_to_centroid_m": 0.028704756327321602,
+              "centerline_to_centroid_m": 0.015448526171170568,
               "compactness": 0.9208082084148725,
               "x_span_m": 0.3504254961435426,
               "z_span_m": 0.24880916188330462,
@@ -6152,7 +6152,7 @@
                   2.1099911515642352e-07,
                   -0.013047302527695188
                 ],
-                "centerline_to_centroid_m": 0.028704756327321602,
+                "centerline_to_centroid_m": 0.015448526171170568,
                 "compactness": 0.9208082084148725,
                 "x_span_m": 0.3504254961435426,
                 "z_span_m": 0.24880916188330462,
@@ -6182,10 +6182,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.004373100957619299,
-                0.011688644260372846
+                -0.0026478192331541054,
+                0.003344491672184181
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -6197,7 +6197,7 @@
                   -2.2073044663206448e-07,
                   -0.011655953892056117
                 ],
-                "centerline_to_centroid_m": 0.02375062829441755,
+                "centerline_to_centroid_m": 0.015232305963224191,
                 "compactness": 0.9258090334119048,
                 "x_span_m": 0.34432086127565864,
                 "z_span_m": 0.24916966359768514,
@@ -6215,7 +6215,7 @@
                     -2.2073044663206448e-07,
                     -0.011655953892056117
                   ],
-                  "centerline_to_centroid_m": 0.02375062829441755,
+                  "centerline_to_centroid_m": 0.015232305963224191,
                   "compactness": 0.9258090334119048,
                   "x_span_m": 0.34432086127565864,
                   "z_span_m": 0.24916966359768514,
@@ -6244,10 +6244,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005099335379255332,
-                0.013374347555031231
+                -0.002894617556814555,
+                0.0027114502070358037
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -6259,7 +6259,7 @@
                   -1.2741799063624383e-08,
                   -0.012305475606839065
                 ],
-                "centerline_to_centroid_m": 0.0261812224501799,
+                "centerline_to_centroid_m": 0.015293357967906599,
                 "compactness": 0.9234354012452297,
                 "x_span_m": 0.3473159800285257,
                 "z_span_m": 0.24919241264826947,
@@ -6277,7 +6277,7 @@
                     -1.2741799063624383e-08,
                     -0.012305475606839065
                   ],
-                  "centerline_to_centroid_m": 0.0261812224501799,
+                  "centerline_to_centroid_m": 0.015293357967906599,
                   "compactness": 0.9234354012452297,
                   "x_span_m": 0.3473159800285257,
                   "z_span_m": 0.24919241264826947,
@@ -6306,10 +6306,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.005825569800891363,
-                0.015060050849689616
+                -0.0031414158804750044,
+                0.002078408741887428
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -6321,7 +6321,7 @@
                   2.1099911515642352e-07,
                   -0.013047302527695188
                 ],
-                "centerline_to_centroid_m": 0.028704756327321602,
+                "centerline_to_centroid_m": 0.015448526171170568,
                 "compactness": 0.9208082084148725,
                 "x_span_m": 0.3504254961435426,
                 "z_span_m": 0.24880916188330462,
@@ -6339,7 +6339,7 @@
                     2.1099911515642352e-07,
                     -0.013047302527695188
                   ],
-                  "centerline_to_centroid_m": 0.028704756327321602,
+                  "centerline_to_centroid_m": 0.015448526171170568,
                   "compactness": 0.9208082084148725,
                   "x_span_m": 0.3504254961435426,
                   "z_span_m": 0.24880916188330462,
@@ -6368,10 +6368,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.006551804222527397,
-                0.016745754144348
+                -0.003388214204135453,
+                0.0014453672767390522
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -6383,7 +6383,7 @@
                   5.354969666620054e-07,
                   -0.013944693171990633
                 ],
-                "centerline_to_centroid_m": 0.03138210815539034,
+                "centerline_to_centroid_m": 0.01575873044227464,
                 "compactness": 0.9183659118044517,
                 "x_span_m": 0.3546404103503995,
                 "z_span_m": 0.24842452800982356,
@@ -6401,7 +6401,7 @@
                     5.354969666620054e-07,
                     -0.013944693171990633
                   ],
-                  "centerline_to_centroid_m": 0.03138210815539034,
+                  "centerline_to_centroid_m": 0.01575873044227464,
                   "compactness": 0.9183659118044517,
                   "x_span_m": 0.3546404103503995,
                   "z_span_m": 0.24842452800982356,
@@ -6418,7 +6418,7 @@
                     0.7955415462457451,
                     -0.08335344787757601
                   ],
-                  "centerline_to_centroid_m": 0.80831528076045,
+                  "centerline_to_centroid_m": 0.8034174513813347,
                   "compactness": 0.9171941197984418,
                   "x_span_m": 0.0075311049712222244,
                   "z_span_m": 0.008305328310802135,
@@ -6435,7 +6435,7 @@
                     -0.7955454028586633,
                     -0.08336798418212557
                   ],
-                  "centerline_to_centroid_m": 0.7953198471624491,
+                  "centerline_to_centroid_m": 0.7966845775604859,
                   "compactness": 0.9157324751657365,
                   "x_span_m": 0.007544205721071173,
                   "z_span_m": 0.008235821004677693,
@@ -6452,7 +6452,7 @@
                     -0.8137629370842692,
                     -0.07151915440121748
                   ],
-                  "centerline_to_centroid_m": 0.8120224794280596,
+                  "centerline_to_centroid_m": 0.8136528823194487,
                   "compactness": 0.9038048735376393,
                   "x_span_m": 0.007881162963179977,
                   "z_span_m": 0.006461359132804878,
@@ -6469,7 +6469,7 @@
                     0.8141109670067643,
                     -0.07136006483145106
                   ],
-                  "centerline_to_centroid_m": 0.825378712724733,
+                  "centerline_to_centroid_m": 0.82073475753434,
                   "compactness": 0.8790406315267104,
                   "x_span_m": 0.007502491855615023,
                   "z_span_m": 0.005797417461167381,
@@ -6498,10 +6498,10 @@
               "selection_mode": "spine_centerline_containment_then_area",
               "fallback_used": false,
               "centerline_xz_m": [
-                -0.007278038644163428,
-                0.018431457439006385
+                -0.0036350125277959024,
+                0.0008123258115906749
               ],
-              "centerline_mode": "spine2_to_spine3_linear_extrapolation",
+              "centerline_mode": "piecewise_thoracic_skeleton_interpolation",
               "centerline_inside": true,
               "selected_metrics": {
                 "contour_id": 0,
@@ -6513,7 +6513,7 @@
                   7.712578703267842e-07,
                   -0.014900519299811742
                 ],
-                "centerline_to_centroid_m": 0.03411746981983069,
+                "centerline_to_centroid_m": 0.016128001278243882,
                 "compactness": 0.9143537874539205,
                 "x_span_m": 0.3601112688211662,
                 "z_span_m": 0.24802816842239253,
@@ -6531,7 +6531,7 @@
                     7.712578703267842e-07,
                     -0.014900519299811742
                   ],
-                  "centerline_to_centroid_m": 0.03411746981983069,
+                  "centerline_to_centroid_m": 0.016128001278243882,
                   "compactness": 0.9143537874539205,
                   "x_span_m": 0.3601112688211662,
                   "z_span_m": 0.24802816842239253,
@@ -6548,7 +6548,7 @@
                     0.7943241842451637,
                     -0.08371946016829747
                   ],
-                  "centerline_to_centroid_m": 0.8080847317633991,
+                  "centerline_to_centroid_m": 0.8024241413090065,
                   "compactness": 0.9551369866209236,
                   "x_span_m": 0.011088767222716012,
                   "z_span_m": 0.011159853870371078,
@@ -6565,7 +6565,7 @@
                     -0.7943407343059378,
                     -0.0837191142066896
                   ],
-                  "centerline_to_centroid_m": 0.7936639252164113,
+                  "centerline_to_centroid_m": 0.7952113573159381,
                   "compactness": 0.9568995329400095,
                   "x_span_m": 0.011049955463587335,
                   "z_span_m": 0.011150065553135483,
@@ -6582,7 +6582,7 @@
                     -0.8119302807680568,
                     -0.07092815588209737
                   ],
-                  "centerline_to_centroid_m": 0.8095988952857496,
+                  "centerline_to_centroid_m": 0.8114726966283202,
                   "compactness": 0.9520805903812722,
                   "x_span_m": 0.011668705611443952,
                   "z_span_m": 0.0103683164389069,
@@ -6599,7 +6599,7 @@
                     0.8121853466857036,
                     -0.07088891488726037
                   ],
-                  "centerline_to_centroid_m": 0.8243169104226779,
+                  "centerline_to_centroid_m": 0.8189651558063982,
                   "compactness": 0.9562293941643267,
                   "x_span_m": 0.011240842982855881,
                   "z_span_m": 0.010238119551401581,
@@ -6616,7 +6616,7 @@
                     -0.7733064064118635,
                     -0.10500844209933423
                   ],
-                  "centerline_to_centroid_m": 0.7759103485731341,
+                  "centerline_to_centroid_m": 0.7769118929999086,
                   "compactness": 0.943189212697871,
                   "x_span_m": 0.0076795177934176895,
                   "z_span_m": 0.007147299912274974,
@@ -6633,7 +6633,7 @@
                     0.7733138372987554,
                     -0.10500343064200814
                   ],
-                  "centerline_to_centroid_m": 0.7902909896890243,
+                  "centerline_to_centroid_m": 0.7841214762781646,
                   "compactness": 0.9438429374111998,
                   "x_span_m": 0.0076469846945180775,
                   "z_span_m": 0.007152421346396071,
@@ -6650,7 +6650,7 @@
                     -0.7762256934047883,
                     -0.014893774069699219
                   ],
-                  "centerline_to_centroid_m": 0.7696694529581994,
+                  "centerline_to_centroid_m": 0.7727503100947005,
                   "compactness": 0.3024873178389203,
                   "x_span_m": 0.005817023375766839,
                   "z_span_m": 0.004036418094420222,
@@ -6667,7 +6667,7 @@
                     0.7761469996936371,
                     -0.014833556735672184
                   ],
-                  "centerline_to_centroid_m": 0.7841309532613961,
+                  "centerline_to_centroid_m": 0.7799389592941166,
                   "compactness": 0.16363905924674255,
                   "x_span_m": 0.005489838941187042,
                   "z_span_m": 0.003930709377470204,

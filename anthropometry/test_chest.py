@@ -34,6 +34,7 @@ def joints():
     value[3] = [0.0, 0.52, 0.01]
     value[6] = [0.0, 0.64, 0.00]
     value[9] = [0.0, 0.72, -0.01]
+    value[12] = [0.0, 0.86, -0.03]
     value[16] = [0.18, 0.82, -0.02]
     value[17] = [-0.18, 0.82, -0.02]
     return value
@@ -59,10 +60,10 @@ class ChestTests(unittest.TestCase):
         self.assertEqual(result["selection_mode"], "spine_centerline_containment_then_area")
         self.assertFalse(result["fallback_used"])
 
-    def test_centerline_extrapolates_without_moving_plane(self):
+    def test_centerline_interpolates_to_neck_without_moving_plane(self):
         centerline, mode = thoracic_centerline_xz(joints(), 0.76)
-        self.assertEqual(mode, "spine2_to_spine3_linear_extrapolation")
-        np.testing.assert_allclose(centerline, [0.0, -0.015], atol=1e-12)
+        self.assertEqual(mode, "piecewise_thoracic_skeleton_interpolation")
+        np.testing.assert_allclose(centerline, [0.0, -0.015714285714285715], atol=1e-12)
 
     def test_possible_arm_merge_is_flagged_by_x_span(self):
         merged = square(0, 0.0, -0.01, 0.30)
