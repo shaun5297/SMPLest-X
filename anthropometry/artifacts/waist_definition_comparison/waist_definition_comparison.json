@@ -1,0 +1,526 @@
+{
+  "experiment": "step_2_5d_waist_definition_comparison",
+  "status": "waist_subsystem_closed",
+  "scope": {
+    "purpose": "Quantify systematic plane-location and circumference differences among three waist definitions without claiming accuracy superiority.",
+    "sample_count": 5,
+    "main_definition_count": 3,
+    "primary_measurement_count": 15,
+    "primary_measurement_success_count": 15,
+    "metric_calibration": "none; raw canonical SMPL-X geometry",
+    "accuracy_claim": "none; no human ground truth is available",
+    "frozen_definition_modified": false
+  },
+  "definitions": {
+    "geometry_waist_v0": {
+      "status": "baseline",
+      "role": "geometry_baseline",
+      "selection": "raw discrete minimum of the torso C(y) profile",
+      "landmark_required": false,
+      "shape_adaptation": "determined directly from each beta-deformed mesh"
+    },
+    "literature_waist_v1": {
+      "status": "baseline",
+      "role": "literature_baseline",
+      "selection": "published topology-fixed surface landmark plane",
+      "landmark_required": true,
+      "shape_adaptation": "fixed vertex IDs with beta-deformed coordinates"
+    },
+    "anatomical_midpoint_waist_proxy_v1": {
+      "status": "frozen_v1",
+      "role": "anatomical_proxy",
+      "selection": "gender-specific face-barycentric surface anchors",
+      "landmark_required": true,
+      "shape_adaptation": "surface anchored and beta adaptive"
+    }
+  },
+  "fixed_xyz_control": {
+    "role": "ablation_control_only",
+    "included_in_main_definition_competition": false,
+    "reason_rejected_as_final_anatomical_representation": "world-space XYZ landmarks are invariant to beta deformation",
+    "cross_beta_surface_anchor_plane_range_mm": {
+      "female": {
+        "sample_count": 3,
+        "fixed_plane_y_range_mm": 0.0,
+        "anchored_plane_y_range_mm": 2.971683076678333,
+        "anchored_plane_y_std_mm": 1.2169332537278523
+      },
+      "male": {
+        "sample_count": 2,
+        "fixed_plane_y_range_mm": 0.0,
+        "anchored_plane_y_range_mm": 7.750916622853154,
+        "anchored_plane_y_std_mm": 3.875458311426577
+      }
+    }
+  },
+  "pairwise_delta_convention": "signed first definition minus second definition",
+  "samples": [
+    {
+      "sample": "p000444",
+      "gender": "female",
+      "measurements": {
+        "geometry_waist_v0": {
+          "definition": "geometry_waist_v0",
+          "status": "baseline",
+          "plane_y_m": -0.1967448336482048,
+          "y_norm": 0.6382137619500898,
+          "circumference_cm": 83.3867283592829,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        },
+        "literature_waist_v1": {
+          "definition": "literature_waist_v1",
+          "status": "baseline",
+          "plane_y_m": -0.25470419228076935,
+          "y_norm": 0.6038536416419084,
+          "circumference_cm": 85.74432860775177,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        },
+        "anatomical_midpoint_waist_proxy_v1": {
+          "definition": "anatomical_midpoint_waist_proxy_v1",
+          "status": "frozen_v1",
+          "plane_y_m": -0.27019791523478126,
+          "y_norm": 0.5946684781535331,
+          "circumference_cm": 87.1392071366208,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        }
+      },
+      "pairwise_differences": {
+        "geometry_minus_anatomical": {
+          "direction": "geometry_waist_v0 minus anatomical_midpoint_waist_proxy_v1",
+          "delta_y_norm_first_minus_second": 0.043545283796556755,
+          "delta_y_mm_first_minus_second": 73.45308158657646,
+          "delta_c_cm_first_minus_second": -3.752478777337899
+        },
+        "geometry_minus_literature": {
+          "direction": "geometry_waist_v0 minus literature_waist_v1",
+          "delta_y_norm_first_minus_second": 0.034360120308181474,
+          "delta_y_mm_first_minus_second": 57.959358632564545,
+          "delta_c_cm_first_minus_second": -2.35760024846887
+        },
+        "literature_minus_anatomical": {
+          "direction": "literature_waist_v1 minus anatomical_midpoint_waist_proxy_v1",
+          "delta_y_norm_first_minus_second": 0.00918516348837528,
+          "delta_y_mm_first_minus_second": 15.493722954011913,
+          "delta_c_cm_first_minus_second": -1.3948785288690289
+        }
+      },
+      "fixed_xyz_control": {
+        "definition": "anatomical_waist_proxy_v1",
+        "status": "baseline",
+        "plane_y_m": -0.2515547175,
+        "y_norm": 0.6057207487826355,
+        "circumference_cm": 85.59218081466837,
+        "role": "ablation_control_only",
+        "included_in_main_comparison": false
+      },
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000456",
+      "gender": "male",
+      "measurements": {
+        "geometry_waist_v0": {
+          "definition": "geometry_waist_v0",
+          "status": "baseline",
+          "plane_y_m": -0.20848896533250807,
+          "y_norm": 0.6403642757835653,
+          "circumference_cm": 88.10099007475554,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        },
+        "literature_waist_v1": {
+          "definition": "literature_waist_v1",
+          "status": "baseline",
+          "plane_y_m": -0.2642388418316841,
+          "y_norm": 0.6088935304030675,
+          "circumference_cm": 90.74274907448977,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        },
+        "anatomical_midpoint_waist_proxy_v1": {
+          "definition": "anatomical_midpoint_waist_proxy_v1",
+          "status": "frozen_v1",
+          "plane_y_m": -0.26303995541774816,
+          "y_norm": 0.60957030049553,
+          "circumference_cm": 90.6747071859892,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        }
+      },
+      "pairwise_differences": {
+        "geometry_minus_anatomical": {
+          "direction": "geometry_waist_v0 minus anatomical_midpoint_waist_proxy_v1",
+          "delta_y_norm_first_minus_second": 0.03079397528803529,
+          "delta_y_mm_first_minus_second": 54.55099008524009,
+          "delta_c_cm_first_minus_second": -2.5737171112336625
+        },
+        "geometry_minus_literature": {
+          "direction": "geometry_waist_v0 minus literature_waist_v1",
+          "delta_y_norm_first_minus_second": 0.03147074538049777,
+          "delta_y_mm_first_minus_second": 55.74987649917604,
+          "delta_c_cm_first_minus_second": -2.641758999734222
+        },
+        "literature_minus_anatomical": {
+          "direction": "literature_waist_v1 minus anatomical_midpoint_waist_proxy_v1",
+          "delta_y_norm_first_minus_second": -0.0006767700924624753,
+          "delta_y_mm_first_minus_second": -1.1988864139359512,
+          "delta_c_cm_first_minus_second": 0.06804188850055937
+        }
+      },
+      "fixed_xyz_control": {
+        "definition": "anatomical_waist_proxy_v1",
+        "status": "baseline",
+        "plane_y_m": -0.26315822499999997,
+        "y_norm": 0.6095035374434296,
+        "circumference_cm": 90.68128657541588,
+        "role": "ablation_control_only",
+        "included_in_main_comparison": false
+      },
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000475",
+      "gender": "female",
+      "measurements": {
+        "geometry_waist_v0": {
+          "definition": "geometry_waist_v0",
+          "status": "baseline",
+          "plane_y_m": -0.1940890571475029,
+          "y_norm": 0.6419006354554541,
+          "circumference_cm": 81.71140714806056,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        },
+        "literature_waist_v1": {
+          "definition": "literature_waist_v1",
+          "status": "baseline",
+          "plane_y_m": -0.25320999324321747,
+          "y_norm": 0.6071729641665585,
+          "circumference_cm": 84.13137389918958,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        },
+        "anatomical_midpoint_waist_proxy_v1": {
+          "definition": "anatomical_midpoint_waist_proxy_v1",
+          "status": "frozen_v1",
+          "plane_y_m": -0.2689145439830687,
+          "y_norm": 0.597948102182804,
+          "circumference_cm": 85.61854597859512,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        }
+      },
+      "pairwise_differences": {
+        "geometry_minus_anatomical": {
+          "direction": "geometry_waist_v0 minus anatomical_midpoint_waist_proxy_v1",
+          "delta_y_norm_first_minus_second": 0.04395253327265003,
+          "delta_y_mm_first_minus_second": 74.82548683556578,
+          "delta_c_cm_first_minus_second": -3.9071388305345636
+        },
+        "geometry_minus_literature": {
+          "direction": "geometry_waist_v0 minus literature_waist_v1",
+          "delta_y_norm_first_minus_second": 0.034727671288895534,
+          "delta_y_mm_first_minus_second": 59.12093609571456,
+          "delta_c_cm_first_minus_second": -2.4199667511290244
+        },
+        "literature_minus_anatomical": {
+          "direction": "literature_waist_v1 minus anatomical_midpoint_waist_proxy_v1",
+          "delta_y_norm_first_minus_second": 0.009224861983754495,
+          "delta_y_mm_first_minus_second": 15.70455073985122,
+          "delta_c_cm_first_minus_second": -1.4871720794055392
+        }
+      },
+      "fixed_xyz_control": {
+        "definition": "anatomical_waist_proxy_v1",
+        "status": "baseline",
+        "plane_y_m": -0.2515547175,
+        "y_norm": 0.6081452740739977,
+        "circumference_cm": 84.02441975761784,
+        "role": "ablation_control_only",
+        "included_in_main_comparison": false
+      },
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000486",
+      "gender": "male",
+      "measurements": {
+        "geometry_waist_v0": {
+          "definition": "geometry_waist_v0",
+          "status": "baseline",
+          "plane_y_m": -0.1952912447452545,
+          "y_norm": 0.6446740097181631,
+          "circumference_cm": 90.35834312155556,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        },
+        "literature_waist_v1": {
+          "definition": "literature_waist_v1",
+          "status": "baseline",
+          "plane_y_m": -0.25620055943727493,
+          "y_norm": 0.6095969340739361,
+          "circumference_cm": 92.59396656967073,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        },
+        "anatomical_midpoint_waist_proxy_v1": {
+          "definition": "anatomical_midpoint_waist_proxy_v1",
+          "status": "frozen_v1",
+          "plane_y_m": -0.255289038794895,
+          "y_norm": 0.6101218698524079,
+          "circumference_cm": 92.53633513689546,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        }
+      },
+      "pairwise_differences": {
+        "geometry_minus_anatomical": {
+          "direction": "geometry_waist_v0 minus anatomical_midpoint_waist_proxy_v1",
+          "delta_y_norm_first_minus_second": 0.03455213986575523,
+          "delta_y_mm_first_minus_second": 59.997794049640504,
+          "delta_c_cm_first_minus_second": -2.177992015339896
+        },
+        "geometry_minus_literature": {
+          "direction": "geometry_waist_v0 minus literature_waist_v1",
+          "delta_y_norm_first_minus_second": 0.03507707564422702,
+          "delta_y_mm_first_minus_second": 60.90931469202043,
+          "delta_c_cm_first_minus_second": -2.235623448115163
+        },
+        "literature_minus_anatomical": {
+          "direction": "literature_waist_v1 minus anatomical_midpoint_waist_proxy_v1",
+          "delta_y_norm_first_minus_second": -0.0005249357784717912,
+          "delta_y_mm_first_minus_second": -0.911520642379926,
+          "delta_c_cm_first_minus_second": 0.057631432775266944
+        }
+      },
+      "fixed_xyz_control": {
+        "definition": "anatomical_waist_proxy_v1",
+        "status": "baseline",
+        "plane_y_m": -0.26315822499999997,
+        "y_norm": 0.6055900828643146,
+        "circumference_cm": 93.02764318061362,
+        "role": "ablation_control_only",
+        "included_in_main_comparison": false
+      },
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000573",
+      "gender": "female",
+      "measurements": {
+        "geometry_waist_v0": {
+          "definition": "geometry_waist_v0",
+          "status": "baseline",
+          "plane_y_m": -0.19454202353954314,
+          "y_norm": 0.6451122175597229,
+          "circumference_cm": 84.0149802602056,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        },
+        "literature_waist_v1": {
+          "definition": "literature_waist_v1",
+          "status": "baseline",
+          "plane_y_m": -0.251790426671505,
+          "y_norm": 0.611882357113233,
+          "circumference_cm": 86.39081615204083,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        },
+        "anatomical_midpoint_waist_proxy_v1": {
+          "definition": "anatomical_midpoint_waist_proxy_v1",
+          "status": "frozen_v1",
+          "plane_y_m": -0.2672262321581029,
+          "y_norm": 0.60292263711866,
+          "circumference_cm": 87.58671713427037,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "validation_passed": true
+        }
+      },
+      "pairwise_differences": {
+        "geometry_minus_anatomical": {
+          "direction": "geometry_waist_v0 minus anatomical_midpoint_waist_proxy_v1",
+          "delta_y_norm_first_minus_second": 0.04218958044106291,
+          "delta_y_mm_first_minus_second": 72.6842086185598,
+          "delta_c_cm_first_minus_second": -3.5717368740647686
+        },
+        "geometry_minus_literature": {
+          "direction": "geometry_waist_v0 minus literature_waist_v1",
+          "delta_y_norm_first_minus_second": 0.0332298604464899,
+          "delta_y_mm_first_minus_second": 57.24840313196184,
+          "delta_c_cm_first_minus_second": -2.375835891835223
+        },
+        "literature_minus_anatomical": {
+          "direction": "literature_waist_v1 minus anatomical_midpoint_waist_proxy_v1",
+          "delta_y_norm_first_minus_second": 0.008959719994573012,
+          "delta_y_mm_first_minus_second": 15.435805486597953,
+          "delta_c_cm_first_minus_second": -1.1959009822295457
+        }
+      },
+      "fixed_xyz_control": {
+        "definition": "anatomical_waist_proxy_v1",
+        "status": "baseline",
+        "plane_y_m": -0.2515547175,
+        "y_norm": 0.6120191746041421,
+        "circumference_cm": 86.37349331384053,
+        "role": "ablation_control_only",
+        "included_in_main_comparison": false
+      },
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    }
+  ],
+  "aggregate": {
+    "pairwise_differences": {
+      "geometry_minus_anatomical": {
+        "direction": "geometry_waist_v0 minus anatomical_midpoint_waist_proxy_v1",
+        "delta_y_norm_first_minus_second": {
+          "mean": 0.03900670253281204,
+          "population_std": 0.005338214883749193,
+          "mean_absolute": 0.03900670253281204,
+          "minimum": 0.03079397528803529,
+          "maximum": 0.04395253327265003
+        },
+        "delta_y_mm_first_minus_second": {
+          "mean": 67.10231223511653,
+          "population_std": 8.23586219964495,
+          "mean_absolute": 67.10231223511653,
+          "minimum": 54.55099008524009,
+          "maximum": 74.82548683556578
+        },
+        "delta_c_cm_first_minus_second": {
+          "mean": -3.196612721702158,
+          "population_std": 0.689947771617127,
+          "mean_absolute": 3.196612721702158,
+          "minimum": -3.9071388305345636,
+          "maximum": -2.177992015339896
+        }
+      },
+      "geometry_minus_literature": {
+        "direction": "geometry_waist_v0 minus literature_waist_v1",
+        "delta_y_norm_first_minus_second": {
+          "mean": 0.033773094613658336,
+          "population_std": 0.0013078300864282396,
+          "mean_absolute": 0.033773094613658336,
+          "minimum": 0.03147074538049777,
+          "maximum": 0.03507707564422702
+        },
+        "delta_y_mm_first_minus_second": {
+          "mean": 58.197577810287484,
+          "population_std": 1.7409784659233343,
+          "mean_absolute": 58.197577810287484,
+          "minimum": 55.74987649917604,
+          "maximum": 60.90931469202043
+        },
+        "delta_c_cm_first_minus_second": {
+          "mean": -2.4061570678565003,
+          "population_std": 0.13270857662038368,
+          "mean_absolute": 2.4061570678565003,
+          "minimum": -2.641758999734222,
+          "maximum": -2.235623448115163
+        }
+      },
+      "literature_minus_anatomical": {
+        "direction": "literature_waist_v1 minus anatomical_midpoint_waist_proxy_v1",
+        "delta_y_norm_first_minus_second": {
+          "mean": 0.005233607919153704,
+          "population_std": 0.004764917740760743,
+          "mean_absolute": 0.005714290267527411,
+          "minimum": -0.0006767700924624753,
+          "maximum": 0.009224861983754495
+        },
+        "delta_y_mm_first_minus_second": {
+          "mean": 8.90473442482904,
+          "population_std": 8.133254927366442,
+          "mean_absolute": 9.748897247355393,
+          "minimum": -1.1988864139359512,
+          "maximum": 15.70455073985122
+        },
+        "delta_c_cm_first_minus_second": {
+          "mean": -0.7904556538456575,
+          "population_std": 0.7030499897606766,
+          "mean_absolute": 0.840724982355988,
+          "minimum": -1.4871720794055392,
+          "maximum": 0.06804188850055937
+        }
+      }
+    }
+  },
+  "validation": {
+    "passed": true,
+    "failures": [],
+    "fallback_count": 0,
+    "bad_contour_count": 0
+  },
+  "figures": {
+    "sample_profiles": [
+      "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/waist_definition_comparison/p000444_waist_definition_profile.png",
+      "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/waist_definition_comparison/p000456_waist_definition_profile.png",
+      "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/waist_definition_comparison/p000475_waist_definition_profile.png",
+      "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/waist_definition_comparison/p000486_waist_definition_profile.png",
+      "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/waist_definition_comparison/p000573_waist_definition_profile.png"
+    ],
+    "aggregate": "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/waist_definition_comparison/waist_definition_comparison_aggregate.png"
+  }
+}
