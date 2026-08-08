@@ -167,6 +167,7 @@ def convert_gender(
     payload = {
         "schema": "smplx_surface_landmarks_v1",
         "definition": "anatomical_midpoint_waist_proxy_v1",
+        "status": "frozen_v1",
         "gender": gender,
         "source_fixed_landmarks": str(fixed_path.resolve()),
         "source_landmark_type": fixed.get("landmark_type", "fixed_xyz_per_gender"),

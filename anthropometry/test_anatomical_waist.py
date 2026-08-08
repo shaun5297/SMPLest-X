@@ -135,6 +135,7 @@ class AnatomicalWaistTests(unittest.TestCase):
             anchor_path=self.anchor_path,
         )
         self.assertEqual(result["definition"], "anatomical_midpoint_waist_proxy_v1")
+        self.assertEqual(result["status"], "frozen_v1")
         self.assertTrue(result["landmark_source"]["surface_anchored"])
         self.assertAlmostEqual(result["plane_definition"]["plane_y_m"], 0.5)
 

@@ -28,6 +28,7 @@ ANATOMICAL_WAIST_DEFINITION = "anatomical_waist_proxy_v1"
 SURFACE_ANCHORED_ANATOMICAL_WAIST_DEFINITION = (
     "anatomical_midpoint_waist_proxy_v1"
 )
+SURFACE_ANCHORED_ANATOMICAL_WAIST_STATUS = "frozen_v1"
 ANATOMICAL_WAIST_STATUS = "baseline"
 WAIST_LANDMARK_NAMES = (
     "left_lower_rib",
@@ -240,6 +241,7 @@ def _measure_anatomical_waist_from_landmarks(
     gender: str,
     landmarks: dict[str, object],
     definition: str,
+    status: str,
     surface_anchored: bool,
     eps: float = EPS,
     endpoint_tolerance: float = ENDPOINT_CLUSTER_TOLERANCE_M,
@@ -283,7 +285,7 @@ def _measure_anatomical_waist_from_landmarks(
 
     return {
         "definition": definition,
-        "status": ANATOMICAL_WAIST_STATUS,
+        "status": status,
         "definition_text": (
             "A single horizontal canonical SMPL-X slice at the bilateral mean height "
             "of manually annotated lower-rib to iliac-crest midpoints."
@@ -359,6 +361,7 @@ def measure_anatomical_waist(
         gender=gender,
         landmarks=landmarks,
         definition=ANATOMICAL_WAIST_DEFINITION,
+        status=ANATOMICAL_WAIST_STATUS,
         surface_anchored=False,
         eps=eps,
         endpoint_tolerance=endpoint_tolerance,
@@ -392,6 +395,7 @@ def measure_surface_anchored_anatomical_waist(
         gender=normalized_gender,
         landmarks=landmarks,
         definition=SURFACE_ANCHORED_ANATOMICAL_WAIST_DEFINITION,
+        status=SURFACE_ANCHORED_ANATOMICAL_WAIST_STATUS,
         surface_anchored=True,
         eps=eps,
         endpoint_tolerance=endpoint_tolerance,

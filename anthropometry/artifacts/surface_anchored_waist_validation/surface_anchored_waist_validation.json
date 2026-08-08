@@ -1,7 +1,7 @@
 {
   "experiment": "Step 2.5C.1 surface-anchored anatomical landmarks",
   "definition": "anatomical_midpoint_waist_proxy_v1",
-  "status": "recommended_pending_manual_acceptance",
+  "status": "frozen_v1",
   "scope": "gender-template manual XYZ projected to face+barycentric anchors and evaluated on each beta-deformed neutral canonical SMPL-X mesh",
   "gender_label_source": "/data0/datasets/data/humman_smplest_x_waist_clean_std2_front000/shape_gender.xlsx",
   "fixed_landmark_dir": "/data0/datasets/data/smplx_models",
@@ -501,7 +501,7 @@
       },
       "surface_anchored": {
         "definition": "anatomical_midpoint_waist_proxy_v1",
-        "status": "baseline",
+        "status": "frozen_v1",
         "definition_text": "A single horizontal canonical SMPL-X slice at the bilateral mean height of manually annotated lower-rib to iliac-crest midpoints.",
         "independent_of_circumference_minimum": true,
         "measurement_space": "raw canonical SMPL-X geometry",
@@ -1709,7 +1709,7 @@
       },
       "surface_anchored": {
         "definition": "anatomical_midpoint_waist_proxy_v1",
-        "status": "baseline",
+        "status": "frozen_v1",
         "definition_text": "A single horizontal canonical SMPL-X slice at the bilateral mean height of manually annotated lower-rib to iliac-crest midpoints.",
         "independent_of_circumference_minimum": true,
         "measurement_space": "raw canonical SMPL-X geometry",
@@ -2907,7 +2907,7 @@
       },
       "surface_anchored": {
         "definition": "anatomical_midpoint_waist_proxy_v1",
-        "status": "baseline",
+        "status": "frozen_v1",
         "definition_text": "A single horizontal canonical SMPL-X slice at the bilateral mean height of manually annotated lower-rib to iliac-crest midpoints.",
         "independent_of_circumference_minimum": true,
         "measurement_space": "raw canonical SMPL-X geometry",
@@ -4115,7 +4115,7 @@
       },
       "surface_anchored": {
         "definition": "anatomical_midpoint_waist_proxy_v1",
-        "status": "baseline",
+        "status": "frozen_v1",
         "definition_text": "A single horizontal canonical SMPL-X slice at the bilateral mean height of manually annotated lower-rib to iliac-crest midpoints.",
         "independent_of_circumference_minimum": true,
         "measurement_space": "raw canonical SMPL-X geometry",
@@ -5313,7 +5313,7 @@
       },
       "surface_anchored": {
         "definition": "anatomical_midpoint_waist_proxy_v1",
-        "status": "baseline",
+        "status": "frozen_v1",
         "definition_text": "A single horizontal canonical SMPL-X slice at the bilateral mean height of manually annotated lower-rib to iliac-crest midpoints.",
         "independent_of_circumference_minimum": true,
         "measurement_space": "raw canonical SMPL-X geometry",

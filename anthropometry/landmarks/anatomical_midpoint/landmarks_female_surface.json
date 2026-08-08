@@ -1,6 +1,7 @@
 {
   "schema": "smplx_surface_landmarks_v1",
   "definition": "anatomical_midpoint_waist_proxy_v1",
+  "status": "frozen_v1",
   "gender": "female",
   "source_fixed_landmarks": "/data0/datasets/data/smplx_models/landmarks_female.json",
   "source_landmark_type": "fixed_xyz_per_gender",

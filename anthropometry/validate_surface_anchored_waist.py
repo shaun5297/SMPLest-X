@@ -342,7 +342,7 @@ def main() -> int:
     report = {
         "experiment": "Step 2.5C.1 surface-anchored anatomical landmarks",
         "definition": "anatomical_midpoint_waist_proxy_v1",
-        "status": "recommended_pending_manual_acceptance",
+        "status": "frozen_v1",
         "scope": (
             "gender-template manual XYZ projected to face+barycentric anchors and "
             "evaluated on each beta-deformed neutral canonical SMPL-X mesh"
