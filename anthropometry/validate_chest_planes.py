@@ -167,6 +167,12 @@ def validate_file(path: Path, output_dir: Path) -> dict[str, object]:
     output_dir.mkdir(parents=True, exist_ok=True)
     plot_path = output_dir / f"{sample}_chest_plane_validation.png"
     plot_sample(sample, vertices, candidates, plot_path)
+    # Ordered contour points are needed only to render the debug figure.  The
+    # persistent report keeps the requested per-slice metrics and avoids
+    # duplicating tens of thousands of mesh-intersection coordinates.
+    for candidate in candidates.values():
+        for probe in candidate["local_topology_probes"]:
+            probe.pop("selected_ordered_points_m", None)
     return {
         "sample": sample,
         "source_npz": str(path),
