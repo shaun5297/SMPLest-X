@@ -1,0 +1,298 @@
+{
+  "experiment": "step_2_6e_hip_definition_comparison",
+  "status": "hip_subsystem_closed",
+  "scope": {
+    "purpose": "Quantify plane-location and circumference differences between geometry and literature hip definitions without claiming equivalence or accuracy superiority.",
+    "sample_count": 5,
+    "main_definition_count": 2,
+    "primary_measurement_count": 10,
+    "primary_measurement_success_count": 10,
+    "new_measurement_algorithm": false,
+    "metric_calibration": "none; raw canonical SMPL-X geometry",
+    "accuracy_claim": "none; no human ground truth is available",
+    "frozen_definition_modified": false
+  },
+  "definitions": {
+    "geometry_hip_v0": {
+      "status": "baseline",
+      "role": "geometry_baseline",
+      "selection": "raw discrete pelvic perimeter argmax"
+    },
+    "literature_hip_v1": {
+      "status": "baseline",
+      "role": "literature_baseline",
+      "selection": "single horizontal slice at beta-deformed v5949"
+    }
+  },
+  "pairwise_delta_convention": "signed first definition minus second definition",
+  "samples": [
+    {
+      "sample": "p000444",
+      "measurements": {
+        "geometry_hip_v0": {
+          "definition": "geometry_hip_v0",
+          "status": "baseline",
+          "plane_y_m": -0.4632624878883361,
+          "y_norm": 0.4802137619500898,
+          "circumference_cm": 100.88264567746361,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "topology_state": "joined_pelvis",
+          "validation_passed": true
+        },
+        "literature_hip_v1": {
+          "definition": "literature_hip_v1",
+          "status": "baseline",
+          "plane_y_m": -0.44026026129722595,
+          "y_norm": 0.4938502012012055,
+          "circumference_cm": 100.59045118785406,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "topology_state": "joined_pelvis",
+          "validation_passed": true
+        }
+      },
+      "pairwise_differences": {
+        "geometry_minus_literature": {
+          "direction": "geometry_hip_v0 minus literature_hip_v1",
+          "delta_y_norm_first_minus_second": -0.013636439251115684,
+          "delta_y_mm_first_minus_second": -23.002226591110176,
+          "delta_c_cm_first_minus_second": 0.29219448960955674
+        }
+      },
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000456",
+      "measurements": {
+        "geometry_hip_v0": {
+          "definition": "geometry_hip_v0",
+          "status": "baseline",
+          "plane_y_m": -0.4812972791194915,
+          "y_norm": 0.48636427578356534,
+          "circumference_cm": 102.01859196299625,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "topology_state": "joined_pelvis",
+          "validation_passed": true
+        },
+        "literature_hip_v1": {
+          "definition": "literature_hip_v1",
+          "status": "baseline",
+          "plane_y_m": -0.4609237611293793,
+          "y_norm": 0.49786510479762225,
+          "circumference_cm": 101.845217000886,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "topology_state": "joined_pelvis",
+          "validation_passed": true
+        }
+      },
+      "pairwise_differences": {
+        "geometry_minus_literature": {
+          "direction": "geometry_hip_v0 minus literature_hip_v1",
+          "delta_y_norm_first_minus_second": -0.011500829014056912,
+          "delta_y_mm_first_minus_second": -20.373517990112223,
+          "delta_c_cm_first_minus_second": 0.17337496211025893
+        }
+      },
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000475",
+      "measurements": {
+        "geometry_hip_v0": {
+          "definition": "geometry_hip_v0",
+          "status": "baseline",
+          "plane_y_m": -0.4596659210324288,
+          "y_norm": 0.4859006354554541,
+          "circumference_cm": 99.90292956080573,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "topology_state": "joined_pelvis",
+          "validation_passed": true
+        },
+        "literature_hip_v1": {
+          "definition": "literature_hip_v1",
+          "status": "baseline",
+          "plane_y_m": -0.43835753202438354,
+          "y_norm": 0.4984171952062891,
+          "circumference_cm": 99.56750650116064,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "topology_state": "joined_pelvis",
+          "validation_passed": true
+        }
+      },
+      "pairwise_differences": {
+        "geometry_minus_literature": {
+          "direction": "geometry_hip_v0 minus literature_hip_v1",
+          "delta_y_norm_first_minus_second": -0.012516559750834988,
+          "delta_y_mm_first_minus_second": -21.30838900804527,
+          "delta_c_cm_first_minus_second": 0.33542305964509467
+        }
+      },
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000486",
+      "measurements": {
+        "geometry_hip_v0": {
+          "definition": "geometry_hip_v0",
+          "status": "baseline",
+          "plane_y_m": -0.4696491136550903,
+          "y_norm": 0.4866740097181631,
+          "circumference_cm": 105.05206274135949,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "topology_state": "joined_pelvis",
+          "validation_passed": true
+        },
+        "literature_hip_v1": {
+          "definition": "literature_hip_v1",
+          "status": "baseline",
+          "plane_y_m": -0.44923388957977295,
+          "y_norm": 0.49843093659879945,
+          "circumference_cm": 104.95083459829226,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "topology_state": "joined_pelvis",
+          "validation_passed": true
+        }
+      },
+      "pairwise_differences": {
+        "geometry_minus_literature": {
+          "direction": "geometry_hip_v0 minus literature_hip_v1",
+          "delta_y_norm_first_minus_second": -0.011756926880636343,
+          "delta_y_mm_first_minus_second": -20.415224075317372,
+          "delta_c_cm_first_minus_second": 0.10122814306723171
+        }
+      },
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000573",
+      "measurements": {
+        "geometry_hip_v0": {
+          "definition": "geometry_hip_v0",
+          "status": "baseline",
+          "plane_y_m": -0.4598532214760781,
+          "y_norm": 0.4911122175597229,
+          "circumference_cm": 100.33830851495729,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "topology_state": "joined_pelvis",
+          "validation_passed": true
+        },
+        "literature_hip_v1": {
+          "definition": "literature_hip_v1",
+          "status": "baseline",
+          "plane_y_m": -0.43934789299964905,
+          "y_norm": 0.5030145443741586,
+          "circumference_cm": 100.10101855792826,
+          "fallback_used": false,
+          "centerline_inside": true,
+          "remaining_duplicate_segments": 0,
+          "invalid_component_count": 0,
+          "topology_state": "joined_pelvis",
+          "validation_passed": true
+        }
+      },
+      "pairwise_differences": {
+        "geometry_minus_literature": {
+          "direction": "geometry_hip_v0 minus literature_hip_v1",
+          "delta_y_norm_first_minus_second": -0.011902326814435704,
+          "delta_y_mm_first_minus_second": -20.505328476429053,
+          "delta_c_cm_first_minus_second": 0.23728995702903433
+        }
+      },
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    }
+  ],
+  "aggregate": {
+    "pairwise_differences": {
+      "geometry_minus_literature": {
+        "direction": "geometry_hip_v0 minus literature_hip_v1",
+        "delta_y_norm_first_minus_second": {
+          "mean": -0.012262616342215926,
+          "population_std": 0.0007639014266936872,
+          "mean_absolute": 0.012262616342215926,
+          "minimum": -0.013636439251115684,
+          "maximum": -0.011500829014056912
+        },
+        "delta_y_mm_first_minus_second": {
+          "mean": -21.12093722820282,
+          "population_std": 1.0010023520090623,
+          "mean_absolute": 21.12093722820282,
+          "minimum": -23.002226591110176,
+          "maximum": -20.373517990112223
+        },
+        "delta_c_cm_first_minus_second": {
+          "mean": 0.22790212229223528,
+          "population_std": 0.08342889201680181,
+          "mean_absolute": 0.22790212229223528,
+          "minimum": 0.10122814306723171,
+          "maximum": 0.33542305964509467
+        }
+      }
+    },
+    "methodological_context": {
+      "waist": {
+        "comparison_pair": "geometry_waist_v0 minus anatomical_midpoint_waist_proxy_v1",
+        "mean_absolute_delta_y_mm": 67.10231223511653,
+        "mean_absolute_delta_c_cm": 3.196612721702158,
+        "role": "methodological_context_not_accuracy_benchmark"
+      },
+      "hip": {
+        "comparison_pair": "geometry_hip_v0 minus literature_hip_v1",
+        "mean_absolute_delta_y_mm": 21.12093722820282,
+        "mean_absolute_delta_c_cm": 0.22790212229223528
+      },
+      "interpretation": "Definition-dependent plane displacement has a much larger circumference effect for the retained waist comparison than for the hip comparison. This is an observed canonical-sample sensitivity contrast, not an accuracy ranking or proof that the two hip definitions are equivalent.",
+      "measurement_aware_loss_implication": "Landmark-level sensitivity is measurement-specific; a uniform assumption across anthropometric targets is unsupported."
+    }
+  },
+  "scientific_conclusion": "The two hip definitions select systematically different vertical locations but yield highly consistent circumferences on the current canonical SMPL-X samples; they are not claimed to be equivalent.",
+  "validation": {
+    "passed": true,
+    "failures": [],
+    "fallback_count": 0,
+    "bad_contour_count": 0
+  },
+  "figures": {
+    "aggregate": "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/hip_definition_comparison/hip_definition_comparison_aggregate.png"
+  }
+}
