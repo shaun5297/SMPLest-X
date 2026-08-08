@@ -1,0 +1,96 @@
+{
+  "step": "2.7A",
+  "status": "completed",
+  "review_date": "2026-08-08",
+  "scope": "Public executable SMPL-X chest/bust definitions; no accuracy ranking",
+  "definitions": [
+    {
+      "source": "SMPL-Anthropometry",
+      "measurement_name": "chest circumference",
+      "landmarks": [
+        {"name": "LEFT_NIPPLE", "representation": "vertex", "vertex_id": 3572},
+        {"name": "RIGHT_NIPPLE", "representation": "vertex", "vertex_id": 8340}
+      ],
+      "plane_origin": "3D mean of both nipple vertices",
+      "plane_normal": "pelvis-to-spine3 joint vector",
+      "bodypart_filter": ["spine1", "spine2"],
+      "perimeter_method": "convex hull",
+      "gender_specific_definition": false,
+      "female_bust_special_handling_found": false,
+      "shape_adaptive": true,
+      "sources": [
+        "https://github.com/DavidBoja/SMPL-Anthropometry/blob/master/measurement_definitions.py",
+        "https://github.com/DavidBoja/SMPL-Anthropometry/blob/master/landmark_definitions.py",
+        "https://github.com/DavidBoja/SMPL-Anthropometry/blob/master/measure.py"
+      ]
+    },
+    {
+      "source": "A2B official B2A measurer",
+      "measurement_name": "chest",
+      "landmarks": [
+        {"name": "lnipple", "representation": "vertex", "vertex_id": 3572},
+        {"name": "rnipple", "representation": "vertex", "vertex_id": 8340}
+      ],
+      "plane_origin": "3D mean of both nipple vertices",
+      "plane_normal": "pelvis-to-spine3 joint vector",
+      "bodypart_filter": ["spine1", "spine2"],
+      "perimeter_method": "convex hull",
+      "gender_specific_definition": false,
+      "female_bust_special_handling_found": false,
+      "shape_adaptive": true,
+      "sources": [
+        "https://github.com/kaulquappe23/a2b_human_mesh/blob/main/anthro/measurements/measure.py"
+      ]
+    },
+    {
+      "source": "Focused repository bundled SHAPY measurement path",
+      "measurement_name": "CW_p / chest",
+      "landmarks": [
+        {
+          "name": "NippleRight",
+          "representation": "face_barycentric",
+          "face_id": 18402,
+          "barycentric": [0.0, 0.0, 1.0]
+        }
+      ],
+      "plane_origin": "Y coordinate of subject-evaluated NippleRight surface anchor",
+      "plane_normal": "global vertical; horizontal y=constant plane",
+      "bodypart_filter": null,
+      "perimeter_method": "convex hull",
+      "gender_specific_definition": false,
+      "female_bust_special_handling_found": false,
+      "shape_adaptive": true,
+      "attribution_note": "This is bundled SHAPY measurement code in the Focused repository, not evidence of a uniquely introduced Focused protocol.",
+      "sources": [
+        "https://github.com/Eddie-cc/Focused-human-body-measurement/blob/main/data/SHAPY/mesh-mesh-intersection/data/measurement_defitions.yaml",
+        "https://github.com/Eddie-cc/Focused-human-body-measurement/blob/main/data/SHAPY/mesh-mesh-intersection/data/smplx_measurements.yaml",
+        "https://github.com/Eddie-cc/Focused-human-body-measurement/blob/main/data/SHAPY/mesh-mesh-intersection/body_measurements/cwh_measurements.py"
+      ]
+    }
+  ],
+  "cross_source_findings": {
+    "smpl_anthropometry_and_a2b_definition_match": true,
+    "gender_specific_definition_found": false,
+    "female_bust_special_handling_found": false,
+    "evidence_boundary": "No such branch was found in the inspected public code; this is not a universal anthropometric-protocol claim.",
+    "fixed_xyz_problem_present": false,
+    "global_chest_argmax_supported": false
+  },
+  "step_2_7b": {
+    "primary_candidate": {
+      "name": "literature_chest_v1_candidate",
+      "plane_rule": "horizontal y=mean(Y(v3572), Y(v8340))",
+      "role": "consensus literature candidate"
+    },
+    "control_candidate": {
+      "name": "focused_shapy_chest_control",
+      "plane_rule": "horizontal y=Y(face 18402, barycentric [0,0,1])",
+      "role": "single-anchor implementation control"
+    },
+    "prohibited_shortcuts": [
+      "global argmax circumference",
+      "largest contour without centerline or containment checks",
+      "claiming ISO or female-bust compliance from repository labels alone"
+    ]
+  }
+}
