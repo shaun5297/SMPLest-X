@@ -1,0 +1,508 @@
+{
+  "extractor": {
+    "definition": "unified_anthropometric_extractor_v1",
+    "status": "baseline_infrastructure",
+    "primary_targets": {
+      "height": "raw_height_v0",
+      "shoulder": "acromion_surface_proxy_v1",
+      "waist": "anatomical_midpoint_waist_proxy_v1",
+      "hip": "literature_hip_v1",
+      "chest": "literature_chest_v1"
+    }
+  },
+  "sample": "p000475",
+  "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000475_a000048_kinect_000_000120/canonical/000001_canonical.npz",
+  "geometry": {
+    "coordinate_system": "smplx_native",
+    "axis_semantics": {
+      "x": "left_right",
+      "y": "vertical",
+      "z": "front_back"
+    },
+    "unit": "meter",
+    "metric_calibrated": false,
+    "canonical_pose": "zero_pose",
+    "model_gender": "neutral",
+    "subject_gender_label": "female",
+    "axis_ranges_m": {
+      "x_min_m": -0.7983982563018799,
+      "x_max_m": 0.7984189391136169,
+      "x_range_m": 1.5968172550201416,
+      "y_min_m": -1.2868708372116089,
+      "y_max_m": 0.41554495692253113,
+      "y_range_m": 1.7024158239364624,
+      "z_min_m": -0.1429426223039627,
+      "z_max_m": 0.13657858967781067,
+      "z_range_m": 0.27952122688293457
+    },
+    "axis_verification": {
+      "left_right_axis": "x",
+      "vertical_axis": "y",
+      "depth_axis": "z",
+      "left_right_landmarks": "SMPL-X left/right shoulder joints",
+      "vertical_landmarks": "SMPL-X head joint and mean of left/right foot joints",
+      "checks": {
+        "left_right_is_x": true,
+        "vertical_is_y": true,
+        "depth_is_z": true,
+        "left_is_positive_x": true,
+        "head_is_positive_y_from_feet": true
+      }
+    }
+  },
+  "height": {
+    "raw_height_v0": {
+      "definition": "raw_height_v0",
+      "status": "baseline",
+      "value_m": 1.7024158239364624,
+      "value_cm": 170.24158239364624,
+      "method": "max(vertices[:,1]) - min(vertices[:,1])"
+    }
+  },
+  "shoulder": {
+    "shoulder_joint_width": {
+      "definition": "shoulder_joint_width",
+      "status": "control",
+      "value_m": 0.30223751068115234,
+      "value_cm": 30.223751068115234
+    },
+    "literature_shoulder_breadth": {
+      "definition": "literature_shoulder_breadth",
+      "status": "literature_baseline",
+      "value_m": 0.31747645139694214,
+      "value_cm": 31.747645139694214
+    },
+    "acromion_surface_proxy_v1": {
+      "definition": "acromion_surface_proxy_v1",
+      "status": "frozen_v1",
+      "value_m": 0.31537532806396484,
+      "value_cm": 31.537532806396484
+    },
+    "landmark_coordinates_m": {
+      "left_joint": [
+        0.1569344848394394,
+        0.08448503911495209,
+        -0.01699630171060562
+      ],
+      "right_joint": [
+        -0.1452517807483673,
+        0.0795140266418457,
+        -0.01950046792626381
+      ],
+      "left_literature": [
+        0.15875691175460815,
+        0.135624960064888,
+        -0.05257068946957588
+      ],
+      "right_literature": [
+        -0.15768642723560333,
+        0.13850408792495728,
+        -0.027141567319631577
+      ],
+      "left_acromion": [
+        0.1576889157295227,
+        0.13850794732570648,
+        -0.027145007625222206
+      ],
+      "right_acromion": [
+        -0.15768642723560333,
+        0.13850408792495728,
+        -0.027141567319631577
+      ]
+    }
+  },
+  "waist": {
+    "geometry_waist_v0": {
+      "definition": "geometry_waist_v0",
+      "status": "baseline",
+      "perimeter_m": 0.8171140714806056,
+      "perimeter_cm": 81.71140714806056,
+      "plane_y_m": -0.1940890571475029,
+      "y_norm": 0.6419006354554541,
+      "area_m2": 0.051012868068035115,
+      "centroid_xz_m": [
+        -1.8171234598808907e-07,
+        0.00939834331334883
+      ],
+      "selected_contour_id": 0,
+      "selection_mode": "spine_centerline_containment_then_area",
+      "fallback_used": false,
+      "num_contours": 1,
+      "diagnostics": {
+        "invalid_component_count": 0,
+        "remaining_duplicate_segments": 0
+      }
+    },
+    "literature_waist_v1": {
+      "definition": "literature_waist_v1",
+      "status": "baseline",
+      "perimeter_m": 0.8413137389918959,
+      "perimeter_cm": 84.13137389918958,
+      "plane_y_m": -0.25320999324321747,
+      "y_norm": 0.6071729641665585,
+      "area_m2": 0.05358360180414295,
+      "centroid_xz_m": [
+        -7.064547719839595e-09,
+        0.012181075289749575
+      ],
+      "selected_contour_id": 0,
+      "selection_mode": "spine_centerline_containment_then_area",
+      "fallback_used": false,
+      "num_contours": 1,
+      "diagnostics": {
+        "invalid_component_count": 0,
+        "remaining_duplicate_segments": 0
+      },
+      "landmarks": {
+        "front": {
+          "name": "BELLY_BUTTON",
+          "vertex_id": 5939,
+          "coordinate_m": [
+            2.522057798159949e-07,
+            -0.28282588720321655,
+            0.13172085583209991
+          ]
+        },
+        "back": {
+          "name": "BACK_BELLY_BUTTON",
+          "vertex_id": 5941,
+          "coordinate_m": [
+            1.3505854212780832e-07,
+            -0.22359409928321838,
+            -0.08504699170589447
+          ]
+        }
+      }
+    },
+    "anatomical_midpoint_waist_proxy_v1": {
+      "definition": "anatomical_midpoint_waist_proxy_v1",
+      "status": "frozen_v1",
+      "perimeter_m": 0.8561854597859512,
+      "perimeter_cm": 85.61854597859512,
+      "plane_y_m": -0.2689145439830687,
+      "y_norm": 0.597948102182804,
+      "area_m2": 0.05557752666763048,
+      "centroid_xz_m": [
+        -1.4668114345861424e-07,
+        0.010883584649317995
+      ],
+      "selected_contour_id": 0,
+      "selection_mode": "spine_centerline_containment_then_area",
+      "fallback_used": false,
+      "num_contours": 1,
+      "diagnostics": {
+        "invalid_component_count": 0,
+        "remaining_duplicate_segments": 0
+      },
+      "gender": "female",
+      "anchor_path": "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/landmarks/anatomical_midpoint/landmarks_female_surface.json",
+      "landmarks": {
+        "left_lower_rib": [
+          0.136940251900603,
+          -0.22051407438116907,
+          0.03725512743310631
+        ],
+        "right_lower_rib": [
+          -0.13052390608950254,
+          -0.21788851451619667,
+          0.04933800221543816
+        ],
+        "left_iliac_crest": [
+          0.15499013012795299,
+          -0.31926936291764046,
+          0.03075582213970213
+        ],
+        "right_iliac_crest": [
+          -0.1548535661949802,
+          -0.31798622411726857,
+          0.030455902337462218
+        ]
+      }
+    }
+  },
+  "hip": {
+    "geometry_hip_v0": {
+      "definition": "geometry_hip_v0",
+      "status": "baseline",
+      "perimeter_m": 0.9990292956080573,
+      "perimeter_cm": 99.90292956080573,
+      "plane_y_m": -0.4596659210324288,
+      "y_norm": 0.4859006354554541,
+      "area_m2": 0.07248771879743866,
+      "centroid_xz_m": [
+        -6.944984858712157e-07,
+        -0.01506620400701278
+      ],
+      "selected_contour_id": 0,
+      "selection_mode": "spine_centerline_containment_then_area",
+      "fallback_used": false,
+      "num_contours": 1,
+      "diagnostics": {
+        "invalid_component_count": 0,
+        "remaining_duplicate_segments": 0
+      }
+    },
+    "literature_hip_v1": {
+      "definition": "literature_hip_v1",
+      "status": "baseline",
+      "perimeter_m": 0.9956750650116063,
+      "perimeter_cm": 99.56750650116064,
+      "plane_y_m": -0.43835753202438354,
+      "y_norm": 0.4984171952062891,
+      "area_m2": 0.07351991013055381,
+      "centroid_xz_m": [
+        -1.0021711204303086e-06,
+        -0.016069880665180614
+      ],
+      "selected_contour_id": 0,
+      "selection_mode": "spine_centerline_containment_then_area",
+      "fallback_used": false,
+      "num_contours": 1,
+      "diagnostics": {
+        "invalid_component_count": 0,
+        "remaining_duplicate_segments": 0
+      },
+      "landmarks": {
+        "name": "PUBIC_BONE",
+        "vertex_id": 5949,
+        "coordinate_m": [
+          -8.680645464664849e-07,
+          -0.43835753202438354,
+          0.1089811846613884
+        ],
+        "representation": "fixed topology vertex evaluated on subject beta mesh"
+      }
+    }
+  },
+  "chest": {
+    "literature_chest_v1": {
+      "definition": "literature_chest_v1",
+      "status": "baseline",
+      "perimeter_m": 0.9760309005261321,
+      "perimeter_cm": 97.60309005261321,
+      "plane_y_m": -0.03885248117148876,
+      "y_norm": 0.7330866751193325,
+      "area_m2": 0.07034978258146307,
+      "compactness": 0.9279946849902688,
+      "centroid_xz_m": [
+        -2.487304126949676e-07,
+        -0.01169207484952588
+      ],
+      "landmarks": [
+        {
+          "name": "LEFT_NIPPLE",
+          "vertex_id": 3572,
+          "coordinate_m": [
+            0.07957527041435242,
+            -0.038879141211509705,
+            0.11307007074356079
+          ]
+        },
+        {
+          "name": "RIGHT_NIPPLE",
+          "vertex_id": 8340,
+          "coordinate_m": [
+            -0.09207841753959656,
+            -0.03882582113146782,
+            0.11012369394302368
+          ]
+        }
+      ],
+      "plane_rule": "y = mean(Y(v3572), Y(v8340))",
+      "selected_contour_id": 0,
+      "selection_mode": "spine_centerline_containment_then_area",
+      "fallback_used": false,
+      "num_contours": 1,
+      "arm_torso_merge": false,
+      "diagnostics": {
+        "invalid_component_count": 0,
+        "remaining_duplicate_segments": 0,
+        "endpoint_cluster_tolerance_m": 1e-07
+      }
+    },
+    "focused_shapy_chest_control": {
+      "definition": "focused_shapy_chest_control",
+      "status": "control",
+      "perimeter_m": 0.9760514109297695,
+      "perimeter_cm": 97.60514109297695,
+      "plane_y_m": -0.03882582113146782,
+      "y_norm": 0.7331023352416399,
+      "area_m2": 0.07035145172921692,
+      "compactness": 0.9279777013439161,
+      "centroid_xz_m": [
+        -2.4863224276673116e-07,
+        -0.011698783200117122
+      ],
+      "landmarks": [
+        {
+          "name": "NippleRight",
+          "face_id": 18402,
+          "face_vertex_ids": [
+            5994,
+            5993,
+            8340
+          ],
+          "barycentric": [
+            0.0,
+            0.0,
+            1.0
+          ],
+          "coordinate_m": [
+            -0.09207841753959656,
+            -0.03882582113146782,
+            0.11012369394302368
+          ]
+        }
+      ],
+      "plane_rule": "y = Y(face18402, barycentric=[0,0,1])",
+      "selected_contour_id": 0,
+      "selection_mode": "spine_centerline_containment_then_area",
+      "fallback_used": false,
+      "num_contours": 1,
+      "arm_torso_merge": false,
+      "diagnostics": {
+        "invalid_component_count": 0,
+        "remaining_duplicate_segments": 0,
+        "endpoint_cluster_tolerance_m": 1e-07
+      }
+    },
+    "geometry_extreme_status": {
+      "measurement": "chest",
+      "type": "geometry_extreme",
+      "status": "rejected_as_measurement_definition",
+      "algorithm": "maximum perimeter in skeleton-bounded thoracic diagnostic interval",
+      "rejection_reason": "clean torso C(y) increases toward arm-torso topology merging; raw maxima are dominated by merged upper limbs"
+    }
+  },
+  "definition_registry": {
+    "raw_height_v0": {
+      "measurement": "height",
+      "version": "v0",
+      "type": "axis_extent",
+      "status": "baseline",
+      "algorithm": "max(vertices[:,1]) - min(vertices[:,1])"
+    },
+    "shoulder_joint_width": {
+      "measurement": "shoulder",
+      "type": "joint_distance",
+      "status": "control",
+      "landmarks": {
+        "left_joint": 16,
+        "right_joint": 17
+      },
+      "algorithm": "Euclidean distance"
+    },
+    "literature_shoulder_breadth": {
+      "measurement": "shoulder",
+      "type": "surface_vertex_distance",
+      "status": "literature_baseline",
+      "landmarks": {
+        "left_vertex": 4442,
+        "right_vertex": 7218
+      },
+      "algorithm": "Euclidean distance",
+      "sources": [
+        "https://github.com/DavidBoja/SMPL-Anthropometry",
+        "https://github.com/kaulquappe23/a2b_human_mesh"
+      ]
+    },
+    "acromion_surface_proxy_v1": {
+      "measurement": "shoulder",
+      "version": "v1",
+      "type": "surface_vertex_distance",
+      "status": "frozen_v1",
+      "landmarks": {
+        "left_vertex": 4482,
+        "right_vertex": 7218
+      },
+      "algorithm": "Euclidean distance",
+      "scientific_boundary": "external surface proxy; not bony acromion ground truth"
+    },
+    "geometry_waist_v0": {
+      "measurement": "waist",
+      "version": "v0",
+      "type": "geometry_extreme",
+      "status": "baseline",
+      "algorithm": "raw discrete minimum torso perimeter in pelvis-to-spine2 interval"
+    },
+    "literature_waist_v1": {
+      "measurement": "waist",
+      "version": "v1",
+      "type": "bilateral_surface_landmark_plane",
+      "status": "baseline",
+      "landmarks": {
+        "front_vertex": 5939,
+        "back_vertex": 5941
+      },
+      "algorithm": "horizontal slice at mean landmark Y"
+    },
+    "anatomical_midpoint_waist_proxy_v1": {
+      "measurement": "waist",
+      "version": "v1",
+      "type": "surface_anchor_plane",
+      "status": "frozen_v1",
+      "landmarks": [
+        "left_lower_rib",
+        "right_lower_rib",
+        "left_iliac_crest",
+        "right_iliac_crest"
+      ],
+      "algorithm": "horizontal slice at bilateral lower-rib/iliac-crest midpoint height",
+      "scientific_boundary": "WHO-protocol-inspired proxy; not clinical or certified ground truth"
+    },
+    "geometry_hip_v0": {
+      "measurement": "hip",
+      "version": "v0",
+      "type": "geometry_extreme",
+      "status": "baseline",
+      "algorithm": "raw discrete maximum perimeter in stable joined-pelvis interval"
+    },
+    "literature_hip_v1": {
+      "measurement": "hip",
+      "version": "v1",
+      "type": "surface_landmark_plane",
+      "status": "baseline",
+      "landmarks": {
+        "vertex": 5949
+      },
+      "algorithm": "horizontal slice at PUBIC_BONE landmark Y"
+    },
+    "literature_chest_v1": {
+      "measurement": "chest",
+      "version": "v1",
+      "type": "bilateral_surface_landmark_plane",
+      "status": "baseline",
+      "landmarks": {
+        "left_vertex": 3572,
+        "right_vertex": 8340
+      },
+      "algorithm": "horizontal slice at mean nipple landmark Y",
+      "sources": [
+        "https://github.com/DavidBoja/SMPL-Anthropometry",
+        "https://github.com/kaulquappe23/a2b_human_mesh"
+      ]
+    },
+    "focused_shapy_chest_control": {
+      "measurement": "chest",
+      "type": "surface_anchor_plane",
+      "status": "control",
+      "landmarks": {
+        "face_id": 18402,
+        "barycentric": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "algorithm": "horizontal slice at single NippleRight surface-anchor Y"
+    },
+    "geometry_chest_extreme": {
+      "measurement": "chest",
+      "type": "geometry_extreme",
+      "status": "rejected_as_measurement_definition",
+      "algorithm": "maximum perimeter in skeleton-bounded thoracic diagnostic interval",
+      "rejection_reason": "clean torso C(y) increases toward arm-torso topology merging; raw maxima are dominated by merged upper limbs"
+    }
+  },
+  "scientific_boundary": "All values are raw zero-pose canonical SMPL-X anthropometry. They are not real-person ground-truth measurements and receive no metric calibration."
+}

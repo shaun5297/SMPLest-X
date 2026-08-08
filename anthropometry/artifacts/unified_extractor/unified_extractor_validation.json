@@ -1,0 +1,251 @@
+{
+  "experiment": "Step 2.8 unified anthropometric extractor final regression",
+  "definition": "unified_anthropometric_extractor_v1",
+  "status": "completed",
+  "scope": "raw zero-pose canonical SMPL-X anthropometry; no GT or metric calibration",
+  "primary_targets": {
+    "height": "raw_height_v0",
+    "shoulder": "acromion_surface_proxy_v1",
+    "waist": "anatomical_midpoint_waist_proxy_v1",
+    "hip": "literature_hip_v1",
+    "chest": "literature_chest_v1"
+  },
+  "regression_tolerance_cm": 1e-09,
+  "samples": [
+    {
+      "sample": "p000444",
+      "gender": "female",
+      "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000444_a001426_kinect_000_000102/canonical/000001_canonical.npz",
+      "source_sha256_before": "67ee0062af103f79a96d1c4bd1a1b3008fddc60407e59eb8c293dd1f57e1e69b",
+      "source_sha256_after": "67ee0062af103f79a96d1c4bd1a1b3008fddc60407e59eb8c293dd1f57e1e69b",
+      "source_unchanged": true,
+      "values_cm": {
+        "height_cm": 168.682062625885,
+        "shoulder_joint_cm": 30.77429234981537,
+        "shoulder_literature_cm": 32.25153088569641,
+        "shoulder_acromion_cm": 32.05146789550781,
+        "waist_geometry_cm": 83.3867283592829,
+        "waist_literature_cm": 85.74432860775177,
+        "waist_anatomical_cm": 87.1392071366208,
+        "hip_geometry_cm": 100.88264567746361,
+        "hip_literature_cm": 100.59045118785406,
+        "chest_literature_cm": 99.0692807876959,
+        "chest_focused_control_cm": 99.07188670346679
+      },
+      "regression_difference_cm": {
+        "height_cm": 0.0,
+        "shoulder_joint_cm": 0.0,
+        "shoulder_literature_cm": 0.0,
+        "shoulder_acromion_cm": 0.0,
+        "waist_geometry_cm": 0.0,
+        "waist_literature_cm": 0.0,
+        "waist_anatomical_cm": 0.0,
+        "hip_geometry_cm": 0.0,
+        "hip_literature_cm": 0.0,
+        "chest_literature_cm": 0.0,
+        "chest_focused_control_cm": 0.0
+      },
+      "diagnostics": {
+        "fallback_count": 0,
+        "invalid_component_count": 0
+      },
+      "output_json": "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/unified_extractor/p000444_anthropometry.json",
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000456",
+      "gender": "male",
+      "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000456_a000793_kinect_000_000000/canonical/000001_canonical.npz",
+      "source_sha256_before": "5466878b5ee1b8daf9c129b4e2a4d3529bb2fc3268a5aea956046ff176f07945",
+      "source_sha256_after": "5466878b5ee1b8daf9c129b4e2a4d3529bb2fc3268a5aea956046ff176f07945",
+      "source_unchanged": true,
+      "values_cm": {
+        "height_cm": 177.14825868606567,
+        "shoulder_joint_cm": 33.504822850227356,
+        "shoulder_literature_cm": 34.93441045284271,
+        "shoulder_acromion_cm": 34.78338122367859,
+        "waist_geometry_cm": 88.10099007475554,
+        "waist_literature_cm": 90.74274907448977,
+        "waist_anatomical_cm": 90.6747071859892,
+        "hip_geometry_cm": 102.01859196299625,
+        "hip_literature_cm": 101.845217000886,
+        "chest_literature_cm": 105.04828946765883,
+        "chest_focused_control_cm": 105.03178267127538
+      },
+      "regression_difference_cm": {
+        "height_cm": 0.0,
+        "shoulder_joint_cm": 0.0,
+        "shoulder_literature_cm": 0.0,
+        "shoulder_acromion_cm": 0.0,
+        "waist_geometry_cm": 0.0,
+        "waist_literature_cm": 0.0,
+        "waist_anatomical_cm": 0.0,
+        "hip_geometry_cm": 0.0,
+        "hip_literature_cm": 0.0,
+        "chest_literature_cm": 0.0,
+        "chest_focused_control_cm": 0.0
+      },
+      "diagnostics": {
+        "fallback_count": 0,
+        "invalid_component_count": 0
+      },
+      "output_json": "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/unified_extractor/p000456_anthropometry.json",
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000475",
+      "gender": "female",
+      "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000475_a000048_kinect_000_000120/canonical/000001_canonical.npz",
+      "source_sha256_before": "340e48b467e4b7fb11a7e2a95dc553c1e1878930d0529aab42facd02453a40ca",
+      "source_sha256_after": "340e48b467e4b7fb11a7e2a95dc553c1e1878930d0529aab42facd02453a40ca",
+      "source_unchanged": true,
+      "values_cm": {
+        "height_cm": 170.24158239364624,
+        "shoulder_joint_cm": 30.223751068115234,
+        "shoulder_literature_cm": 31.747645139694214,
+        "shoulder_acromion_cm": 31.537532806396484,
+        "waist_geometry_cm": 81.71140714806056,
+        "waist_literature_cm": 84.13137389918958,
+        "waist_anatomical_cm": 85.61854597859512,
+        "hip_geometry_cm": 99.90292956080573,
+        "hip_literature_cm": 99.56750650116064,
+        "chest_literature_cm": 97.60309005261321,
+        "chest_focused_control_cm": 97.60514109297695
+      },
+      "regression_difference_cm": {
+        "height_cm": 0.0,
+        "shoulder_joint_cm": 0.0,
+        "shoulder_literature_cm": 0.0,
+        "shoulder_acromion_cm": 0.0,
+        "waist_geometry_cm": 0.0,
+        "waist_literature_cm": 0.0,
+        "waist_anatomical_cm": 0.0,
+        "hip_geometry_cm": 0.0,
+        "hip_literature_cm": 0.0,
+        "chest_literature_cm": 0.0,
+        "chest_focused_control_cm": 0.0
+      },
+      "diagnostics": {
+        "fallback_count": 0,
+        "invalid_component_count": 0
+      },
+      "output_json": "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/unified_extractor/p000475_anthropometry.json",
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000486",
+      "gender": "male",
+      "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000486_a000793_kinect_000_000096/canonical/000001_canonical.npz",
+      "source_sha256_before": "bd8db0fb839eec76c81ef8df95575996911db6d7b49f48f9229eae1e16fad3b5",
+      "source_sha256_after": "bd8db0fb839eec76c81ef8df95575996911db6d7b49f48f9229eae1e16fad3b5",
+      "source_unchanged": true,
+      "values_cm": {
+        "height_cm": 173.64422082901,
+        "shoulder_joint_cm": 33.06136727333069,
+        "shoulder_literature_cm": 34.38650965690613,
+        "shoulder_acromion_cm": 34.208881855010986,
+        "waist_geometry_cm": 90.35834312155556,
+        "waist_literature_cm": 92.59396656967073,
+        "waist_anatomical_cm": 92.53633513689546,
+        "hip_geometry_cm": 105.05206274135949,
+        "hip_literature_cm": 104.95083459829226,
+        "chest_literature_cm": 106.62386955058287,
+        "chest_focused_control_cm": 106.61229196913702
+      },
+      "regression_difference_cm": {
+        "height_cm": 0.0,
+        "shoulder_joint_cm": 0.0,
+        "shoulder_literature_cm": 0.0,
+        "shoulder_acromion_cm": 0.0,
+        "waist_geometry_cm": 0.0,
+        "waist_literature_cm": 0.0,
+        "waist_anatomical_cm": 0.0,
+        "hip_geometry_cm": 0.0,
+        "hip_literature_cm": 0.0,
+        "chest_literature_cm": 0.0,
+        "chest_focused_control_cm": 0.0
+      },
+      "diagnostics": {
+        "fallback_count": 0,
+        "invalid_component_count": 0
+      },
+      "output_json": "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/unified_extractor/p000486_anthropometry.json",
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    },
+    {
+      "sample": "p000573",
+      "gender": "female",
+      "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000573_a000040_kinect_000_000012/canonical/000001_canonical.npz",
+      "source_sha256_before": "6b4f7cbb811279b6336029f9fb40963d1dbf5139270c5448a63da11adb0fb78e",
+      "source_sha256_after": "6b4f7cbb811279b6336029f9fb40963d1dbf5139270c5448a63da11adb0fb78e",
+      "source_unchanged": true,
+      "values_cm": {
+        "height_cm": 172.28000164031982,
+        "shoulder_joint_cm": 31.24920129776001,
+        "shoulder_literature_cm": 32.792308926582336,
+        "shoulder_acromion_cm": 32.59209096431732,
+        "waist_geometry_cm": 84.0149802602056,
+        "waist_literature_cm": 86.39081615204083,
+        "waist_anatomical_cm": 87.58671713427037,
+        "hip_geometry_cm": 100.33830851495729,
+        "hip_literature_cm": 100.10101855792826,
+        "chest_literature_cm": 99.84953553605592,
+        "chest_focused_control_cm": 99.84788954768376
+      },
+      "regression_difference_cm": {
+        "height_cm": 0.0,
+        "shoulder_joint_cm": 0.0,
+        "shoulder_literature_cm": 0.0,
+        "shoulder_acromion_cm": 0.0,
+        "waist_geometry_cm": 0.0,
+        "waist_literature_cm": 0.0,
+        "waist_anatomical_cm": 0.0,
+        "hip_geometry_cm": 0.0,
+        "hip_literature_cm": 0.0,
+        "chest_literature_cm": 0.0,
+        "chest_focused_control_cm": 0.0
+      },
+      "diagnostics": {
+        "fallback_count": 0,
+        "invalid_component_count": 0
+      },
+      "output_json": "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/unified_extractor/p000573_anthropometry.json",
+      "validation": {
+        "passed": true,
+        "failures": []
+      }
+    }
+  ],
+  "aggregate": {
+    "sample_count": 5,
+    "measurement_count": 55,
+    "successful_measurement_count": 55,
+    "source_npz_unchanged_count": 5,
+    "maximum_absolute_regression_drift_cm": 0.0,
+    "fallback_count": 0,
+    "invalid_component_count": 0
+  },
+  "primary_table_columns": {
+    "height": "height_cm",
+    "shoulder": "shoulder_acromion_cm",
+    "chest": "chest_literature_cm",
+    "waist": "waist_anatomical_cm",
+    "hip": "hip_literature_cm"
+  },
+  "csv": "/home/syd/codebase/waist/models/SMPLest-X/anthropometry/artifacts/unified_extractor/unified_anthropometry.csv",
+  "scientific_boundary": "These are raw canonical mesh measurements, not real-person ground truth.",
+  "phase_2_status": "closed",
+  "passed": true
+}
