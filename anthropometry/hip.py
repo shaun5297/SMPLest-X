@@ -28,6 +28,8 @@ RIGHT_KNEE_JOINT_INDEX = 5
 
 GEOMETRY_HIP_DEFINITION = "geometry_hip_v0"
 GEOMETRY_HIP_STATUS = "baseline"
+PELVIC_SEARCH_REGION_DEFINITION = "topology_defined_pelvic_search_region_v0"
+PELVIC_SEARCH_REGION_STATUS = "frozen_v1"
 DEFAULT_STEP_NORMALIZED_HEIGHT = 0.002
 DEFAULT_STABLE_TOPOLOGY_LAYERS = 3
 DEFAULT_STABLE_PELVIS_LAYERS = 4
@@ -415,8 +417,8 @@ def detect_pelvic_search_region(
 
     stable_lower = stable_profile[0]
     return {
-        "definition": "topology_defined_pelvic_search_region_v0",
-        "status": "baseline",
+        "definition": PELVIC_SEARCH_REGION_DEFINITION,
+        "status": PELVIC_SEARCH_REGION_STATUS,
         "step_normalized_height": float(step_normalized_height),
         "step_m": float(step_m),
         "lower_probe_limit": {

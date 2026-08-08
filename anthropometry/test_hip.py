@@ -6,6 +6,8 @@ from __future__ import annotations
 import unittest
 
 from hip import (
+    GEOMETRY_HIP_STATUS,
+    PELVIC_SEARCH_REGION_STATUS,
     classify_pelvic_topology,
     find_first_stable_state,
     find_stable_pelvis_lower_index,
@@ -33,6 +35,10 @@ def pelvic_record(perimeter: float, compactness: float) -> dict[str, object]:
 
 
 class HipTests(unittest.TestCase):
+    def test_frozen_region_and_geometry_baseline_statuses_are_distinct(self) -> None:
+        self.assertEqual(PELVIC_SEARCH_REGION_STATUS, "frozen_v1")
+        self.assertEqual(GEOMETRY_HIP_STATUS, "baseline")
+
     def test_two_bilateral_dominant_loops_are_split_despite_tiny_third_loop(self) -> None:
         result = classify_pelvic_topology(
             [
