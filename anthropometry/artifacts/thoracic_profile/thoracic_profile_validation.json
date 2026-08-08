@@ -25,11 +25,11 @@
         "right_shoulder_y_m": 0.0788564383983612,
         "shoulder_y_mismatch_m": 0.004976429045200348,
         "public_plane_y_m": {
-          "literature_chest_v1_candidate": -0.039620932191610336,
+          "literature_chest_v1": -0.039620932191610336,
           "focused_shapy_chest_control": -0.039585284888744354
         },
         "public_plane_inside_diagnostic_interval": {
-          "literature_chest_v1_candidate": true,
+          "literature_chest_v1": true,
           "focused_shapy_chest_control": true
         },
         "public_plane_outside_diagnostic_interval": false,
@@ -43,7 +43,7 @@
         "metric_calibration": "none"
       },
       "public_reference_planes": {
-        "literature_chest_v1_candidate": {
+        "literature_chest_v1": {
           "plane_y_m": -0.039620932191610336,
           "y_norm": 0.7313617243277497
         },
@@ -1794,11 +1794,11 @@
         "right_shoulder_y_m": 0.08477677404880524,
         "shoulder_y_mismatch_m": 0.004924751818180084,
         "public_plane_y_m": {
-          "literature_chest_v1_candidate": -0.03367377631366253,
+          "literature_chest_v1": -0.03367377631366253,
           "focused_shapy_chest_control": -0.03376426175236702
         },
         "public_plane_inside_diagnostic_interval": {
-          "literature_chest_v1_candidate": true,
+          "literature_chest_v1": true,
           "focused_shapy_chest_control": true
         },
         "public_plane_outside_diagnostic_interval": false,
@@ -1812,7 +1812,7 @@
         "metric_calibration": "none"
       },
       "public_reference_planes": {
-        "literature_chest_v1_candidate": {
+        "literature_chest_v1": {
           "plane_y_m": -0.03367377631366253,
           "y_norm": 0.7390472621456426
         },
@@ -3563,11 +3563,11 @@
         "right_shoulder_y_m": 0.0795140266418457,
         "shoulder_y_mismatch_m": 0.004971012473106384,
         "public_plane_y_m": {
-          "literature_chest_v1_candidate": -0.03885248117148876,
+          "literature_chest_v1": -0.03885248117148876,
           "focused_shapy_chest_control": -0.03882582113146782
         },
         "public_plane_inside_diagnostic_interval": {
-          "literature_chest_v1_candidate": true,
+          "literature_chest_v1": true,
           "focused_shapy_chest_control": true
         },
         "public_plane_outside_diagnostic_interval": false,
@@ -3581,7 +3581,7 @@
         "metric_calibration": "none"
       },
       "public_reference_planes": {
-        "literature_chest_v1_candidate": {
+        "literature_chest_v1": {
           "plane_y_m": -0.03885248117148876,
           "y_norm": 0.7330866879526753
         },
@@ -5332,11 +5332,11 @@
         "right_shoulder_y_m": 0.08256162703037262,
         "shoulder_y_mismatch_m": 0.0048507824540138245,
         "public_plane_y_m": {
-          "literature_chest_v1_candidate": -0.034473344683647156,
+          "literature_chest_v1": -0.034473344683647156,
           "focused_shapy_chest_control": -0.03455653041601181
         },
         "public_plane_inside_diagnostic_interval": {
-          "literature_chest_v1_candidate": true,
+          "literature_chest_v1": true,
           "focused_shapy_chest_control": true
         },
         "public_plane_outside_diagnostic_interval": false,
@@ -5350,7 +5350,7 @@
         "metric_calibration": "none"
       },
       "public_reference_planes": {
-        "literature_chest_v1_candidate": {
+        "literature_chest_v1": {
           "plane_y_m": -0.034473344683647156,
           "y_norm": 0.7372874576600713
         },
@@ -7101,11 +7101,11 @@
         "right_shoulder_y_m": 0.08244520425796509,
         "shoulder_y_mismatch_m": 0.0049011483788490295,
         "public_plane_y_m": {
-          "literature_chest_v1_candidate": -0.03559534810483456,
+          "literature_chest_v1": -0.03559534810483456,
           "focused_shapy_chest_control": -0.03561411798000336
         },
         "public_plane_inside_diagnostic_interval": {
-          "literature_chest_v1_candidate": true,
+          "literature_chest_v1": true,
           "focused_shapy_chest_control": true
         },
         "public_plane_outside_diagnostic_interval": false,
@@ -7119,7 +7119,7 @@
         "metric_calibration": "none"
       },
       "public_reference_planes": {
-        "literature_chest_v1_candidate": {
+        "literature_chest_v1": {
           "plane_y_m": -0.03559534810483456,
           "y_norm": 0.7373728843062523
         },

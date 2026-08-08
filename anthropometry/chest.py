@@ -22,7 +22,9 @@ from torso import (
 )
 
 
-LITERATURE_CHEST_CANDIDATE = "literature_chest_v1_candidate"
+LITERATURE_CHEST_DEFINITION = "literature_chest_v1"
+LITERATURE_CHEST_CANDIDATE = LITERATURE_CHEST_DEFINITION
+LITERATURE_CHEST_STATUS = "baseline"
 FOCUSED_SHAPY_CHEST_CONTROL = "focused_shapy_chest_control"
 LEFT_NIPPLE_VERTEX_ID = 3572
 RIGHT_NIPPLE_VERTEX_ID = 8340
@@ -80,6 +82,7 @@ def compute_candidate_planes(
     return {
         LITERATURE_CHEST_CANDIDATE: {
             "definition": LITERATURE_CHEST_CANDIDATE,
+            "status": LITERATURE_CHEST_STATUS,
             "plane_y_m": float(0.5 * (left[1] + right[1])),
             "plane_rule": "y = mean(Y(v3572), Y(v8340))",
             "landmarks": [
@@ -91,6 +94,7 @@ def compute_candidate_planes(
         },
         FOCUSED_SHAPY_CHEST_CONTROL: {
             "definition": FOCUSED_SHAPY_CHEST_CONTROL,
+            "status": "control",
             "plane_y_m": float(focused[1]),
             "plane_rule": "y = Y(face18402, barycentric=[0,0,1])",
             "landmarks": [

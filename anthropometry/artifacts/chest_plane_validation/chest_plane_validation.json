@@ -12,8 +12,9 @@
       "sample": "p000444",
       "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000444_a001426_kinect_000_000102/canonical/000001_canonical.npz",
       "candidates": {
-        "literature_chest_v1_candidate": {
-          "definition": "literature_chest_v1_candidate",
+        "literature_chest_v1": {
+          "definition": "literature_chest_v1",
+          "status": "baseline",
           "plane_y_m": -0.039620932191610336,
           "plane_rule": "y = mean(Y(v3572), Y(v8340))",
           "landmarks": [
@@ -525,6 +526,7 @@
         },
         "focused_shapy_chest_control": {
           "definition": "focused_shapy_chest_control",
+          "status": "control",
           "plane_y_m": -0.039585284888744354,
           "plane_rule": "y = Y(face18402, barycentric=[0,0,1])",
           "landmarks": [
@@ -1049,8 +1051,9 @@
       "sample": "p000456",
       "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000456_a000793_kinect_000_000000/canonical/000001_canonical.npz",
       "candidates": {
-        "literature_chest_v1_candidate": {
-          "definition": "literature_chest_v1_candidate",
+        "literature_chest_v1": {
+          "definition": "literature_chest_v1",
+          "status": "baseline",
           "plane_y_m": -0.03367377631366253,
           "plane_rule": "y = mean(Y(v3572), Y(v8340))",
           "landmarks": [
@@ -1919,6 +1922,7 @@
         },
         "focused_shapy_chest_control": {
           "definition": "focused_shapy_chest_control",
+          "status": "control",
           "plane_y_m": -0.03376426175236702,
           "plane_rule": "y = Y(face18402, barycentric=[0,0,1])",
           "landmarks": [
@@ -2800,8 +2804,9 @@
       "sample": "p000475",
       "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000475_a000048_kinect_000_000120/canonical/000001_canonical.npz",
       "candidates": {
-        "literature_chest_v1_candidate": {
-          "definition": "literature_chest_v1_candidate",
+        "literature_chest_v1": {
+          "definition": "literature_chest_v1",
+          "status": "baseline",
           "plane_y_m": -0.03885248117148876,
           "plane_rule": "y = mean(Y(v3572), Y(v8340))",
           "landmarks": [
@@ -3381,6 +3386,7 @@
         },
         "focused_shapy_chest_control": {
           "definition": "focused_shapy_chest_control",
+          "status": "control",
           "plane_y_m": -0.03882582113146782,
           "plane_rule": "y = Y(face18402, barycentric=[0,0,1])",
           "landmarks": [
@@ -3973,8 +3979,9 @@
       "sample": "p000486",
       "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000486_a000793_kinect_000_000096/canonical/000001_canonical.npz",
       "candidates": {
-        "literature_chest_v1_candidate": {
-          "definition": "literature_chest_v1_candidate",
+        "literature_chest_v1": {
+          "definition": "literature_chest_v1",
+          "status": "baseline",
           "plane_y_m": -0.034473344683647156,
           "plane_rule": "y = mean(Y(v3572), Y(v8340))",
           "landmarks": [
@@ -4707,6 +4714,7 @@
         },
         "focused_shapy_chest_control": {
           "definition": "focused_shapy_chest_control",
+          "status": "control",
           "plane_y_m": -0.03455653041601181,
           "plane_rule": "y = Y(face18402, barycentric=[0,0,1])",
           "landmarks": [
@@ -5452,8 +5460,9 @@
       "sample": "p000573",
       "source_npz": "/home/syd/codebase/waist/models/SMPLest-X/demo/results/p000573_a000040_kinect_000_000012/canonical/000001_canonical.npz",
       "candidates": {
-        "literature_chest_v1_candidate": {
-          "definition": "literature_chest_v1_candidate",
+        "literature_chest_v1": {
+          "definition": "literature_chest_v1",
+          "status": "baseline",
           "plane_y_m": -0.03559534810483456,
           "plane_rule": "y = mean(Y(v3572), Y(v8340))",
           "landmarks": [
@@ -6084,6 +6093,7 @@
         },
         "focused_shapy_chest_control": {
           "definition": "focused_shapy_chest_control",
+          "status": "control",
           "plane_y_m": -0.03561411798000336,
           "plane_rule": "y = Y(face18402, barycentric=[0,0,1])",
           "landmarks": [
