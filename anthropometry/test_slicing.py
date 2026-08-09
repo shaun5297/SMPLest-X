@@ -8,6 +8,7 @@ import unittest
 import numpy as np
 
 from slicing import (
+    _intersect_mesh_with_horizontal_plane_provenance,
     compute_contour_area,
     compute_contour_perimeter,
     deduplicate_segments,
@@ -83,6 +84,62 @@ class SlicingTests(unittest.TestCase):
         self.assertEqual(len(result["contours"]), 1)
         self.assertAlmostEqual(result["contours"][0]["perimeter_m"], 8.0, places=10)
         self.assertAlmostEqual(result["contours"][0]["area_m2"], 4.0, places=10)
+
+    def test_tiny_topologically_valid_segment_is_preserved(self) -> None:
+        vertices, faces = cube()
+        result = slice_mesh(
+            vertices,
+            faces,
+            -1.0 + 1e-8,
+            eps=1e-12,
+            endpoint_tolerance=1e-6,
+        )
+        connectivity = result["diagnostics"]["connectivity"]
+        self.assertEqual(connectivity["endpoint_identity"], "mesh_topology_provenance")
+        self.assertFalse(connectivity["coordinate_tolerance_controls_topology"])
+        self.assertGreater(
+            connectivity["very_short_but_topologically_valid_segment_count"], 0
+        )
+        self.assertEqual(connectivity["topological_zero_length_segments_removed"], 0)
+        self.assertEqual(connectivity["invalid_component_count"], 0)
+        self.assertEqual(len(result["contours"]), 1)
+        self.assertAlmostEqual(result["contours"][0]["perimeter_m"], 8.0, places=7)
+
+    def test_spatially_close_but_topologically_distinct_loops_do_not_merge(self) -> None:
+        first_vertices, first_faces = cube(-1.00000025)
+        second_vertices, second_faces = cube(1.00000025)
+        vertices = np.vstack([first_vertices, second_vertices])
+        faces = np.vstack([first_faces, second_faces + len(first_vertices)])
+        result = slice_mesh(vertices, faces, 0.0, endpoint_tolerance=1e-6)
+        self.assertEqual(result["diagnostics"]["connectivity"]["invalid_component_count"], 0)
+        self.assertEqual(len(result["contours"]), 2)
+
+    def test_adjacent_triangles_share_edge_provenance(self) -> None:
+        vertices = np.asarray(
+            [[-1, -1, 0], [1, 1, 0], [-1, 1, 0], [1, -1, 0]],
+            dtype=np.float64,
+        )
+        faces = np.asarray([[0, 1, 2], [0, 3, 1]], dtype=np.int64)
+        _, endpoint_keys, diagnostics = (
+            _intersect_mesh_with_horizontal_plane_provenance(
+                vertices, faces, 0.0, eps=1e-12
+            )
+        )
+        self.assertEqual(diagnostics["raw_segment_count"], 2)
+        self.assertEqual(
+            sum(("edge", 0, 1) in key_pair for key_pair in endpoint_keys), 2
+        )
+
+    def test_exact_on_plane_vertices_keep_vertex_identity(self) -> None:
+        vertices, faces = cube()
+        _, endpoint_keys, diagnostics = (
+            _intersect_mesh_with_horizontal_plane_provenance(
+                vertices, faces, -1.0
+            )
+        )
+        flattened = {key for pair in endpoint_keys for key in pair}
+        self.assertGreater(diagnostics["on_plane_edge_face_count"], 0)
+        self.assertIn(("vertex", 0), flattened)
 
     def test_isolated_coplanar_triangle_is_ignored(self) -> None:
         vertices = np.asarray([[0, 0, 0], [1, 0, 0], [0, 0, 1]], dtype=np.float64)
